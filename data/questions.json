@@ -1,0 +1,161 @@
+[
+    {"id": 1,
+     "question_statement": "What is the capital of France?",
+     "options":["Beijin", "Madrid", "Paris", "Lagos"],
+     "answer": "Paris",
+     "category": "Geography",
+     "difficulty": "Easy"
+    },
+
+    {"id": 2,
+     "question_statement": "What is the largest planet in our solar system?",
+     "options":["Earth", "Jupiter", "Mars", "Venus"],
+     "answer": "Jupiter",
+     "category": "Science",
+     "difficulty": "Medium"
+    },
+
+    {"id": 3,
+     "question_statement": "Who wrote 'Romeo and Juliet'?",
+     "options":["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+     "answer": "William Shakespeare",
+     "category": "Literature",
+     "difficulty": "Easy"
+    },
+
+    {"id": 4,
+     "question_statement": "What is the chemical symbol for gold?",
+     "options":["Au", "Ag", "Fe", "Pb"],
+     "answer": "Au",
+     "category": "Science",
+     "difficulty": "Medium"
+    },
+
+    {"id": 5,
+     "question_statement": "Which country is known as the Land of the Rising Sun?",
+     "options":["China", "Japan", "Thailand", "India"],
+     "answer": "Japan",
+     "category": "Geography",
+     "difficulty": "Easy"
+    },
+
+    {"id": 6,
+     "question_statement": "What is the square root of 144?",
+     "options":["10", "11", "12", "13"],
+     "answer": "12",
+     "category": "Mathematics",
+     "difficulty": "Easy"
+    },
+
+    {"id": 7,
+     "question_statement": "Who painted the Mona Lisa?",
+     "options":["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+     "answer": "Leonardo da Vinci",
+     "category": "Art",
+     "difficulty": "Medium"
+    },
+
+    {"id": 8,
+     "question_statement": "What is the largest ocean on Earth?",
+     "options":["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+     "answer": "Pacific Ocean",
+     "category": "Geography",
+     "difficulty": "Medium"
+    },
+
+    {"id": 9,
+     "question_statement": "In which year did the Titanic sink?",
+     "options":["1910", "1912", "1914", "1916"],
+     "answer": "1912",
+     "category": "History",
+     "difficulty": "Medium"
+    },
+
+    {"id": 10,
+     "question_statement": "What is the main ingredient in guacamole?",
+     "options":["Tomato", "Avocado", "Onion", "Lime"],
+     "answer": "Avocado",
+     "category": "Food",
+     "difficulty": "Easy"
+    },
+
+    {"id": 11,
+     "question_statement": "What is the currency of Japan?",
+     "options":["Yen", "Dollar", "Euro", "Pound"],
+     "answer": "Yen",
+     "category": "Economics",
+     "difficulty": "Easy"
+    },
+
+    {"id": 12,
+     "question_statement": "Who discovered penicillin?",
+     "options":["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"],
+     "answer": "Alexander Fleming",
+     "category": "Science",
+     "difficulty": "Medium"
+    },
+
+    {"id": 13,
+     "question_statement": "What is the tallest mountain in the world?",
+     "options":["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+     "answer": "Mount Everest",
+     "category": "Geography",
+     "difficulty": "Easy"
+    },
+
+    {"id": 14,
+     "question_statement": "Which element has the atomic number 1?",
+     "options":["Oxygen", "Hydrogen", "Carbon", "Nitrogen"],
+     "answer": "Hydrogen",
+     "category": "Science",
+     "difficulty": "Easy"
+    },
+
+    {"id": 15,
+     "question_statement": "Who is known as the Father of Computers?",
+     "options":["Alan Turing", "Charles Babbage", "Bill Gates", "Steve Jobs"],
+     "answer": "Charles Babbage",
+     "category": "Technology",
+     "difficulty": "Medium"
+    },
+
+    {"id": 16,
+     "question_statement": "What is the largest desert in the world?",
+     "options":["Sahara", "Gobi", "Kalahari", "Antarctic Desert"],
+     "answer": "Antarctic Desert",
+     "category": "Geography",
+     "difficulty": "Medium"
+    },
+
+    {"id": 17,
+     "question_statement": "Which planet is known as the Red Planet?",
+     "options":["Mars", "Venus", "Jupiter", "Saturn"],
+     "answer": "Mars",
+     "category": "Science",
+     "difficulty": "Easy"
+    },
+
+    {"id": 18,
+     "question_statement": "Who wrote '1984'?",
+     "options":["George Orwell", "Aldous Huxley", "Ray Bradbury", "J.K. Rowling"],
+     "answer": "George Orwell",
+     "category": "Literature",
+     "difficulty": "Medium"
+    },
+
+    {"id": 19,
+     "question_statement": "What is the chemical formula for water?",
+     "options":["H2O", "CO2", "NaCl", "O2"],
+     "answer": "H2O",
+     "category": "Science",
+     "difficulty": "Easy"
+    },
+
+    {"id": 20,
+     "question_statement": "Which country hosted the 2016 Summer Olympics?",
+     "options":["China", "Brazil", "United Kingdom", "Russia"],
+     "answer": "Brazil",
+     "category": "Sports",
+     "difficulty": "Easy"
+    }  
+]
