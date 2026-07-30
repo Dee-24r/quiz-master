@@ -1,10 +1,5 @@
 from questions import get_random_questions
-
-def run_quiz():
-    random_questions = get_random_questions()
-    for question in random_questions:
-        display_question(question)
-        pick_options(question)
+from score import calculate_score, record_score
 
 def display_question(question):
     """
@@ -30,8 +25,26 @@ def pick_options(question):
 
     if question["options"][int(user_answer) - 1] == question["answer"]:
         print("Correct answer!\n")
+        return True
     else:
         print(f"Wrong answer! The correct answer is: {question['answer']}\n")
+        return False
+
+
+def run_quiz():
+    random_questions = get_random_questions()
+    correct_answers = 0
+
+    for question in random_questions:
+        display_question(question)
+
+        if pick_options(question):
+            correct_answers +=1
+
+    score = calculate_score(correct_answers, len(random_questions))
+    print(f"""You scored {correct_answers} out of {len(random_questions)}. 
+    Your percentage score is: {score}\n""")
+    record_score(score)
 
 
 if __name__ == "__main__":

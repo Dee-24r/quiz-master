@@ -7,3 +7,8 @@ quiz.py done.
 Tested and functioning
 
 ![quiz test](images/test_questions.png)
+
+score.py done
+Tested and functioninggg
+
+![score test](images/test_quizzer.png)
