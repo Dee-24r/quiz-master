@@ -1,4 +1,4 @@
-from questions import get_random_questions
+from questions import get_random_questions, get_opentdb_questions
 from score import calculate_score, record_score
 
 def display_question(question):
@@ -32,17 +32,18 @@ def pick_options(question):
 
 
 def run_quiz():
-    random_questions = get_random_questions()
+    #list_of_questions = get_random_questions()
+    list_of_questions = get_opentdb_questions()
     correct_answers = 0
 
-    for question in random_questions:
+    for question in list_of_questions:
         display_question(question)
 
         if pick_options(question):
             correct_answers +=1
 
-    score = calculate_score(correct_answers, len(random_questions))
-    print(f"""You scored {correct_answers} out of {len(random_questions)}. 
+    score = calculate_score(correct_answers, len(list_of_questions))
+    print(f"""You scored {correct_answers} out of {len(list_of_questions)}. 
     Your percentage score is: {score}\n""")
     record_score(score)
 

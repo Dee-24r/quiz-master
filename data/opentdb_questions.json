@@ -1,0 +1,62 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Sports",
+        "question": "At which race was the 2018 F1 Drivers Championship won?",
+        "correct_answer": "Mexico",
+        "incorrect_answers": [
+            "United States",
+            "Belgium",
+            "Abu Dhabi"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entertainment: Music",
+        "question": "Pamina and Papageno are characters in what Mozart opera?",
+        "correct_answer": "The Magic Flute",
+        "incorrect_answers": [
+            "The Marriage of Figaro",
+            "The Impresario",
+            "The Goose of Cairo"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entertainment: Video Games",
+        "question": "In the game &quot;Super Hang-On&quot; which is the top speed WITH the use of turbo?",
+        "correct_answer": "324 km/h",
+        "incorrect_answers": [
+            "320 km/h",
+            "280 km/h",
+            "286 km/h"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Geography",
+        "question": "Which of these countries is located the FURTHEST away from the South China Sea?",
+        "correct_answer": "Bangladesh",
+        "incorrect_answers": [
+            "Malaysia",
+            "Vietnam",
+            "Philippines"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entertainment: Video Games",
+        "question": "What is the perk that was introduced in the &quot;Call Of Duty: Zombies&quot; map, &quot;Mob Of The Dead&quot;?",
+        "correct_answer": "Electric Cherry",
+        "incorrect_answers": [
+            "Quick Revive",
+            "Vulture Aid",
+            "Tombstone"
+        ]
+    }
+]
