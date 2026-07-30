@@ -1,10 +1,15 @@
+import os
 import json
 import random
 import html
 import requests
+from dotenv import load_dotenv
 
-QUESTIONS_FILE = "data/questions.json"
-API_QUESTIONS_FILE = "data/opentdb_questions.json"
+load_dotenv()
+
+LOCAL_QUESTIONS_FILE = "data/local_questions.json"
+FREE_API_QUESTIONS_FILE = "data/opentdb_questions.json"
+AUTH_API_QUESTIONS_FILE = "data/quizapi_questions.json"
 
 
 
@@ -14,7 +19,7 @@ def load_questions():
     
     """
 
-    with open(QUESTIONS_FILE, "r") as file:
+    with open(LOCAL_QUESTIONS_FILE, "r") as file:
         questions = json.load(file)
     return questions
 
@@ -31,6 +36,7 @@ def get_random_questions(no_of_questions=3):
         no_of_questions = len(questions)
 
     return random.sample(questions, no_of_questions)
+
 
 
 
@@ -61,13 +67,50 @@ def get_opentdb_questions():
 
     return formatted_questions
 
-    """with open(API_QUESTIONS_FILE, "w") as file:
-        json.dump(questions, file, indent=4)"""
+    """with open(FREE_API_QUESTIONS_FILE, "w") as file:
+        json.dump(data, file, indent=4)"""
 
+
+
+
+def get_quizapi_questions():
+    """Questions from QuizAPI (authenticated key)"""
+
+    api_key = os.getenv("QUIZ_API_KEY")
+    headers = {"Authorization": f"Bearer {api_key}"}
+
+    url = "https://quizapi.io/api/v1/questions?limit=5"
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        data_r = response.json() #data_response - changed from data cuz data is a json key
+
+        questions = data_r.get("data", [])
+        formatted_questions = []
+        for question in questions:
+
+            options = []
+            answer = ""
+            for option in question.get("answers", []):
+                options.append(option["text"])
+                if option.get("isCorrect"):
+                    answer = option["text"]
+
+            formatted_question = {
+                "question_statement": html.unescape(question["text"]),
+                "options": [html.unescape(option) for option in options],
+                "answer": html.unescape(answer),
+                "category": question["category"],
+                "difficulty": question["difficulty"]
+            }
+
+            formatted_questions.append(formatted_question)
+
+    return formatted_questions
 
 
 if __name__ == "__main__":
-    get_opentdb_questions()
+    get_quizapi_questions()
     print("Done")
 
 

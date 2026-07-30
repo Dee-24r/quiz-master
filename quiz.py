@@ -1,4 +1,4 @@
-from questions import get_random_questions, get_opentdb_questions
+from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from score import calculate_score, record_score
 
 def display_question(question):
@@ -32,8 +32,9 @@ def pick_options(question):
 
 
 def run_quiz():
-    #list_of_questions = get_random_questions()
-    list_of_questions = get_opentdb_questions()
+    list_of_questions = get_random_questions()
+    #list_of_questions = get_opentdb_questions()
+    #list_of_questions = get_quizapi_questions()
     correct_answers = 0
 
     for question in list_of_questions:
