@@ -12,3 +12,6 @@ score.py done
 Tested and functioninggg
 
 ![score test](images/test_quizzer.png)
+
+integrated w Open Trivia DB API calls.
+Tested and functioning
