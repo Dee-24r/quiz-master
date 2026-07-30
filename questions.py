@@ -14,7 +14,7 @@ def load_questions():
     return questions
 
 def get_random_questions(no_of_questions=3):
-    """Retruns the specified number of random questions from
+    """Returns the specified number of random questions from
     the loaded questions list."""
 
     questions = load_questions()
@@ -35,3 +35,4 @@ if __name__ == "__main__":
 
     for i, question in enumerate(random_questions):
         print(f"{i+1}. {question['question_statement']}")
+        

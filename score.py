@@ -13,15 +13,15 @@ def load_scores():
         scores_history = json.load(file)
     return scores_history
 
-def display_top_():
+def display_top_5():
     """
     Displays top 5 scores.
     """
     print("Your top 5 scores: \n")
 
     scores = load_scores()
-    sorted_scores = scores.sort()
-    for i, score in enumerate(sorted_scores):
+    top_5 = sorted(scores, reverse=True)[:5]
+    for i, score in enumerate(top_5):
         print(f"{i+1}. {score}\n")
 
 def record_score(score):
