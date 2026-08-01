@@ -26,3 +26,6 @@ And then after that, I'm going to make a full loop -- so that it goes back and a
 Acc, I'll prolly do the second one first.
 
 After it all, I'll do streamlit integration, ship, and then do UI with either Flask/Django, make it to a full webapp.
+
+![loopapp](images/loop_app.png)
+Be back in the evening! let's just say I wasn't trying on the last quiz run :P
