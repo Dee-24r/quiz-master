@@ -48,7 +48,7 @@ def choose_game():
 
     print("\nWhat would you like to work on today?:\n")
     for i, category in enumerate(categories):
-        print(f"{category["id"]}. {category["name"]}")
+        print(f"{i+1}. {category["name"]}")
 
     user_category = input(f"Input a number between 1 and {len(categories)}: ")
     while not (1 <= int(user_category) <= len(categories)):
@@ -103,7 +103,7 @@ def build_param_list(c_category, c_type, c_difficulty, c_amount):
     """
 
     params = {}
-    if 1<= c_type <= 2:
+    if c_type["name_id"]!= "mixed":
         params["type"] = c_type["name_id"]
 
     params["difficulty"] = c_difficulty["name_id"]
