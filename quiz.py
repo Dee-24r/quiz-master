@@ -1,12 +1,7 @@
 #IMPORTS
 from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from score import calculate_score, record_score
-from utils import load_opentdb_categories
-
-
-#VARIABLES AND DATA
-categories = load_opentdb_categories()
-DIFFICULTY = ["Easy", "Medium", "Hard"]
+from utils import choose_game
 
 
 def display_question(question):
@@ -42,37 +37,12 @@ def select_option(question):
 
 
 
-def choose_game():
-    """Prompts the user to choose category, difficulty, and 
-    number of questions"""
-
-    print("What would you like to work on today?:\n")
-    for i, category in enumerate(categories):
-        print(f"{i+1}. {category["name"]}")
-
-    user_category = input(f"Input a number between 1 and {len(categories)}: ")
-    while not (1 <= int(user_category) <= len(categories)):
-        user_category = input(f"Please input a valid number between 1 and {len(categories)}: ")
-
-    user_category = int(user_category)
-    chosen_category = categories[user_category-1]
-
-    print("How far can you go?: ")
-    for i, level in enumerate(DIFFICULTY):
-        print(f"{i+1}. {level}")
-
-    user_difficulty = input("Enter a number between 1 and 3: ")
-    
-    
-
-    params = {id = chosen_category}
-
-
-
-
 def run_quiz():
-    list_of_questions = get_random_questions()
-    #list_of_questions = get_opentdb_questions()
+
+    c_category, c_type, c_difficulty, c_amount = choose_game()
+
+    #list_of_questions = get_random_questions()
+    list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
     #list_of_questions = get_quizapi_questions()
     correct_answers = 0
 

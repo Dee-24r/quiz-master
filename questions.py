@@ -4,6 +4,7 @@ import random
 import html
 import requests
 from dotenv import load_dotenv
+from utils import build_param_list
 
 load_dotenv()
 
@@ -40,11 +41,13 @@ def get_random_questions(no_of_questions=3):
 
 
 
-def get_opentdb_questions():
+def get_opentdb_questions(c_category, c_type, c_difficulty, c_amount):
     """Questions from Open Trivia DB"""
 
-    url = "https://opentdb.com/api.php?amount=5"
-    response = requests.get(url)
+    params = build_param_list(c_category, c_type, c_difficulty, c_amount)
+
+    url = "https://opentdb.com/api.php?"
+    response = requests.get(url, params=params)
     data = response.json()
 
     questions = data.get("results", [])

@@ -1,5 +1,6 @@
 from quiz import run_quiz
 from score import display_top_5
+from utils import choose_game
 
 
 def main():
