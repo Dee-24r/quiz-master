@@ -83,7 +83,7 @@ def get_quizapi_questions():
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
-        data_r = response.json() #data_response - changed from data cuz data is a json key
+        data_r = response.json() #data_response - ran out of names, lol. changed from data cuz data is a json key.
 
         questions = data_r.get("data", [])
         formatted_questions = []
@@ -107,6 +107,7 @@ def get_quizapi_questions():
             formatted_questions.append(formatted_question)
 
     return formatted_questions
+
 
 
 if __name__ == "__main__":
