@@ -1,4 +1,5 @@
 #IMPORTS
+import time
 from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from score import calculate_score, record_score
 from utils import choose_game
@@ -58,6 +59,55 @@ def run_quiz():
     record_score(score)
 
 
+
+
+def run_timed_quiz():
+    """
+    Runs the timed quiz option of the app"""
+
+    c_category, c_type, c_difficulty, c_amount = choose_game()
+
+    list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
+    correct_answers = 0
+
+    time_limit = 15
+    start_time = time.time()
+    for question in list_of_questions:
+        elapsed_time = time.time() - start_time
+        remaining_time = (time_limit - elapsed_time)
+
+        no_of_hours, no_of_minutes, no_of_seconds = format_time_figures(remaining_time)
+        print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds)
+        if remaining_time <= 0:
+            print("Time's up!")
+            break
+
+        
+        display_question(question)
+
+        if select_option(question):
+            correct_answers +=1
+
+    score = calculate_score(correct_answers, len(list_of_questions))
+    print(f"""You scored {correct_answers} out of {len(list_of_questions)}. 
+    Your percentage score is: {score}\n""")
+    record_score(score)
+
+
+
+def format_time_figures(no_of_seconds):
+
+    no_of_seconds = max(0, no_of_seconds)
+    no_of_minutes, no_of_seconds = divmod(no_of_seconds, 60)
+    no_of_hours, no_of_minutes = divmod(no_of_minutes, 60)
+    return int(no_of_hours), int(no_of_minutes), int(no_of_seconds)
+
+
+def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
+    print(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
+
+
+
 if __name__ == "__main__":
     print("How smart are you? :D\n")
-    run_quiz()
+    run_timed_quiz()
