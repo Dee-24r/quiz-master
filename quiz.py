@@ -98,14 +98,12 @@ def run_timed_quiz():
 
 
 
-def endless_run = ():
-"""runs the endless option of the app. keep solving quizzzes
+def endless_run():
+    """runs the endless option of the app. keep solving quizzzes
     till the user says exit"""
 
-    #they still select category, type, and difficulty level, 
-    # but not number of questions.
 
-    while
+    print("h")
 
 
 

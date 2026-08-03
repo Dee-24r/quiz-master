@@ -24,12 +24,14 @@ def choose_and_run_task():
     while not (1 <= int(user_response) <= 3):
         user_response = input("Please input a valid option between 1 and 3: ")
 
-    if int(user_response) == 1:
-        #run_quiz()
+    user_response = int(user_response)
+
+    if user_response == 1:
+        run_quiz()
         #choose_mode()
-    if int(user_response) == 2:
+    if user_response == 2:
         display_top_5()
-    if int(user_response) == 3:
+    if user_response == 3:
         exit_game()
         return False
 
