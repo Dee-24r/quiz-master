@@ -25,7 +25,8 @@ def choose_and_run_task():
         user_response = input("Please input a valid option between 1 and 3: ")
 
     if int(user_response) == 1:
-        run_quiz()
+        #run_quiz()
+        #choose_mode()
     if int(user_response) == 2:
         display_top_5()
     if int(user_response) == 3:
@@ -34,6 +35,14 @@ def choose_and_run_task():
 
     return True
 
+"""
+#make a choose_game function when the user chooses the game, it 
+returns the id of the game they chose, and pick game runs on all 
+of that.
+so most of the functions take in the id of the game type
 
+
+
+"""
 if __name__ == "__main__":
     main()

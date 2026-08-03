@@ -69,6 +69,7 @@ def run_timed_quiz():
 
     list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
     correct_answers = 0
+    questions_answered = 0
 
     time_limit = 15
     start_time = time.time()
@@ -78,8 +79,10 @@ def run_timed_quiz():
 
         no_of_hours, no_of_minutes, no_of_seconds = format_time_figures(remaining_time)
         print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds)
+        questions_answered+=1
         if remaining_time <= 0:
             print("Time's up!")
+            print(f"Questions answered {questions_answered}")
             break
 
         
@@ -92,6 +95,17 @@ def run_timed_quiz():
     print(f"""You scored {correct_answers} out of {len(list_of_questions)}. 
     Your percentage score is: {score}\n""")
     record_score(score)
+
+
+
+def endless_run = ():
+"""runs the endless option of the app. keep solving quizzzes
+    till the user says exit"""
+
+    #they still select category, type, and difficulty level, 
+    # but not number of questions.
+
+    while
 
 
 

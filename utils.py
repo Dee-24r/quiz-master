@@ -5,6 +5,14 @@ CATEGORIES_DOC = "data/opentdb_categories.json"
 
 #VARIABLES AND DATA
 
+GAME_MODES = [
+    {"id": 1, "name": "Practice Mode", "name_id": "practice_mode", "description": "Choose a number of questions and test yourself on them."},
+    {"id": 2, "name": "Timed Mode", "name_id": "timed_mode", "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."},
+    {"id": 3, "name": "Jeopardy", "name_id": "jeopardy_mode", "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."},
+    {"id": 4, "name": "Endless Mode", "name_id": "endless_mode", "description": "Solve questions until you're tired. Exit by entering 'X'."},
+    {"id": 5, "name": "Exam Mode", "name_id": "exam_mode", "description": "Allows the user to revisit questions, like in an exam."}
+]
+
 DIFFICULTY = [
     {"id": 1, "name":"Easy", "name_id": "easy"}, 
     {"id": 2, "name": "Medium", "name_id": "medium"}, 
@@ -112,6 +120,29 @@ def build_param_list(c_category, c_type, c_difficulty, c_amount):
 
     return params
         
+
+
+
+
+def pick_quiz_type():
+    """prompts the user to pick a game type - out of 
+    the 5 and returns the id so it can be used in 
+    other functions"""
+
+    print("Let's goo! How do we do this?: ")
+    for game in enumerate(GAME_MODES):
+        print(f"{game["id"]}. {game["name"]}")
+
+    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}")    
+    
+    while not game_mode.isdigit() or not (1 <= int(game_mode) <= len(GAME_MODES)):
+        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode")
+
+    game_mode = int(game_mode)
+    return GAME_MODES[game_mode-1]
+
+    #so we want it to return the game mode object I guess. 
+
 
 if __name__ == "__main__":
     save_opentdb_categories()

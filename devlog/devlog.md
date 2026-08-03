@@ -17,6 +17,7 @@ integrated w Open Trivia DB API calls.
 Tested and functioning
 
 1st Aug
+
 ![completely functioning quiz](images/fullquiz.png)
 
 So, we can now pick our category, difficulty level, question type and number of questions.
@@ -81,3 +82,8 @@ maybe once i do streamlit stuff, i'll add different users and habe them be displ
 ![timer](images/timed_quiz.png)
 
 Turns out the way to implement the timer inteh CLI is just checking after each question, so the user can finish answering one more question even tho the timer just ended. there's a way to interrupt which I will attempt in the morning. i'll implement better stuff when we switch to GUI!
+
+
+Did not later try the interrupt thingy but I researched a bit how to do it.
+Trying to work on integrating the new game modes, and I have to restructure my code to make functions accomodate my modes... like be reusable, so I don't just make a new function for each mode.
+It's 12.38am! I'll continue tmr!
