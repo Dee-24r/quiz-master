@@ -1,9 +1,10 @@
 import requests
 import json
-
-CATEGORIES_DOC = "data/opentdb_categories.json"
+import config
 
 #VARIABLES AND DATA
+
+CATEGORIES_DOC = "data/opentdb_categories.json"
 
 GAME_MODES = [
     {"id": 1, "name": "Practice Mode", "name_id": "practice_mode", "description": "Choose a number of questions and test yourself on them."},
@@ -17,13 +18,13 @@ DIFFICULTY = [
     {"id": 1, "name":"Easy", "name_id": "easy"}, 
     {"id": 2, "name": "Medium", "name_id": "medium"}, 
     {"id": 3, "name": "Hard", "name_id": "hard"}
-    ]
+]
 
 QUESTION_TYPES = [
     {"id": 1, "name": "Multiple Choice", "name_id": "multiple"}, 
     {"id": 2, "name": "True/False", "name_id": "boolean"},
-    {"id": 3, "name": "Mixed", "name_id": "mixed"}
-    ]
+    {"id": 3, "name": "Mixed", "name_id": "mixed"}   
+]
 
 
 def save_opentdb_categories():
@@ -50,7 +51,29 @@ categories = load_opentdb_categories() #dictionary with
 
 
 
-def choose_game():
+def pick_game_mode():
+    """prompts the user to pick a game type - out of 
+    the 5 and returns the id so it can be used in 
+    other functions"""
+
+    print("Let's goo! Where do you want to start?: ")
+    for game in enumerate(GAME_MODES):
+        print(f"{game["id"]}. {game["name"]}")
+
+    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}")    
+    
+    while not game_mode.isdigit() or not (1 <= int(game_mode) <= len(GAME_MODES)):
+        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode")
+
+    game_mode = int(game_mode)
+    return GAME_MODES[game_mode-1]
+
+    #so we want it to return the game mode object abu dict item.
+
+
+
+
+def configure_quiz(mode):
     """Prompts the user to choose category, difficulty, and 
     number of questions"""
 
@@ -64,7 +87,6 @@ def choose_game():
 
     user_category = int(user_category)
     chosen_category = categories[user_category-1]
-
 
 
     print("\nPick your kind of questions?\n")
@@ -91,23 +113,25 @@ def choose_game():
     chosen_difficulty = DIFFICULTY[user_difficulty-1]
 
 
+    if game_configurations["mode"]["name_id"] in ("endless_mode", "jeopardy_mode"):
+        chosen_amount = 20
+    else:
+        print("\nOkay, how many questions?: ")
+        user_amount = input("Enter a number between 1 and 100: ")
+        while not (1 <= int(user_amount) <= 100):
+            user_amount = input(f"Please input a valid number between 1 and 100: ")
 
-    print("\nOkay, how many questions?: ")
-    user_amount = input("Enter a number between 1 and 100: ")
-    while not (1 <= int(user_amount) <= 100):
-        user_amount = input(f"Please input a valid number between 1 and 100: ")
-
-    chosen_amount = user_amount = int(user_amount)
+        chosen_amount = user_amount = int(user_amount)
 
     return chosen_category, chosen_type, chosen_difficulty, chosen_amount
 
 
-#c_ for chosen :)
 
+#c_ for chosen
 def build_param_list(c_category, c_type, c_difficulty, c_amount):
     """
     Build's parameters for the API call. variables received from 
-    choose_game
+    configure_quiz
     """
 
     params = {}
@@ -122,26 +146,6 @@ def build_param_list(c_category, c_type, c_difficulty, c_amount):
         
 
 
-
-
-def pick_quiz_type():
-    """prompts the user to pick a game type - out of 
-    the 5 and returns the id so it can be used in 
-    other functions"""
-
-    print("Let's goo! How do we do this?: ")
-    for game in enumerate(GAME_MODES):
-        print(f"{game["id"]}. {game["name"]}")
-
-    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}")    
-    
-    while not game_mode.isdigit() or not (1 <= int(game_mode) <= len(GAME_MODES)):
-        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode")
-
-    game_mode = int(game_mode)
-    return GAME_MODES[game_mode-1]
-
-    #so we want it to return the game mode object I guess. 
 
 
 if __name__ == "__main__":

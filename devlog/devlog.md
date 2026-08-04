@@ -83,7 +83,12 @@ maybe once i do streamlit stuff, i'll add different users and habe them be displ
 
 Turns out the way to implement the timer inteh CLI is just checking after each question, so the user can finish answering one more question even tho the timer just ended. there's a way to interrupt which I will attempt in the morning. i'll implement better stuff when we switch to GUI!
 
-
+3rn Aug (12.38am)
 Did not later try the interrupt thingy but I researched a bit how to do it.
 Trying to work on integrating the new game modes, and I have to restructure my code to make functions accomodate my modes... like be reusable, so I don't just make a new function for each mode.
 It's 12.38am! I'll continue tmr!
+
+3rd Aug (11.27 pm)
+Yh, so at this point, I'm doing a lot of asking chat GPT and checking, trying to refactor the code especially defining a dic for the configurations, so i'm not doing 10000 if statements in each function... if you get! I think I finally got it now tbh, but need to go sleep! will continue tmr.
+
+anyways, I currently have the and I'm trying to create separate parent functions for each of the game modes and mdivide most of the already existing functions into more specific individual functions, e.g configure_category, configure_difficulty, instead of doing all 4 in one function.

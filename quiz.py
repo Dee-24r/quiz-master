@@ -2,8 +2,41 @@
 import time
 from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from score import calculate_score, record_score
-from utils import choose_game
+from utils import configure_quiz
+import config
 
+
+game_configurations = {}
+
+"""this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
+configure_quiz
+
+
+game_configurations = {
+    "mode": {
+        "id":1,
+        "name": "Practice Mode",
+        "name_id": "practice_mode",
+        "description": "kms"
+    },
+    "category":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "difficulty":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "type":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "amount": 20
+}
+"""
 
 def display_question(question):
     """
@@ -39,8 +72,8 @@ def select_option(question):
 
 
 def run_quiz():
-
-    c_category, c_type, c_difficulty, c_amount = choose_game()
+    game_configurations["category"], game_configurations["type"],
+    game_configurations["difficulty"], game_configurations["amount"] = configure_quiz()
 
     #list_of_questions = get_random_questions()
     list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
@@ -65,7 +98,7 @@ def run_timed_quiz():
     """
     Runs the timed quiz option of the app"""
 
-    c_category, c_type, c_difficulty, c_amount = choose_game()
+    c_category, c_type, c_difficulty, c_amount = configure_quiz()
 
     list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
     correct_answers = 0

@@ -1,5 +1,6 @@
 from quiz import run_quiz
 from score import display_top_5
+import config
 
 def exit_game():
     print("Thank you for playing! Goodbye!")
@@ -38,7 +39,7 @@ def choose_and_run_task():
     return True
 
 """
-#make a choose_game function when the user chooses the game, it 
+#make a choose_game_mode function when the user chooses the game, it 
 returns the id of the game they chose, and pick game runs on all 
 of that.
 so most of the functions take in the id of the game type

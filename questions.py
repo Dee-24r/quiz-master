@@ -3,6 +3,7 @@ import json
 import random
 import html
 import requests
+import config
 from dotenv import load_dotenv
 from utils import build_param_list
 
