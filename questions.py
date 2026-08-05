@@ -49,7 +49,25 @@ def get_opentdb_questions(game_config):
     params = build_param_list(game_config)
 
     url = "https://opentdb.com/api.php?"
-    response = requests.get(url, params=params)
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()
+    
+    except requests.exceptions.ConnectionError:
+        print("Internet connection error! Please check your internet connection and try again.\n")
+        return[] #basically, return empty list of questions
+
+    except requests.exceptions.Timeout:
+        print("The API call took more than 10 secs. Please try again after a while.\n")
+        return []
+
+    except requests.exceptions.HTTPError:
+        print(f"\nThe API server returned a {response.status_code} error")
+        return []
+
+    except requests.exceptions.RequestException as e:
+        print(f"Something unexpected happened: {e}.")
+        return []
     data = response.json()
 
     questions = data.get("results", [])
