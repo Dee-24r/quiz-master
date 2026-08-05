@@ -3,7 +3,7 @@ import json
 import config
 
 #VARIABLES AND DATA
-
+game_config = {}
 CATEGORIES_DOC = "data/opentdb_categories.json"
 
 GAME_MODES = [
@@ -51,44 +51,42 @@ categories = load_opentdb_categories() #dictionary with
 
 
 
-def pick_game_mode():
+def choose_game_mode():
     """prompts the user to pick a game type - out of 
     the 5 and returns the id so it can be used in 
     other functions"""
 
     print("Let's goo! Where do you want to start?: ")
-    for game in enumerate(GAME_MODES):
+    for game in GAME_MODES:
         print(f"{game["id"]}. {game["name"]}")
 
-    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}")    
+    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}: ")    
     
     while not game_mode.isdigit() or not (1 <= int(game_mode) <= len(GAME_MODES)):
-        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode")
+        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode: ")
 
     game_mode = int(game_mode)
     return GAME_MODES[game_mode-1]
 
     #so we want it to return the game mode object abu dict item.
 
-
-
-
-def configure_quiz(mode):
-    """Prompts the user to choose category, difficulty, and 
-    number of questions"""
-
+def choose_category():
+    """
+    prompts the user to choose an available category
+    of questions"""
     print("\nWhat would you like to work on today?:\n")
     for i, category in enumerate(categories):
         print(f"{i+1}. {category["name"]}")
-
+    
     user_category = input(f"Input a number between 1 and {len(categories)}: ")
     while not (1 <= int(user_category) <= len(categories)):
         user_category = input(f"Please input a valid number between 1 and {len(categories)}: ")
 
     user_category = int(user_category)
     chosen_category = categories[user_category-1]
+    return chosen_category
 
-
+def choose_questions_type():
     print("\nPick your kind of questions?\n")
     for i, type in enumerate(QUESTION_TYPES):
         print(f"{type["id"]}. {type["name"]}")
@@ -99,8 +97,10 @@ def configure_quiz(mode):
 
     user_type = int(user_type)
     chosen_type = QUESTION_TYPES[user_type-1]
+    return chosen_type
 
 
+def choose_difficulty():
     print("\nHow far can you go?: ")
     for i, level in enumerate(DIFFICULTY):
         print(f"{level["id"]}. {level["name"]}")
@@ -111,36 +111,60 @@ def configure_quiz(mode):
 
     user_difficulty = int(user_difficulty)
     chosen_difficulty = DIFFICULTY[user_difficulty-1]
+    return chosen_difficulty
 
 
-    if game_configurations["mode"]["name_id"] in ("endless_mode", "jeopardy_mode"):
-        chosen_amount = 20
+
+def choose_amount():
+    print("\nOkay, how many questions?: ")
+    user_amount = input("Enter a number between 1 and 100: ")
+    while not (1 <= int(user_amount) <= 100):
+        user_amount = input(f"Please input a valid number between 1 and 100: ")
+
+    chosen_amount = user_amount = int(user_amount)
+    return chosen_amount
+
+
+
+
+
+def configure_quiz(mode):
+    """Prompts the user to choose category, difficulty, and 
+    number of questions"""
+
+    global game_config
+
+    game_config["mode"] = mode
+    game_config["category"] = choose_category()
+    game_config["type"] = choose_questions_type()
+    game_config["difficulty"] = choose_difficulty()
+
+    if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
+        game_config["amount"] = 20
     else:
-        print("\nOkay, how many questions?: ")
-        user_amount = input("Enter a number between 1 and 100: ")
-        while not (1 <= int(user_amount) <= 100):
-            user_amount = input(f"Please input a valid number between 1 and 100: ")
+        game_config["amount"] = choose_amount()
 
-        chosen_amount = user_amount = int(user_amount)
+    return game_config
+    
 
-    return chosen_category, chosen_type, chosen_difficulty, chosen_amount
-
-
-
+#pass in game_config. then we'll do game_config["id"]
 #c_ for chosen
-def build_param_list(c_category, c_type, c_difficulty, c_amount):
+def build_param_list(game_config):
     """
     Build's parameters for the API call. variables received from 
     configure_quiz
     """
 
+    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
+
     params = {}
-    if c_type["name_id"]!= "mixed":
-        params["type"] = c_type["name_id"]
 
     params["difficulty"] = c_difficulty["name_id"]
     params["category"] = c_category["id"]
     params["amount"] = c_amount
+
+    if c_type["name_id"]!= "mixed":
+            params["type"] = c_type["name_id"]
 
     return params
         

@@ -9,7 +9,6 @@ def exit_game():
 
 def main():
     print("Welcome, Welcome! What would you like to do today?\n")
-    choose_and_run_task()
     while choose_and_run_task():
         print("\nWhat would you like to do next?\n")
         pass
@@ -29,7 +28,6 @@ def choose_and_run_task():
 
     if user_response == 1:
         run_quiz()
-        #choose_mode()
     if user_response == 2:
         display_top_5()
     if user_response == 3:

@@ -42,10 +42,11 @@ def get_random_questions(no_of_questions=3):
 
 
 
-def get_opentdb_questions(c_category, c_type, c_difficulty, c_amount):
+def get_opentdb_questions(game_config):
     """Questions from Open Trivia DB"""
+    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
 
-    params = build_param_list(c_category, c_type, c_difficulty, c_amount)
+    params = build_param_list(game_config)
 
     url = "https://opentdb.com/api.php?"
     response = requests.get(url, params=params)
@@ -84,31 +85,49 @@ def get_quizapi_questions():
     headers = {"Authorization": f"Bearer {api_key}"}
 
     url = "https://quizapi.io/api/v1/questions?limit=5"
-    response = requests.get(url, headers=headers)
 
-    if response.status_code == 200:
-        data_r = response.json() #data_response - ran out of names, lol. changed from data cuz data is a json key.
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+    
+    except requests.exceptions.ConnectionError:
+        print("Internet connection error! Please check your internet connection and try again.\n")
+        return[] #basically, return empty list of questions
 
-        questions = data_r.get("data", [])
-        formatted_questions = []
-        for question in questions:
+    except requests.exceptions.Timeout:
+        print("The API call took more than 10 secs. Please try again after a while.\n")
+        return []
 
-            options = []
-            answer = ""
-            for option in question.get("answers", []):
-                options.append(option["text"])
-                if option.get("isCorrect"):
-                    answer = option["text"]
+    except requests.exceptions.HTTPError:
+        print(f"\nThe API server returned a {response.status_code} error")
+        return []
 
-            formatted_question = {
-                "question_statement": html.unescape(question["text"]),
-                "options": [html.unescape(option) for option in options],
-                "answer": html.unescape(answer),
-                "category": question["category"],
-                "difficulty": question["difficulty"]
-            }
+    except requests.exceptions.RequestException as e:
+        print(f"Something unexpected happened: {e}.")
+        return []
 
-            formatted_questions.append(formatted_question)
+    data_r = response.json() #data_response - ran out of names, lol. changed from data cuz data is a json key.
+
+    questions = data_r.get("data", [])
+    formatted_questions = []
+    for question in questions:
+
+        options = []
+        answer = ""
+        for option in question.get("answers", []):
+            options.append(option["text"])
+            if option.get("isCorrect"):
+                answer = option["text"]
+
+        formatted_question = {
+            "question_statement": html.unescape(question["text"]),
+            "options": [html.unescape(option) for option in options],
+            "answer": html.unescape(answer),
+            "category": question["category"],
+            "difficulty": question["difficulty"]
+        }
+
+        formatted_questions.append(formatted_question)
 
     return formatted_questions
 

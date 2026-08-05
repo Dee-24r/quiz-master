@@ -92,3 +92,13 @@ It's 12.38am! I'll continue tmr!
 Yh, so at this point, I'm doing a lot of asking chat GPT and checking, trying to refactor the code especially defining a dic for the configurations, so i'm not doing 10000 if statements in each function... if you get! I think I finally got it now tbh, but need to go sleep! will continue tmr.
 
 anyways, I currently have the and I'm trying to create separate parent functions for each of the game modes and mdivide most of the already existing functions into more specific individual functions, e.g configure_category, configure_difficulty, instead of doing all 4 in one function.
+
+---
+4th August (11.45pm)
+
+![finished splitting modes and integrated practice mode](images/practice_mode.png)
+RAHH! Did my victory dance today!! I was able to understand what I needed to change lol and refactor the functions (making more dedicated ones and also passing variables differently) and get everything working again.
+
+I've worked on the practice mode and it comes together fine. I haven't finished integrating the timed_mode (that is after I made changes to my code var and stuff), and then I haven't started working on the other 3 modes. I'll start from there tmr.
+
+I also did error handling for the API call (partially bcuz T-mobile and Verizon has been showing our area what Nigerians like to call 'pepper', and so I had an error cuz i wasn't connected to the internet and I decidedd to research error handling and fix the code to print pleasnt stuff instead of those error codes)

@@ -2,17 +2,13 @@
 import time
 from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from score import calculate_score, record_score
-from utils import configure_quiz
-import config
-
-
-game_configurations = {}
+from utils import configure_quiz, choose_game_mode
 
 """this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
 configure_quiz
 
 
-game_configurations = {
+game_config = {
     "mode": {
         "id":1,
         "name": "Practice Mode",
@@ -71,13 +67,9 @@ def select_option(question):
 
 
 
-def run_quiz():
-    game_configurations["category"], game_configurations["type"],
-    game_configurations["difficulty"], game_configurations["amount"] = configure_quiz()
-
-    #list_of_questions = get_random_questions()
-    list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
-    #list_of_questions = get_quizapi_questions()
+def run_practice_mode(game_config):
+    
+    list_of_questions = get_opentdb_questions(game_config)
     correct_answers = 0
 
     for question in list_of_questions:
@@ -94,7 +86,7 @@ def run_quiz():
 
 
 
-def run_timed_quiz():
+def run_timed_mode():
     """
     Runs the timed quiz option of the app"""
 
@@ -151,8 +143,33 @@ def format_time_figures(no_of_seconds):
 def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
     print(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
 
+def run_quiz():
+    mode = choose_game_mode()
+    game_config = configure_quiz(mode)
+
+    mode = game_config["mode"]["name_id"]
+    if mode == "practice_mode":
+        run_practice_mode(game_config)
+    elif mode == "timed_mode":
+        run_timed_mode(game_config)
+    elif mode == "jeopardy_mode":
+        run_jeopardy_mode(game_config)
+    elif mode == "endless_mode":
+        run_endless_mode(game_config)
+    elif mode == "exam_mode":
+        run_exam_mode(game_config)
+    else:
+        print("THERE WAS AN ERROR SOMEWHEREE!! - RUN_QUIZ()")
+
 
 
 if __name__ == "__main__":
     print("How smart are you? :D\n")
-    run_timed_quiz()
+    run_timed_mode()
+
+
+
+"""
+#list_of_questions = get_random_questions()
+    #list_of_questions = get_quizapi_questions()
+    # """
