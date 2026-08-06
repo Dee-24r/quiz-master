@@ -1,8 +1,8 @@
 #IMPORTS
 import time
 from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
-from score import calculate_score, record_score
-from utils import configure_quiz, choose_game_mode
+from score import handle_and_print_score
+from utils import configure_quiz, choose_game_mode, format_time_figures, print_formatted_time
 
 """this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
 configure_quiz
@@ -47,24 +47,32 @@ def display_question(question):
 
 
 
-def select_option(question):
+def select_option(question, allow_quit=False):
     """
     Prompts the user to pick and option for the question and check
     the asnwer"""
+    prompt = f"Pick an option (1-{len(question['options'])})"
 
-    user_answer = input(f"Pick an option (1-{len(question['options'])}): ")
+    if allow_quit == True:
+        prompt += " or enter 'X' to cancel"
+    prompt += ": "
 
-    while not user_answer.isdigit() or not (1 <= int(user_answer) <= len(question["options"])):
-        print(f"Invalid input. Please enter a number between 1 and {len(question['options'])}.")
-        user_answer = input(f"Pick an option (1-{len(question['options'])}): ")
+    user_answer = input(prompt)
 
+    if allow_quit and user_answer.upper() == 'X':
+        return "quit"
+    while not (allow_quit and user_answer.upper() == 'X') and not (user_answer.isdigit() and 1 <= int(user_answer) <= len(question["options"])):
+        print("Invalid input!")
+        user_answer = input(prompt)
+
+    if allow_quit and user_answer.upper() == 'X':
+        return "quit"
     if question["options"][int(user_answer) - 1] == question["answer"]:
         print("Correct answer!\n")
         return True
     else:
         print(f"Wrong answer! The correct answer is: {question['answer']}\n")
         return False
-
 
 
 def run_practice_mode(game_config):
@@ -77,22 +85,16 @@ def run_practice_mode(game_config):
 
         if select_option(question):
             correct_answers +=1
-
-    score = calculate_score(correct_answers, len(list_of_questions))
-    print(f"""You scored {correct_answers} out of {len(list_of_questions)}. 
-    Your percentage score is: {score}\n""")
-    record_score(score)
+    handle_and_print_score(correct_answers, len(list_of_questions))
 
 
 
 
-def run_timed_mode():
+def run_timed_mode(game_config):
     """
     Runs the timed quiz option of the app"""
 
-    c_category, c_type, c_difficulty, c_amount = configure_quiz()
-
-    list_of_questions = get_opentdb_questions(c_category, c_type, c_difficulty, c_amount)
+    list_of_questions = get_opentdb_questions(game_config)
     correct_answers = 0
     questions_answered = 0
 
@@ -116,32 +118,46 @@ def run_timed_mode():
         if select_option(question):
             correct_answers +=1
 
-    score = calculate_score(correct_answers, len(list_of_questions))
-    print(f"""You scored {correct_answers} out of {len(list_of_questions)}. 
-    Your percentage score is: {score}\n""")
-    record_score(score)
+    handle_and_print_score(correct_answers, len(list_of_questions))
+
+
+def stop(correct_answers, answered_questions):
+    print("Nice Work")
+    handle_and_print_score(correct_answers, answered_questions)
 
 
 
-def endless_run():
+def run_endless_mode(game_config):
     """runs the endless option of the app. keep solving quizzzes
     till the user says exit"""
 
+    print("Hmm!! I see you're locked in?")
+    print("Get ready! I won't stop until you say so!")
+    correct_answers = 0
+    answered_questions = 0
 
-    print("h")
+    print("Enter 'X' to stop the quiz!")
 
+    while True:
+        list_of_questions = get_opentdb_questions(game_config)
 
+        for question in list_of_questions:
+            display_question(question)
 
-def format_time_figures(no_of_seconds):
+            result = select_option(question, allow_quit=True)
+            if result == "quit":
+                stop(correct_answers, answered_questions)
+                return
+            else:           
+                answered_questions+=1
+                if result:
+                    correct_answers +=1
 
-    no_of_seconds = max(0, no_of_seconds)
-    no_of_minutes, no_of_seconds = divmod(no_of_seconds, 60)
-    no_of_hours, no_of_minutes = divmod(no_of_minutes, 60)
-    return int(no_of_hours), int(no_of_minutes), int(no_of_seconds)
+    
 
+def run_jeopardy_mode(game_config):
+    print("sa")
 
-def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
-    print(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
 
 def run_quiz():
     mode = choose_game_mode()

@@ -79,7 +79,7 @@ def choose_category():
         print(f"{i+1}. {category["name"]}")
     
     user_category = input(f"Input a number between 1 and {len(categories)}: ")
-    while not (1 <= int(user_category) <= len(categories)):
+    while not user_category.isdigit() or not (1 <= int(user_category) <= len(categories)):
         user_category = input(f"Please input a valid number between 1 and {len(categories)}: ")
 
     user_category = int(user_category)
@@ -92,7 +92,7 @@ def choose_questions_type():
         print(f"{type["id"]}. {type["name"]}")
 
     user_type = input("Enter a number between 1 and 3: ")
-    while not (1 <= int(user_type) <= 3):
+    while not user_type.isdigit() or not (1 <= int(user_type) <= 3):
         user_type = input(f"Please input a valid number between 1 and 3: ")
 
     user_type = int(user_type)
@@ -106,7 +106,7 @@ def choose_difficulty():
         print(f"{level["id"]}. {level["name"]}")
 
     user_difficulty = input("Enter a number between 1 and 3: ")
-    while not (1 <= int(user_difficulty) <= 3):
+    while not user_difficulty.isdigit() or not (1 <= int(user_difficulty) <= 3):
         user_difficulty = input(f"Please input a valid number between 1 and 3: ")
 
     user_difficulty = int(user_difficulty)
@@ -117,8 +117,8 @@ def choose_difficulty():
 
 def choose_amount():
     print("\nOkay, how many questions?: ")
-    user_amount = input("Enter a number between 1 and 100: ")
-    while not (1 <= int(user_amount) <= 100):
+    user_amount = input("Enter a number between 1 and 16: ")
+    while not user_amount.isdigit() or not (1 <= int(user_amount) <= 16):
         user_amount = input(f"Please input a valid number between 1 and 100: ")
 
     chosen_amount = user_amount = int(user_amount)
@@ -140,7 +140,7 @@ def configure_quiz(mode):
     game_config["difficulty"] = choose_difficulty()
 
     if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
-        game_config["amount"] = 20
+        game_config["amount"] = 15
     else:
         game_config["amount"] = choose_amount()
 
@@ -169,6 +169,17 @@ def build_param_list(game_config):
     return params
         
 
+
+def format_time_figures(no_of_seconds):
+
+    no_of_seconds = max(0, no_of_seconds)
+    no_of_minutes, no_of_seconds = divmod(no_of_seconds, 60)
+    no_of_hours, no_of_minutes = divmod(no_of_minutes, 60)
+    return int(no_of_hours), int(no_of_minutes), int(no_of_seconds)
+
+
+def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
+    print(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
 
 
 

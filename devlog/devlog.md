@@ -113,4 +113,13 @@ I also did error handling for the API call (partially bcuz T-mobile and Verizon 
 
 ![api_call_error_test](images/test_api_call_error.png)
 
-It wroked, but raised zero division error in my scoring system. will pick up from there tmr.
+It worked, but raised zero division error in my scoring system. will pick up from there tmr.
+
+---
+^^^fixed
+
+![fixed_zero_div](images/new_api_error_test.png)
+
+![endless-mode](images/endless_mode.png)
+
+Yayay! I ensured Timed Mode worked and integrated Endless Mode. it works.. finallyy! So, I found out the Open Trivia DB's limit is 16 questions per call????? Just 16?? So, I had to change my endless mode logic to accomodate 16. it works, but the only thing is I get dupl,icate questions (for Computer Science, Easy, True/False) which is annoying. So, I may check QuizAPI or other APIs. but this works for just testing as I build. yipee. t-tmr

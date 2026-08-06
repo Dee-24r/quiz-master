@@ -21,7 +21,7 @@ def choose_and_run_task():
     print("3. Exit\n")
 
     user_response = input("Input 1, 2, or 3: ")
-    while not (1 <= int(user_response) <= 3):
+    while not user_response.isdigit() or not (1 <= int(user_response) <= 3):
         user_response = input("Please input a valid option between 1 and 3: ")
 
     user_response = int(user_response)

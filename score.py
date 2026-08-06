@@ -2,7 +2,16 @@ import json
 
 SCORES_FILENAME = "data/scores.json"
 
+def handle_and_print_score(correct_answers, no_of_questions):
+    score = calculate_score(correct_answers, no_of_questions)
+    print(f"""You scored {correct_answers} out of {no_of_questions}. 
+    Your percentage score is: {score}\n""")
+    record_score(score)
+
+
 def calculate_score(correct_answers, total_questions):
+    if total_questions == 0:
+        return 0.0
     percentage_score = (correct_answers/total_questions) * 100
     return round(percentage_score, 2)
 
