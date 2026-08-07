@@ -1,0 +1,28 @@
+I feel like I'm going to forget all my naming systems, and all the ids
+of he dicts i've created, like their ids and stuff
+
+game_config = {
+    "mode": {
+        "id":1,
+        "name": "Practice Mode",
+        "name_id": "practice_mode",
+        "description": "kms"
+    },
+    "category":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "difficulty":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "type":{
+        "id": 2,
+        "name": "dsmn",
+        "name_id": "aboni_"
+    },
+    "amount": 20
+}
+

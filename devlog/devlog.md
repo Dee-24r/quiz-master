@@ -72,7 +72,6 @@ for test prep (normal) - they'll pick their questions, answer them, and then  th
 timed quiz would be a timer, and would also be the same review of answers a the end.
 
 
-
 maybe once i do streamlit stuff, i'll add different users and habe them be displayed with their stats??
 
 
@@ -123,3 +122,14 @@ It worked, but raised zero division error in my scoring system. will pick up fro
 ![endless-mode](images/endless_mode.png)
 
 Yayay! I ensured Timed Mode worked and integrated Endless Mode. it works.. finallyy! So, I found out the Open Trivia DB's limit is 16 questions per call????? Just 16?? So, I had to change my endless mode logic to accomodate 16. it works, but the only thing is I get dupl,icate questions (for Computer Science, Easy, True/False) which is annoying. So, I may check QuizAPI or other APIs. but this works for just testing as I build. yipee. t-tmr
+
+--- 
+
+7th Aug (3am)
+
+I'm tireedd! Started around 10 last night. So, I was thinking of what game style to implement for the jeopardy, and when I asked chatgpt it actually said, do these 5 different game styles... like what??
+So, I ended up pickinf survuvor mode (you have 3 lives,a dn a given number of questions), jeopardy (if you fail it, the number of points is deducted, if you win it, it's added) streak mode(fail a question, and streak restes, but you still continue), who wants to be a millionaire (if you fail, game over, lol) but points keep adding up if you don't.
+
+then i needed to implement different modes showing up for some of the modes, and i genuinely got tire/bored so i moved to do stats, and i had to change my helper functions and stuff to show stats,a dn then go back and change the functiions that use them..
+
+did that, went somewhere and this code is defo buggy rn. but do I care by 3 am in the morning? not really! gooof night.
