@@ -68,13 +68,55 @@ def record_score_data(set_of_questions, game_config):
 
     score_data["wrongly_answered"] = set_of_questions["wrongly_answered"]
     score_data["correctly_answered"] = set_of_questions["correctly_answered"]
-    score_data["answered_questions"] = set_of_questions["correctly_answered"] + set_of_questions["wrongly_answered"]
+    score_data["no_of_questions"] = set_of_questions["no_of_questions"]
     
     scores_data = load_scores_data()
     scores_data.append(score_data)
 
     with open(SCORES_DATA_FILENAME, "w") as file:
         json.dump(scores_data, file, indent=4)
+
+
+
+
+"""
+we want to be able to display:
+- performance per topic for the top 5 topics, and bottom 3 topics if applicable
+- number of questions failed, number of questions passed, 
+percentage performance, 
+- 
+"""
+
+def display_categorical_performance(scores_data):
+    print("kmd,,")
+    
+
+
+def display_score_based_performance(scores_data):
+    num_correct_answers = num_wrong_answers = 0
+    for record in scores_data:
+        num_wrong_answers += len(record["wrongly_answered"])
+        num_correct_answers += len(record["correctly_answered"])
+
+    no_of_questions = num_correct_answers + num_wrong_answers
+    percentage_wrong = (num_wrong_answers/no_of_questions) * 100
+    percentage_correct = (num_correct_answers/no_of_questions) * 100
+
+    print(f"Wrongly answered questions: {num_wrong_answers}")
+    print(f"Correctly answered questions: {num_correct_answers}")
+
+    print(f"You have a percentage of {percentage_correct:.2f} correct answers and a percentage of {percentage_wrong:.2f} wrong answers\n")
+
+
+def display_stats(stats_type):
+    with open(SCORES_DATA_FILENAME, "r") as file:
+        scores_data = load_scores_data()
+
+    if stats_type == "categorical_performance":
+        display_categorical_performance(scores_data)
+    elif stats_type == "score_based_performance":
+        display_score_based_performance(scores_data)
+
 
 
 """so, in handle scores, we shud pass a dictionary for
@@ -84,4 +126,5 @@ to do practice later on
 """
 
 if __name__ == "__main__":
+    display_stats("score_based_performance")
     print("Doneee")

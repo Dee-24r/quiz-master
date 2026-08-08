@@ -144,3 +144,9 @@ but tbh, after a while, I shud likely switch to a database, as AI saidd!
 Anyways, I fixed the game modes (except 2) that I haven't even started implementing. Only thing is I have to do a couple more things for some of the games, but I want to get displaying stats working this night, and then.... i'll come back to that b4 streamlit.
 
 I've been supposed to do streamlit for like days now. Anyways, 10 min break. i shall be backkk!
+
+---
+8th Aug (3am)
+
+Implementing stats display so users can see what they did well in each category, and also thir overall averages and scores.
+Will finish up tmr, and then try my best to finish up additional features for other modes, and we SHALLLL move onto UI
