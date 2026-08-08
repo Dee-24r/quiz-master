@@ -34,6 +34,8 @@ game_config = {
 }
 """
 
+
+
 def display_question(question):
     """
     Displays the question statement and the options for a given 
@@ -79,7 +81,9 @@ def run_practice_mode(game_config):
     
     list_of_questions = get_opentdb_questions(game_config)
     set_of_questions = {}
-    set_of_questions["all_questions"] = list_of_questions
+    set_of_questions["no_of_questions"] = len(list_of_questions)
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
 
     for question in list_of_questions:
         display_question(question)
@@ -99,10 +103,13 @@ def run_timed_mode(game_config):
 
     list_of_questions = get_opentdb_questions(game_config)
     set_of_questions = {}
-    set_of_questions["all_questions"] = list_of_questions
+    set_of_questions["no_of_questions"] = len(list_of_questions)
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
 
     time_limit = 15
     start_time = time.time()
+
     for question in list_of_questions:
         elapsed_time = time.time() - start_time
         remaining_time = (time_limit - elapsed_time)
@@ -112,8 +119,8 @@ def run_timed_mode(game_config):
 
         if remaining_time <= 0:
             print("Time's up!")
-            answered_questions = set_of_questions["wrongly_answered"] + set_of_questions["correctly_answered"]
-            print(f"Questions answered {answered_questions}")
+            no_of_answered_questions = len(set_of_questions["wrongly_answered"]) + len(set_of_questions["correctly_answered"])
+            print(f"Questions answered {no_of_answered_questions}")
             break
 
         
@@ -127,9 +134,39 @@ def run_timed_mode(game_config):
     handle_and_print_score(set_of_questions, game_config)
 
 
-def stop(correct_answers, answered_questions):
-    print("Nice Work")
-    handle_and_print_score(correct_answers, answered_questions)
+
+
+def run_jeopardy_mode(game_config):
+    list_of_questions = get_opentdb_questions(game_config)
+    score = 0
+    set_of_questions = {}
+    set_of_questions["no_of_questions"] = len(list_of_questions)
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
+    
+    for question in list_of_questions:
+        #should implement the dict here if something is easy
+        #meaning we shud get questions of different difficulties. (will come back to this tbh)
+        
+        if question["difficulty"] == "easy":
+            score_addition = 10
+        if question["difficulty"] == "medium":
+            score_addition = 20
+        if question["difficulty"] == "hard":
+            score_addition = 30
+        display_question(question)
+
+        result = select_option(question)
+        if not result:
+            score - score_addition
+            (set_of_questions["wrongly_answered"]).append(question)
+        elif result:
+            score + score_addition
+            (set_of_questions["correctly_answered"]).append(question)
+
+    handle_and_print_score(set_of_questions, game_config)
+    print(f"Score: {score}")
+
 
 
 
@@ -140,87 +177,91 @@ def run_endless_mode(game_config):
     print("Hmm!! I see you're locked in?")
     print("Get ready! I won't stop until you say so!")
     set_of_questions = {}
+    set_of_questions["no_of_questions"] = 0
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
 
     print("Enter 'X' to stop the quiz!")
 
     while True:
         list_of_questions = get_opentdb_questions(game_config)
-        set_of_questions["all_questions"].append(list_of_questions)
         for question in list_of_questions:
             display_question(question)
-
+            
             result = select_option(question, allow_quit=True)
             if result == "quit":
-                stop(set_of_questions, game_config)
+                print("Nice Work")
+                handle_and_print_score(set_of_questions, game_config)
                 return
             
-            else:           
+            else:
+                set_of_questions["no_of_questions"] += 1
                 if result:
                     (set_of_questions["correctly_answered"]).append(question)
+                elif not result:
+                    (set_of_questions["wrongly_answered"]).append(question)
 
-def game_over():
-    """Ends the game"""
-    print("GAME OVER")
-    
-
-def run_jeopardy_mode(game_config):
-    list_of_questions = get_opentdb_questions(game_config)
-    score = 0
-    for question in list_of_questions:
-        #qw should implement the list here if something is easy
-        if question["difficulty"] == "easy":
-            score_addition = 10
-        if question["difficulty"] == "medium":
-            score_addition = 20
-        if question["difficulty"] == "hard":
-            score_addition = 30
-        display_question(question)
-
-        if not select_option(question):
-            score - score_addition
-        elif select_option(question):
-            score + score_addition
 
 
 
 def run_exam_mode(game_config):
-    print("sa")
+    print("Not yet implemented")
     
 
 def run_survival_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
-    score = 0
-    for question in list_of_questions:
-        display_question(question)
 
-        if not select_option(question):
-            game_over()
-            return
+    set_of_questions = {}
+    set_of_questions["no_of_questions"] = len(list_of_questions)
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
+
+    lives, score = 3, 0
+    for question in list_of_questions:
+        print(f"You have {lives} lives remaining!")
+        display_question(question)
+        result = select_option(question)
+
+        if not result:
+            lives-=1
+            if lives <= 0:
+                print("Game Over!")
+                return
         else:
             score + 100
+
+    handle_and_print_score(set_of_questions, game_config)
 
 
 def run_streak_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
+
+    set_of_questions = {}
+    set_of_questions["no_of_questions"] = len(list_of_questions)
+    set_of_questions["wrongly_answered"] = []
+    set_of_questions["correctly_answered"] = []
+    
     longest_streak = current_streak = 0
     for question in list_of_questions:
+        print(f"Longest streak {longest_streak}")
+        print(f"Current streak: {current_streak} ")
         display_question(question)
 
-        if not select_option(question):
+        result = select_option(question)
+        
+        if not result:
             current_streak = 0
         else:
             current_streak += 1
             if current_streak > longest_streak:
                 longest_streak = current_streak
-            print(f"Longest streak {longest_streak}")
-            print(f"Current streak: {current_streak} ")
 
 
-def show_score(score):
-    """prints the score during the game modes"""
-    print("Current score")
+    handle_and_print_score(set_of_questions, game_config)
 
-    
+
+def run_millionaire_mode(game_config):
+    print("Not yet implemented!")
     
 
 
@@ -239,6 +280,12 @@ def run_quiz():
         run_endless_mode(game_config)
     elif mode == "exam_mode":
         run_exam_mode(game_config)
+    elif mode == "streak_mode":
+        run_streak_mode(game_config)
+    elif mode == "survival_mode":
+        run_survival_mode(game_config)
+    elif mode == "millionaire_mode":
+        run_millionaire_mode(game_config)
     else:
         print("THERE WAS AN ERROR SOMEWHEREE!! - RUN_QUIZ()")
 

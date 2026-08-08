@@ -1,1 +1,1029 @@
-[]
+[
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In computing, how many bits are in a nibble?",
+                "options": [
+                    "32",
+                    "4",
+                    "16",
+                    "2"
+                ],
+                "answer": "4",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the Prt Sc button do?",
+                "options": [
+                    "Saves a .png file of what's on the screen in your screenshots folder in photos",
+                    "Closes all windows",
+                    "Captures what's on the screen and copies it to your clipboard",
+                    "Nothing"
+                ],
+                "answer": "Captures what's on the screen and copies it to your clipboard",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The C programming language was created by this American computer scientist. ",
+                "options": [
+                    "Dennis Ritchie",
+                    "al-Khw\u0101rizm\u012b",
+                    "Tim Berners Lee",
+                    "Willis Ware"
+                ],
+                "answer": "Dennis Ritchie",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the \"MP\" stand for in MP3?",
+                "options": [
+                    "Moving Picture",
+                    "Multi Pass",
+                    "Music Player",
+                    "Micro Point"
+                ],
+                "answer": "Moving Picture",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "The programming language 'Swift' was created to replace what other programming language?",
+                "options": [
+                    "C++",
+                    "Ruby",
+                    "C#",
+                    "Objective-C"
+                ],
+                "answer": "Objective-C",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "answered_questions": [
+            {
+                "question_statement": "The programming language 'Swift' was created to replace what other programming language?",
+                "options": [
+                    "C++",
+                    "Ruby",
+                    "C#",
+                    "Objective-C"
+                ],
+                "answer": "Objective-C",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In computing, how many bits are in a nibble?",
+                "options": [
+                    "32",
+                    "4",
+                    "16",
+                    "2"
+                ],
+                "answer": "4",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the Prt Sc button do?",
+                "options": [
+                    "Saves a .png file of what's on the screen in your screenshots folder in photos",
+                    "Closes all windows",
+                    "Captures what's on the screen and copies it to your clipboard",
+                    "Nothing"
+                ],
+                "answer": "Captures what's on the screen and copies it to your clipboard",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The C programming language was created by this American computer scientist. ",
+                "options": [
+                    "Dennis Ritchie",
+                    "al-Khw\u0101rizm\u012b",
+                    "Tim Berners Lee",
+                    "Willis Ware"
+                ],
+                "answer": "Dennis Ritchie",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the \"MP\" stand for in MP3?",
+                "options": [
+                    "Moving Picture",
+                    "Multi Pass",
+                    "Music Player",
+                    "Micro Point"
+                ],
+                "answer": "Moving Picture",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "When did the online streaming service \"Mixer\" launch?",
+                "options": [
+                    "2009",
+                    "2013",
+                    "2016",
+                    "2011"
+                ],
+                "answer": "2016",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many bits make up the significand portion of a single precision floating point number?",
+                "options": [
+                    "53",
+                    "15",
+                    "23",
+                    "8"
+                ],
+                "answer": "23",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "answered_questions": [
+            {
+                "question_statement": "How many bits make up the significand portion of a single precision floating point number?",
+                "options": [
+                    "53",
+                    "15",
+                    "23",
+                    "8"
+                ],
+                "answer": "23",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "When did the online streaming service \"Mixer\" launch?",
+                "options": [
+                    "2009",
+                    "2013",
+                    "2016",
+                    "2011"
+                ],
+                "answer": "2016",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 4,
+            "name": "Endless Mode",
+            "name_id": "endless_mode",
+            "description": "Solve questions until you're tired. Exit by entering 'X'."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Time on Computers is measured via the EPOX System.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linux was first created as an alternative to Windows XP.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linus Torvalds created Linux and Git.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The name of the programming language AWK is abbreviated from the names of the developers \u2013 Aho, Weinberger, and Kernighan.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linux was first created as an alternative to Windows XP.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The logo for Snapchat is a Bell.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The first IBM PC was released in 1981.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Ada Lovelace is often considered the first computer programmer.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "\"HTML\" stands for Hypertext Markup Language.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Ada Lovelace is often considered the first computer programmer.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In most programming languages, the operator ++ is equivalent to the statement \"+= 1\".",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The logo for Snapchat is a Bell.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linus Torvalds created Linux and Git.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows ME operating system was released in the year 2000.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Python programming language gets its name from the British comedy group \"Monty Python.\"",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Pointers were not used in the original C programming language; they were added later on in C++.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A Mac is not a PC",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The programming language \"Python\" is based off a modified version of \"JavaScript\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "RAM stands for Random Access Memory.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows 7 operating system has six main editions.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows ME operating system was released in the year 2000.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows 7 operating system has six main editions.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "JavaScript derives from a later version of Java",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "\"HTML\" stands for Hypertext Markup Language.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The programming language \"Python\" is based off a modified version of \"JavaScript\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A Mac is not a PC",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In most programming languages, the operator ++ is equivalent to the statement \"+= 1\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "answered_questions": [
+            {
+                "question_statement": "\"HTML\" stands for Hypertext Markup Language.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Ada Lovelace is often considered the first computer programmer.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In most programming languages, the operator ++ is equivalent to the statement \"+= 1\".",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The logo for Snapchat is a Bell.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linus Torvalds created Linux and Git.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows ME operating system was released in the year 2000.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Python programming language gets its name from the British comedy group \"Monty Python.\"",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Pointers were not used in the original C programming language; they were added later on in C++.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A Mac is not a PC",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The programming language \"Python\" is based off a modified version of \"JavaScript\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "RAM stands for Random Access Memory.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows 7 operating system has six main editions.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows ME operating system was released in the year 2000.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows 7 operating system has six main editions.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "JavaScript derives from a later version of Java",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "\"HTML\" stands for Hypertext Markup Language.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The programming language \"Python\" is based off a modified version of \"JavaScript\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A Mac is not a PC",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In most programming languages, the operator ++ is equivalent to the statement \"+= 1\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Time on Computers is measured via the EPOX System.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linux was first created as an alternative to Windows XP.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linus Torvalds created Linux and Git.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The name of the programming language AWK is abbreviated from the names of the developers \u2013 Aho, Weinberger, and Kernighan.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linux was first created as an alternative to Windows XP.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The logo for Snapchat is a Bell.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The NVidia GTX 1080 gets its name because it can only render at a 1920x1080 screen resolution.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The first IBM PC was released in 1981.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Ada Lovelace is often considered the first computer programmer.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "It's not possible to format a write-protected DVD-R Hard Disk.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "All program codes have to be compiled into an executable file in order to be run. This file can then be executed on any machine.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "A Boolean value of \"0\" represents which of these words?",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "To bypass US Munitions Export Laws, the creator of the PGP published all the source code in book form. ",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "\"Windows NT\" is a monolithic kernel.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "answered_questions": [
+            {
+                "question_statement": "To bypass US Munitions Export Laws, the creator of the PGP published all the source code in book form. ",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "\"Windows NT\" is a monolithic kernel.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "It's not possible to format a write-protected DVD-R Hard Disk.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "All program codes have to be compiled into an executable file in order to be run. This file can then be executed on any machine.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "A Boolean value of \"0\" represents which of these words?",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 8,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which operating system was released first?",
+                "options": [
+                    "Windows",
+                    "Mac OS",
+                    "Linux",
+                    "OS/2"
+                ],
+                "answer": "Mac OS",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which programming language was developed by Sun Microsystems in 1995?",
+                "options": [
+                    "Python",
+                    "Java",
+                    "C++",
+                    "Solaris OS"
+                ],
+                "answer": "Java",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The last Windows operating system to be based on the Windows 9x kernel was Windows 98.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ],
+        "answered_questions": [
+            {
+                "question_statement": "Which programming language was developed by Sun Microsystems in 1995?",
+                "options": [
+                    "Python",
+                    "Java",
+                    "C++",
+                    "Solaris OS"
+                ],
+                "answer": "Java",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The last Windows operating system to be based on the Windows 9x kernel was Windows 98.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which operating system was released first?",
+                "options": [
+                    "Windows",
+                    "Mac OS",
+                    "Linux",
+                    "OS/2"
+                ],
+                "answer": "Mac OS",
+                "category": "Science: Computers",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 16,
+        "mode": {
+            "id": 6,
+            "name": "Streak Mode",
+            "name_id": "streak_mode",
+            "description": "Just like Endless Mode, but you keep correct streaks which reset if you get an answer wrong"
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "answered_questions": []
+    }
+]

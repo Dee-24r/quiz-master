@@ -3,11 +3,15 @@ import json
 SCORES_FILENAME = "data/scores.json"
 SCORES_DATA_FILENAME = "data/scores_data.json"
 
-def handle_and_print_score(correct_answers, no_of_questions):
+def handle_and_print_score(set_of_questions, game_config, printScore=True):
+    correct_answers, no_of_questions = len(set_of_questions["correctly_answered"]), set_of_questions["no_of_questions"]
     score = calculate_score(correct_answers, no_of_questions)
-    print(f"""You scored {correct_answers} out of {no_of_questions}. 
+    if printScore:
+        print(f"""You scored {correct_answers} out of {no_of_questions}. 
     Your percentage score is: {score}\n""")
-    record_score(score)
+    record_score_data(set_of_questions, game_config)
+
+
 
 
 
@@ -43,6 +47,8 @@ def display_top_5():
     for i, score in enumerate(top_5):
         print(f"{i+1}. {score}\n")
 
+"""
+#no longer of useee
 def record_score(score, game_config):
     scores = load_scores()
 
@@ -50,6 +56,8 @@ def record_score(score, game_config):
 
     with open(SCORES_FILENAME, "w") as file:
         json.dump(scores, file, indent=4)
+"""
+
 
 def record_score_data(set_of_questions, game_config):
 
@@ -65,6 +73,10 @@ def record_score_data(set_of_questions, game_config):
     scores_data = load_scores_data()
     scores_data.append(score_data)
 
+    with open(SCORES_DATA_FILENAME, "w") as file:
+        json.dump(scores_data, file, indent=4)
+
+
 """so, in handle scores, we shud pass a dictionary for
  what category of questions we answered for. and
 the questions we got right and wrong, in case we want 
@@ -72,5 +84,4 @@ to do practice later on
 """
 
 if __name__ == "__main__":
-    record_score(59)
     print("Doneee")

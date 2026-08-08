@@ -133,3 +133,14 @@ So, I ended up pickinf survuvor mode (you have 3 lives,a dn a given number of qu
 then i needed to implement different modes showing up for some of the modes, and i genuinely got tire/bored so i moved to do stats, and i had to change my helper functions and stuff to show stats,a dn then go back and change the functiions that use them..
 
 did that, went somewhere and this code is defo buggy rn. but do I care by 3 am in the morning? not really! gooof night.
+
+--- 
+7th Aug (10pm)
+
+So, I have the whole storage stuff working well. Hopefully I will not have the concerns of too much info in the scores_data.json. (that'll be like if I play 1million games maybe)
+
+but tbh, after a while, I shud likely switch to a database, as AI saidd!
+
+Anyways, I fixed the game modes (except 2) that I haven't even started implementing. Only thing is I have to do a couple more things for some of the games, but I want to get displaying stats working this night, and then.... i'll come back to that b4 streamlit.
+
+I've been supposed to do streamlit for like days now. Anyways, 10 min break. i shall be backkk!

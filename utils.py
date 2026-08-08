@@ -11,7 +11,11 @@ GAME_MODES = [
     {"id": 2, "name": "Timed Mode", "name_id": "timed_mode", "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."},
     {"id": 3, "name": "Jeopardy", "name_id": "jeopardy_mode", "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."},
     {"id": 4, "name": "Endless Mode", "name_id": "endless_mode", "description": "Solve questions until you're tired. Exit by entering 'X'."},
-    {"id": 5, "name": "Exam Mode", "name_id": "exam_mode", "description": "Allows the user to revisit questions, like in an exam."}
+    {"id": 5, "name": "Exam Mode", "name_id": "exam_mode", "description": "Allows the user to revisit questions, like in an exam."},
+    {"id": 6, "name": "Streak Mode", "name_id": "streak_mode", "description": "Just like Endless Mode, but you keep correct streaks which reset if you get an answer wrong"},
+    {"id": 7, "name": "Survival", "name_id": "survival_mode", "description": "Have a set of questions and only 3 chances to fail questions."},
+    {"id": 8, "name": "Who wants to be a Millionaire", "name_id": "millionaire_mode", "description": "Points keep adding up, and if you loose, the game ends."}
+    #tbh might or not implement this
 ]
 
 DIFFICULTY = [
