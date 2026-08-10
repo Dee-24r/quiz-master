@@ -49,6 +49,7 @@ def load_opentdb_categories():
 
     return categories["trivia_categories"]
 
+#------------------categoriessss!!------
 categories = load_opentdb_categories() #dictionary with
 # "id" and "name" KVP's
 

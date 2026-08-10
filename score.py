@@ -84,17 +84,56 @@ we want to be able to display:
 - performance per topic for the top 5 topics, and bottom 3 topics if applicable
 - number of questions failed, number of questions passed, 
 percentage performance, 
+
+Number of quizzes completed
+
+Average score 
+
+Number of quizzes completed 
+
+Best score 
+
+Worst score
 - 
 """
 
 def display_categorical_performance(scores_data):
     print("kmd,,")
-    
 
+#have function that return s the percentage adn numbers
+#have function taht matches to the category, when needed
+#function that checks the first 5 and last 4
+
+#first compute categs scores
+
+"""
+{
+
+{"name": "NAEMME", "scores": [893, 32, 32]},
+{"name": "NAEMME", "scores": [893, 32, 32]}
+
+}
+"""
+def compute_stats(scores_data):
+    categ_scores = {} #dict storing dicts containing name and lists of all scores in each categ
+    for record in scores_data:
+        categ_name = (record["category"])["name"]
+        if not (categ_name in categ_scores):
+            categ_scores[categ_name].append(record)
+"""
+
+def ret_high_and_low_categs(scores_data):
+    
+    for record in scores_data:
+
+
+def display_categorical_stats():
+"""
 
 def display_score_based_performance(scores_data):
     num_correct_answers = num_wrong_answers = 0
     for record in scores_data:
+        if (record["category"])["id"] == ""
         num_wrong_answers += len(record["wrongly_answered"])
         num_correct_answers += len(record["correctly_answered"])
 
@@ -102,6 +141,7 @@ def display_score_based_performance(scores_data):
     percentage_wrong = (num_wrong_answers/no_of_questions) * 100
     percentage_correct = (num_correct_answers/no_of_questions) * 100
 
+    print(f"Total answereed questions: {no_of_questions}")
     print(f"Wrongly answered questions: {num_wrong_answers}")
     print(f"Correctly answered questions: {num_correct_answers}")
 
