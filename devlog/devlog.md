@@ -150,3 +150,9 @@ I've been supposed to do streamlit for like days now. Anyways, 10 min break. i s
 
 Implementing stats display so users can see what they did well in each category, and also thir overall averages and scores.
 Will finish up tmr, and then try my best to finish up additional features for other modes, and we SHALLLL move onto UI
+
+
+9th Aug (11pm)
+Went somewhere, acc in stats display!
+Need to sort the stats I store so I can get the highest 5 and lowest 5 categories. a bit tiring cz I have a dictionary of lists of dictionaries. I shud be done tmr :( crying face emojiii
+
