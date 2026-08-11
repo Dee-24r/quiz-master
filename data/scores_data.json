@@ -1213,5 +1213,82 @@
             }
         ],
         "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "On a standard American QWERTY keyboard, what symbol will you enter if you hold the shift key and press 1?",
+                "options": [
+                    "Dollar Sign",
+                    "Percent Sign",
+                    "Asterisk",
+                    "Exclamation Mark"
+                ],
+                "answer": "Exclamation Mark",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Ada Lovelace is often considered the first computer programmer.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the most preferred image format used for logos in the Wikimedia database?",
+                "options": [
+                    ".jpeg",
+                    ".png",
+                    ".gif",
+                    ".svg"
+                ],
+                "answer": ".svg",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "RAM stands for Random Access Memory.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 6,
+            "name": "Streak Mode",
+            "name_id": "streak_mode",
+            "description": "Just like Endless Mode, but you keep correct streaks which reset if you get an answer wrong"
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 4
     }
 ]

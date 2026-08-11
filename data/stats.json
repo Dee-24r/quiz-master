@@ -1,1 +1,18 @@
-{}
+{
+    "Science: Computers": [
+        {
+            "categ_name": "Science: Computers",
+            "correct_answers": 4,
+            "wrong_answers": 0,
+            "no_of_questions": 4,
+            "percentage": 100.0
+        },
+        {
+            "categ_name": "Science: Computers",
+            "correct_answers": 0,
+            "wrong_answers": 0,
+            "no_of_questions": 4,
+            "percentage": 0.0
+        }
+    ]
+}

@@ -151,10 +151,20 @@ I've been supposed to do streamlit for like days now. Anyways, 10 min break. i s
 Implementing stats display so users can see what they did well in each category, and also thir overall averages and scores.
 Will finish up tmr, and then try my best to finish up additional features for other modes, and we SHALLLL move onto UI
 
+---
 
 9th Aug (11pm)
 Went somewhere, acc in stats display!
 Need to sort the stats I store so I can get the highest 5 and lowest 5 categories. a bit tiring cz I have a dictionary of lists of dictionaries. I shud be done tmr :( crying face emojiii
 
+---
+
 10th Ausust
 Okay, if i don't finish stats display, idc againn!! alr, lock in
+
+---
+11th August (12.27am)
+
+I completed display stats -- for the most part (crying face emoji lolol)
+Basically, there's stuff wrong with my dicts logic but I'm gonna get to this till tmr cuz it's alr 12.30am. but i'm SUREEEE that i shud start streamlit tmr. The user can view overall questions wrong, and percentage avg. and also categorical based questions worng and percentage avg
+Mind you, I have 2 inomplete game modes, but I'll get back to that, dw!

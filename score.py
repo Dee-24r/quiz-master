@@ -17,8 +17,7 @@ def write_update_stats(categ_scores):
     
 def update_stats(categ_name, correct_answers, wrong_answers, no_of_questions):
     score_info = {}
-    score_info["categ_name"], score_info["correct_answers"], score_info["wrong_answers"], score_info["no_of_questions"], 
-    score_info["percentage"] = categ_name, correct_answers, wrong_answers, no_of_questions, (correct_answers/no_of_questions)*100
+    score_info["categ_name"], score_info["correct_answers"], score_info["wrong_answers"], score_info["no_of_questions"], score_info["percentage"] = categ_name, correct_answers, wrong_answers, no_of_questions, (correct_answers/no_of_questions)*100
 
     categ_scores = load_stats()
 
@@ -37,6 +36,8 @@ def handle_and_print_score(set_of_questions, game_config, printScore=True):
 
     percentage_score = calculate_score(correct_answers, no_of_questions)
 
+    #some modes are supposed to not print scores (e.g the game modes) bcuz they'll print differently in their own function.
+    #dunno if i'll later scrap this
     if printScore:
         print(f"""You scored {correct_answers} out of {no_of_questions}.
         Your percentage score is: {percentage_score}\n""")
@@ -85,11 +86,11 @@ def compute_categ_avgs():
     stats = load_stats()
     categs_avgs = []
 
-    for categ in stats():
+    for categ in stats:
 
         percentage_sum = 0
         for quiz in categ:
-            percentage_sum += quiz["percentage"]
+            percentage_sum += int(quiz["percentage"])
 
         if len(categ) != 0:
             percentage_avg = percentage_sum / len(categ)
@@ -109,17 +110,17 @@ def display_categorical_stats():
     for item in sorted_categs_avgs:
         print(f"{item[0]} {item[1]}")
 
-def display_score_based_performance(categs_avg):
+def display_score_based_performance():
     stats = load_stats()
     count = no_of_questions = total_correct = total_wrong = sum_percentage = 0
 
     for categ in stats:
         for quiz in categ:
             count+=1
-            no_of_questions += quiz["no_of_questions"]
-            total_correct += quiz["correctly_answered"]
-            total_wrong += quiz["wrongly_answered"]
-            sum_percentage += quiz["percentage"]
+            no_of_questions += int(quiz["no_of_questions"])
+            total_correct += int(quiz["correctly_answered"])
+            total_wrong += int(quiz["wrongly_answered"])
+            sum_percentage += int(quiz["percentage"])
 
     avg_percentage = round(sum_percentage/count, 2)
 
@@ -135,10 +136,10 @@ def display_stats():
     print("1. Overall performance")
     print("2. Categorical performance")
 
-    user_input = input("Please enter a number between 1 and 2")
+    user_input = input("Enter a number between 1 and 2: ")
 
-    while not user_input.isdigit() or not 1 >= int(user_input) >= 2:
-        user_input = input("Please enter a valid number between 1 and 2")
+    while not user_input.isdigit() or not (1 <= int(user_input) <= 2):
+        user_input = input("Please enter a valid number between 1 and 2: ")
 
     user_input = int(user_input)
 
