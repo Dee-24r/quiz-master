@@ -156,3 +156,5 @@ Will finish up tmr, and then try my best to finish up additional features for ot
 Went somewhere, acc in stats display!
 Need to sort the stats I store so I can get the highest 5 and lowest 5 categories. a bit tiring cz I have a dictionary of lists of dictionaries. I shud be done tmr :( crying face emojiii
 
+10th Ausust
+Okay, if i don't finish stats display, idc againn!! alr, lock in

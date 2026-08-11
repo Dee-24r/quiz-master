@@ -26,3 +26,9 @@ game_config = {
     "amount": 20
 }
 
+
+"""
+stats = {
+    "Math": [ {"categ_name": "sc", "wrongly_asnwered": 32, "correctly_asnwered": 32, "no_ofques": 323 }, {"categ_name": "sc", "wrongly_asnwered": 32, "correctly_asnwered": 32, "no_ofques": 323 },  ]
+}
+"""

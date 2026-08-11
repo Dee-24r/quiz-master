@@ -1,6 +1,5 @@
 from quiz import run_quiz
-from score import display_top_5
-import config
+from score import display_stats
 
 def exit_game():
     print("Thank you for playing! Goodbye!")
@@ -29,7 +28,7 @@ def choose_and_run_task():
     if user_response == 1:
         run_quiz()
     if user_response == 2:
-        display_top_5()
+        display_stats()
     if user_response == 3:
         exit_game()
         return False

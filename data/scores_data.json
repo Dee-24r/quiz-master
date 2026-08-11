@@ -1025,5 +1025,193 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "answered_questions": []
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What kind of memory is used on memory cache?",
+                "options": [
+                    "Flash",
+                    "ROM",
+                    "DRAM",
+                    "SRAM"
+                ],
+                "answer": "SRAM",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The first IBM PC was released in 1981.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many values can a single byte represent?",
+                "options": [
+                    "1024",
+                    "256",
+                    "8",
+                    "1"
+                ],
+                "answer": "256",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which computer hardware device provides an interface for all other connected devices to communicate?",
+                "options": [
+                    "Motherboard",
+                    "Random Access Memory",
+                    "Hard Disk Drive",
+                    "Central Processing Unit"
+                ],
+                "answer": "Motherboard",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "JavaScript derives from a later version of Java",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "HTML is what type of language?",
+                "options": [
+                    "Markup Language",
+                    "Scripting Language",
+                    "Macro Language",
+                    "Programming Language"
+                ],
+                "answer": "Markup Language",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which programming language shares its name with an island in Indonesia?",
+                "options": [
+                    "Python",
+                    "C",
+                    "Jakarta",
+                    "Java"
+                ],
+                "answer": "Java",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "The programming language \"Python\" is based off a modified version of \"JavaScript\".",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In computing, what does LAN stand for?",
+                "options": [
+                    "Long Antenna Node",
+                    "Light Access Node",
+                    "Local Area Network",
+                    "Land Address Navigation"
+                ],
+                "answer": "Local Area Network",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When Gmail first launched, how much storage did it provide for your email?",
+                "options": [
+                    "Unlimited",
+                    "1GB",
+                    "5GB",
+                    "512MB"
+                ],
+                "answer": "1GB",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Linus Torvalds created Linux and Git.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Windows 7 operating system has six main editions.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the computer software acronym JVM stand for?",
+                "options": [
+                    "Java Visual Machine",
+                    "Java Vendor Machine",
+                    "Just Virtual Machine",
+                    "Java Virtual Machine"
+                ],
+                "answer": "Java Virtual Machine",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In computing, what does MIDI stand for?",
+                "options": [
+                    "Musical Instrument Digital Interface",
+                    "Musical Interface of Digital Instruments",
+                    "Musical Instrument Data Interface",
+                    "Modular Interface of Digital Instruments"
+                ],
+                "answer": "Musical Instrument Digital Interface",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the term USB stand for?",
+                "options": [
+                    "Unified Signal Bus",
+                    "Universal Simtex Blot",
+                    "Unityped Semtex Backer",
+                    "Universal Serial Bus"
+                ],
+                "answer": "Universal Serial Bus",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 15
     }
 ]

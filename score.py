@@ -1,6 +1,5 @@
 import json
 
-SCORES_FILENAME = "data/scores.json"
 SCORES_DATA_FILENAME = "data/scores_data.json"
 STATS_FILENAME = "data/stats.json"
 
@@ -76,53 +75,77 @@ def record_score_data(set_of_questions, game_config):
 
     with open(SCORES_DATA_FILENAME, "w") as file:
         json.dump(scores_data, file, indent=4)
-        
-"""
-stats = {
-    "Math": [ {"categ_name": "sc", "wrongly_asnwered": 32, "correctly_asnwered": 32, "no_ofques": 323 }, {"categ_name": "sc", "wrongly_asnwered": 32, "correctly_asnwered": 32, "no_ofques": 323 },  ]
-}
-"""
 
-def ret_high_and_low_categs(scores):
+
+
+
+#---- DISPLAY STATS STUFF ----
+
+def compute_categ_avgs():
     stats = load_stats()
-    largest_score = 0
-    sorted_stats = []
+    categs_avgs = []
 
-    for i, item in enumerate(stats):
-        percentage_score = item[i]["percentage_score"]
-        if percentage_score > largest_score = 
+    for categ in stats():
+
+        percentage_sum = 0
+        for quiz in categ:
+            percentage_sum += quiz["percentage"]
+
+        if len(categ) != 0:
+            percentage_avg = percentage_sum / len(categ)
+        else:
+            percentage_avg = 0
+        categs_avgs.append(categ, percentage_avg)
+    return categs_avgs
+
+def ret_high_and_low_categs():
+    categs_avgs = compute_categ_avgs()
+    sorted_categs_avgs = sorted(categs_avgs, key = lambda item:item[1], reverse=True)
+    return sorted_categs_avgs
 
 
 def display_categorical_stats():
-    print("ds")
+    sorted_categs_avgs = ret_high_and_low_categs()
+    for item in sorted_categs_avgs:
+        print(f"{item[0]} {item[1]}")
 
-def display_score_based_performance(scores_data):
-    num_correct_answers = num_wrong_answers = 0
-    for record in scores_data:
-        if (record["category"])["id"] == ""
-        num_wrong_answers += len(record["wrongly_answered"])
-        num_correct_answers += len(record["correctly_answered"])
+def display_score_based_performance(categs_avg):
+    stats = load_stats()
+    count = no_of_questions = total_correct = total_wrong = sum_percentage = 0
 
-    no_of_questions = num_correct_answers + num_wrong_answers
-    percentage_wrong = (num_wrong_answers/no_of_questions) * 100
-    percentage_correct = (num_correct_answers/no_of_questions) * 100
+    for categ in stats:
+        for quiz in categ:
+            count+=1
+            no_of_questions += quiz["no_of_questions"]
+            total_correct += quiz["correctly_answered"]
+            total_wrong += quiz["wrongly_answered"]
+            sum_percentage += quiz["percentage"]
+
+    avg_percentage = round(sum_percentage/count, 2)
 
     print(f"Total answereed questions: {no_of_questions}")
-    print(f"Wrongly answered questions: {num_wrong_answers}")
-    print(f"Correctly answered questions: {num_correct_answers}")
+    print(f"Total correctly answered questions: {total_correct}")
+    print(f"Total wrongly answered questions: {total_wrong}")
 
-    print(f"You have a percentage of {percentage_correct:.2f} correct answers and a percentage of {percentage_wrong:.2f} wrong answers\n")
+    print(f"You have a percentage correctness of {avg_percentage:.2f} \n")
 
 
-def display_stats(stats_type):
-    with open(SCORES_DATA_FILENAME, "r") as file:
-        scores_data = load_scores_data()
+def display_stats():
+    print("What would you like to look at today?")
+    print("1. Overall performance")
+    print("2. Categorical performance")
 
-    if stats_type == "categorical_performance":
-        display_categorical_performance(scores_data)
-    elif stats_type == "score_based_performance":
-        display_score_based_performance(scores_data)
+    user_input = input("Please enter a number between 1 and 2")
 
+    while not user_input.isdigit() or not 1 >= int(user_input) >= 2:
+        user_input = input("Please enter a valid number between 1 and 2")
+
+    user_input = int(user_input)
+
+    if user_input == 1:
+        display_categorical_stats()
+    elif user_input == 2:
+        display_score_based_performance()
 
 
 """so, in handle scores, we shud pass a dictionary for
@@ -132,7 +155,10 @@ to do practice later on
 """
 
 if __name__ == "__main__":
-    display_stats("score_based_performance")
+    #categs_avgs = [("Math", 90),  ("Computer", 299),  ("Computer", 380), ("Computer", 80),  ("Computer", 20)]
+    #print(ret_high_and_low_categs(categs_avgs))
+    sorted_categs_avgs = [('Computer', 380), ('Computer', 299), ('Math', 90), ('Computer', 80), ('Computer', 20)]
+    print(display_categorical_stats(sorted_categs_avgs))
     print("Doneee")
 
 
