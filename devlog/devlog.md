@@ -168,3 +168,14 @@ Okay, if i don't finish stats display, idc againn!! alr, lock in
 I completed display stats -- for the most part (crying face emoji lolol)
 Basically, there's stuff wrong with my dicts logic but I'm gonna get to this till tmr cuz it's alr 12.30am. but i'm SUREEEE that i shud start streamlit tmr. The user can view overall questions wrong, and percentage avg. and also categorical based questions worng and percentage avg
 Mind you, I have 2 inomplete game modes, but I'll get back to that, dw!
+
+
+---
+
+
+11th Aug (11.56pm)
+![STATS](images/stats.png)
+
+It worksss! The issue was with the way I was calling itt. Brain is fried, but I really wanna start UI before I go to bed, even tho I really wannan sleep early.
+
+let's get to it.

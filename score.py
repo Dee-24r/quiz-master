@@ -15,9 +15,13 @@ def write_update_stats(categ_scores):
         json.dump(categ_scores, file, indent=4)
 
     
-def update_stats(categ_name, correct_answers, wrong_answers, no_of_questions):
+def update_stats(categ_name, correctly_answered, wrong_answers, no_of_questions):
     score_info = {}
-    score_info["categ_name"], score_info["correct_answers"], score_info["wrong_answers"], score_info["no_of_questions"], score_info["percentage"] = categ_name, correct_answers, wrong_answers, no_of_questions, (correct_answers/no_of_questions)*100
+    score_info["categ_name"], score_info["correctly_answered"], score_info["wrongly_answered"], score_info["no_of_questions"] = categ_name, correctly_answered, wrong_answers, no_of_questions
+    if correctly_answered == 0:
+        score_info["percentage"] = 0
+    else:
+        score_info["percentage"] = (correctly_answered/no_of_questions)*100
 
     categ_scores = load_stats()
 
@@ -32,19 +36,19 @@ def update_stats(categ_name, correct_answers, wrong_answers, no_of_questions):
 
 def handle_and_print_score(set_of_questions, game_config, printScore=True):
 
-    correct_answers, wrong_answers, no_of_questions = len(set_of_questions["correctly_answered"]), len(set_of_questions["wrongly_answered"]), set_of_questions["no_of_questions"]
+    correctly_answered, wrong_answers, no_of_questions = len(set_of_questions["correctly_answered"]), len(set_of_questions["wrongly_answered"]), set_of_questions["no_of_questions"]
 
-    percentage_score = calculate_score(correct_answers, no_of_questions)
+    percentage_score = calculate_score(correctly_answered, no_of_questions)
 
     #some modes are supposed to not print scores (e.g the game modes) bcuz they'll print differently in their own function.
     #dunno if i'll later scrap this
     if printScore:
-        print(f"""You scored {correct_answers} out of {no_of_questions}.
+        print(f"""You scored {correctly_answered} out of {no_of_questions}.
         Your percentage score is: {percentage_score}\n""")
 
     record_score_data(set_of_questions, game_config)
     categ_name = (game_config["category"])["name"]
-    update_stats(categ_name, correct_answers, wrong_answers, no_of_questions)
+    update_stats(categ_name, correctly_answered, wrong_answers, no_of_questions)
 
 
 def calculate_score(correct_answers, total_questions):
@@ -86,17 +90,17 @@ def compute_categ_avgs():
     stats = load_stats()
     categs_avgs = []
 
-    for categ in stats:
+    for categ, quizzes in stats.items():
 
         percentage_sum = 0
-        for quiz in categ:
-            percentage_sum += int(quiz["percentage"])
+        for quiz in quizzes:
+            percentage_sum += quiz["percentage"]
 
-        if len(categ) != 0:
+        if len(quizzes) != 0:
             percentage_avg = percentage_sum / len(categ)
         else:
             percentage_avg = 0
-        categs_avgs.append(categ, percentage_avg)
+        categs_avgs.append((categ, percentage_avg))
     return categs_avgs
 
 def ret_high_and_low_categs():
@@ -114,11 +118,11 @@ def display_score_based_performance():
     stats = load_stats()
     count = no_of_questions = total_correct = total_wrong = sum_percentage = 0
 
-    for categ in stats:
-        for quiz in categ:
+    for categ, quizzes in stats.items():
+        for quiz in quizzes:
             count+=1
             no_of_questions += int(quiz["no_of_questions"])
-            total_correct += int(quiz["correctly_answered"])
+            total_correct += quiz["correctly_answered"]
             total_wrong += int(quiz["wrongly_answered"])
             sum_percentage += int(quiz["percentage"])
 
@@ -144,9 +148,9 @@ def display_stats():
     user_input = int(user_input)
 
     if user_input == 1:
-        display_categorical_stats()
-    elif user_input == 2:
         display_score_based_performance()
+    elif user_input == 2:
+        display_categorical_stats()
 
 
 """so, in handle scores, we shud pass a dictionary for

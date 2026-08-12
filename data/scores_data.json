@@ -1290,5 +1290,254 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 11,
+            "name": "Entertainment: Film"
+        },
+        "amount": 7,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is the protagonist of the 2002 film \"Kung Pow! Enter the Fist\"?",
+                "options": [
+                    "Iron Monkey",
+                    "Chosen One",
+                    "Master Tang",
+                    "Dragon King"
+                ],
+                "answer": "Chosen One",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who directed the Kill Bill movies?",
+                "options": [
+                    "Quentin Tarantino",
+                    "Stanley Kubrick",
+                    "David Lean",
+                    "Arnold Schwarzenegger"
+                ],
+                "answer": "Quentin Tarantino",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who played Thanos in Avengers: Infinity War and Avengers: End Game?",
+                "options": [
+                    "Tom Hiddleston",
+                    "Josh Brolin",
+                    "Sean Gunn",
+                    "Adam Sandler"
+                ],
+                "answer": "Josh Brolin",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What superhero has been played in film by actors Michael Keaton, Val Kilmer, George Clooney and Christian Bale?",
+                "options": [
+                    "Superman",
+                    "Iron Man",
+                    "Spiderman",
+                    "Batman"
+                ],
+                "answer": "Batman",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "At the end of the 2001 film \"Rat Race\", whose concert do the contestants crash?",
+                "options": [
+                    "Linkin Park",
+                    "Smash Mouth",
+                    "Sum 41",
+                    "Bowling for Soup"
+                ],
+                "answer": "Smash Mouth",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who directed the 2017 movie \"The Shape of Water\"?",
+                "options": [
+                    "Steven Spielberg",
+                    "Guillermo del Toro",
+                    "James Cameron",
+                    "Martin Scorsese"
+                ],
+                "answer": "Guillermo del Toro",
+                "category": "Entertainment: Film",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 7
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 7,
+        "mode": {
+            "id": 6,
+            "name": "Streak Mode",
+            "name_id": "streak_mode",
+            "description": "Just like Endless Mode, but you keep correct streaks which reset if you get an answer wrong"
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 7
+    },
+    {
+        "category": {
+            "id": 30,
+            "name": "Science: Gadgets"
+        },
+        "amount": 6,
+        "mode": {
+            "id": 6,
+            "name": "Streak Mode",
+            "name_id": "streak_mode",
+            "description": "Just like Endless Mode, but you keep correct streaks which reset if you get an answer wrong"
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "When was the DVD invented?",
+                "options": [
+                    "1990",
+                    "2000",
+                    "1995",
+                    "1980"
+                ],
+                "answer": "1995",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which buzzword did Apple Inc. use to describe their removal of the headphone jack?",
+                "options": [
+                    "Courage",
+                    "Innovation",
+                    "Bravery",
+                    "Revolution"
+                ],
+                "answer": "Courage",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When was the Tamagotchi digital pet released?",
+                "options": [
+                    "1990",
+                    "1992",
+                    "1989",
+                    "1996"
+                ],
+                "answer": "1996",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which of the following is not a type of computer mouse?",
+                "options": [
+                    "Trackball mouse",
+                    "Drum mouse",
+                    "Smoothie mouse",
+                    "Optical mouse"
+                ],
+                "answer": "Smoothie mouse",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which gaming console is developed by Sony?",
+                "options": [
+                    "Xbox",
+                    "PlayStation",
+                    "Atari",
+                    "Nintendo Switch"
+                ],
+                "answer": "PlayStation",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which virtual assistant is developed by Amazon?",
+                "options": [
+                    "Alexa",
+                    "Cortana",
+                    "Google Assistant",
+                    "Siri"
+                ],
+                "answer": "Alexa",
+                "category": "Science: Gadgets",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 6
+    },
+    {
+        "category": {
+            "id": 10,
+            "name": "Entertainment: Books"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 11,
+            "name": "Entertainment: Film"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "There aren't any live-action clones in \"Star Wars: Episode III - Revenge of the Sith\".",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Entertainment: Film",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The movie \"Tron\" received an Oscar nomination for Best Visual Effects.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Entertainment: Film",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 2
     }
 ]

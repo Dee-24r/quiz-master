@@ -223,11 +223,13 @@ def run_survival_mode(game_config):
         result = select_option(question)
 
         if not result:
+            set_of_questions["wrongly_answered"].append(question)
             lives-=1
             if lives <= 0:
                 print("Game Over!")
                 return
         else:
+            set_of_questions["correctly_answered"].append(question)
             score + 100
 
     handle_and_print_score(set_of_questions, game_config)
@@ -250,12 +252,13 @@ def run_streak_mode(game_config):
         result = select_option(question)
         
         if not result:
+            set_of_questions["wrongly_answered"].append(question)
             current_streak = 0
         else:
+            set_of_questions["correctly_answered"].append(question)
             current_streak += 1
             if current_streak > longest_streak:
                 longest_streak = current_streak
-
 
     handle_and_print_score(set_of_questions, game_config)
 

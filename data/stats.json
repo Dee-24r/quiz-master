@@ -2,17 +2,49 @@
     "Science: Computers": [
         {
             "categ_name": "Science: Computers",
-            "correct_answers": 4,
-            "wrong_answers": 0,
+            "correctly_answered": 4,
+            "wrongly_answered": 0,
             "no_of_questions": 4,
             "percentage": 100.0
         },
         {
             "categ_name": "Science: Computers",
-            "correct_answers": 0,
-            "wrong_answers": 0,
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
             "no_of_questions": 4,
             "percentage": 0.0
+        },
+        {
+            "categ_name": "Science: Computers",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 7,
+            "percentage": 0.0
+        }
+    ],
+    "Entertainment: Film": [
+        {
+            "categ_name": "Entertainment: Film",
+            "correctly_answered": 2,
+            "wrongly_answered": 4,
+            "no_of_questions": 7,
+            "percentage": 28.57142857142857
+        },
+        {
+            "categ_name": "Entertainment: Film",
+            "correctly_answered": 2,
+            "wrongly_answered": 0,
+            "no_of_questions": 2,
+            "percentage": 100.0
+        }
+    ],
+    "Science: Gadgets": [
+        {
+            "categ_name": "Science: Gadgets",
+            "correctly_answered": 3,
+            "wrongly_answered": 3,
+            "no_of_questions": 6,
+            "percentage": 50.0
         }
     ]
 }
