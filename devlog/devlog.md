@@ -179,3 +179,9 @@ Mind you, I have 2 inomplete game modes, but I'll get back to that, dw!
 It worksss! The issue was with the way I was calling itt. Brain is fried, but I really wanna start UI before I go to bed, even tho I really wannan sleep early.
 
 let's get to it.
+
+---
+
+![UI](images/ui-begin.png)
+
+Yayay. So, I Researched a couple things and just tested the basic out. I should strat actually transforming code tmr. I think i might clone this repo, incase i mess anything up but wtvver

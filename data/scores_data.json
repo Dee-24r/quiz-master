@@ -1539,5 +1539,109 @@
             }
         ],
         "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 6,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What does LTS stand for in the software market?",
+                "options": [
+                    "Ludicrous Turbo Speed",
+                    "Ludicrous Transfer Speed",
+                    "Long Taco Service",
+                    "Long Term Support"
+                ],
+                "answer": "Long Term Support",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the code name for the mobile operating system Android 7.0?",
+                "options": [
+                    "Nougat",
+                    "Jelly Bean",
+                    "Marshmallow",
+                    "Ice Cream Sandwich"
+                ],
+                "answer": "Nougat",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which SQL keyword is used to fetch data from a database?",
+                "options": [
+                    "INDEX",
+                    "SELECT",
+                    "VALUES",
+                    "EXEC"
+                ],
+                "answer": "SELECT",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "On a standard American QWERTY keyboard, what symbol will you enter if you hold the shift key and press 1?",
+                "options": [
+                    "Asterisk",
+                    "Dollar Sign",
+                    "Percent Sign",
+                    "Exclamation Mark"
+                ],
+                "answer": "Exclamation Mark",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The name of the programming language AWK is abbreviated from the names of the developers \u2013 Aho, Weinberger, and Kernighan.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does CPU stand for?",
+                "options": [
+                    "Central Processing Unit",
+                    "Central Processor Unit",
+                    "Central Process Unit",
+                    "Computer Personal Unit"
+                ],
+                "answer": "Central Processing Unit",
+                "category": "Science: Computers",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 6
+    },
+    {
+        "category": {
+            "id": 10,
+            "name": "Entertainment: Books"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
     }
 ]

@@ -20,6 +20,13 @@
             "wrongly_answered": 0,
             "no_of_questions": 7,
             "percentage": 0.0
+        },
+        {
+            "categ_name": "Science: Computers",
+            "correctly_answered": 4,
+            "wrongly_answered": 2,
+            "no_of_questions": 6,
+            "percentage": 66.66666666666666
         }
     ],
     "Entertainment: Film": [
@@ -45,6 +52,15 @@
             "wrongly_answered": 3,
             "no_of_questions": 6,
             "percentage": 50.0
+        }
+    ],
+    "Entertainment: Books": [
+        {
+            "categ_name": "Entertainment: Books",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 0,
+            "percentage": 0
         }
     ]
 }
