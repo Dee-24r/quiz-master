@@ -1,5 +1,6 @@
 import requests
 import json
+import streamlit as st
 
 #VARIABLES AND DATA
 game_config = {}
@@ -60,74 +61,41 @@ def choose_game_mode():
     the 5 and returns the id so it can be used in 
     other functions"""
 
-    print("Let's goo! Where do you want to start?: ")
-    for game in GAME_MODES:
-        print(f"{game["id"]}. {game["name"]}")
-
-    game_mode = input(f"Enter a number from 1 to {len(GAME_MODES)}: ")    
-    
-    while not game_mode.isdigit() or not (1 <= int(game_mode) <= len(GAME_MODES)):
-        game_mode = input(f"Enter a valid number from  1 to {len(GAME_MODES)} to pick a mode: ")
-
-    game_mode = int(game_mode)
-    return GAME_MODES[game_mode-1]
-
-    #so we want it to return the game mode object abu dict item.
+    #st.subheader("Let's goo! Where do you want to start?: ")
+    return st.selectbox("Pick a mode", 
+                 options=GAME_MODES,
+                 format_func= lambda x: x["name"]
+                 )
 
 def choose_category():
     """
     prompts the user to choose an available category
     of questions"""
-    print("\nWhat would you like to work on today?:\n")
-    for i, category in enumerate(categories):
-        print(f"{i+1}. {category["name"]}")
-    
-    user_category = input(f"Input a number between 1 and {len(categories)}: ")
-    while not user_category.isdigit() or not (1 <= int(user_category) <= len(categories)):
-        user_category = input(f"Please input a valid number between 1 and {len(categories)}: ")
 
-    user_category = int(user_category)
-    chosen_category = categories[user_category-1]
-    return chosen_category
+    #st.subheader("\nWhat would you like to work on today?:\n")
+    return st.selectbox("Choose a category", 
+        options=categories,
+        format_func= lambda x: x["name"]
+        )
 
 def choose_questions_type():
-    print("\nPick your kind of questions?\n")
-    for i, type in enumerate(QUESTION_TYPES):
-        print(f"{type["id"]}. {type["name"]}")
+    #st.subheader("\nWhat kind of questions do you want?\n")
+    
+    return st.selectbox("Choose a category", 
+        options=categories,
+        format_func= lambda x: x["name"]
+    )
 
-    user_type = input("Enter a number between 1 and 3: ")
-    while not user_type.isdigit() or not (1 <= int(user_type) <= 3):
-        user_type = input(f"Please input a valid number between 1 and 3: ")
-
-    user_type = int(user_type)
-    chosen_type = QUESTION_TYPES[user_type-1]
-    return chosen_type
-
-
+    
 def choose_difficulty():
-    print("\nHow far can you go?: ")
-    for i, level in enumerate(DIFFICULTY):
-        print(f"{level["id"]}. {level["name"]}")
+    #st.subheader("\nHow far can you go?: ")
 
-    user_difficulty = input("Enter a number between 1 and 3: ")
-    while not user_difficulty.isdigit() or not (1 <= int(user_difficulty) <= 3):
-        user_difficulty = input(f"Please input a valid number between 1 and 3: ")
-
-    user_difficulty = int(user_difficulty)
-    chosen_difficulty = DIFFICULTY[user_difficulty-1]
-    return chosen_difficulty
-
+    return st.slider("Pick a difficulty level", min_value=1, max_value=3, step=1)
 
 
 def choose_amount():
-    print("\nOkay, how many questions?: ")
-    user_amount = input("Enter a number between 1 and 16: ")
-    while not user_amount.isdigit() or not (1 <= int(user_amount) <= 16):
-        user_amount = input(f"Please input a valid number between 1 and 100: ")
-
-    chosen_amount = user_amount = int(user_amount)
-    return chosen_amount
-
+    st.subheader("\nOkay, how many questions?: ")
+    return st.number_input("How many questions?", 1, 16)
 
 
 
@@ -135,7 +103,7 @@ def choose_amount():
 def configure_quiz(mode):
     """Prompts the user to choose category, difficulty, and 
     number of questions"""
-
+    
     global game_config
 
     game_config["mode"] = mode

@@ -4,7 +4,7 @@ import random
 import html
 import requests
 from dotenv import load_dotenv
-from terminal_files.utils import build_param_list
+from streamlit_files.utils import build_param_list
 
 load_dotenv()
 

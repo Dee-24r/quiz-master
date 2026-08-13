@@ -191,3 +191,5 @@ Yayay. So, I Researched a couple things and just tested the basic out. I should 
 I sucessfully converted main to streamlit, and then I need to change the other files, but my beutiful codee... so I decided there'll be 2 versionn - terminal and webapp.
 So, I duplicated all the files, and moved them into folders... so that I don't have 20000 in root.
 I basically just copied file content, and I'll start altering them now.
+
+Crazy how less code it is to write for streamlit. I'll handle the questions processing and everything when my brain is fresh tmr. Gonna go fiddle with hardware!!!
