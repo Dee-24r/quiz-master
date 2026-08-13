@@ -61,6 +61,13 @@
             "wrongly_answered": 0,
             "no_of_questions": 0,
             "percentage": 0
+        },
+        {
+            "categ_name": "Entertainment: Books",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 0,
+            "percentage": 0
         }
     ]
 }

@@ -1,8 +1,8 @@
 #IMPORTS
 import time
-from questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
-from score import handle_and_print_score
-from utils import configure_quiz, choose_game_mode, format_time_figures, print_formatted_time
+from terminal_files.questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
+from terminal_files.score import handle_and_print_score
+from terminal_files.utils import configure_quiz, choose_game_mode, format_time_figures, print_formatted_time
 
 """this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
 configure_quiz

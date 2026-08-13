@@ -1,6 +1,5 @@
 import requests
 import json
-import config
 
 #VARIABLES AND DATA
 game_config = {}

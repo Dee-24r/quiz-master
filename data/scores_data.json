@@ -1643,5 +1643,21 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 10,
+            "name": "Entertainment: Books"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
     }
 ]
