@@ -193,3 +193,15 @@ So, I duplicated all the files, and moved them into folders... so that I don't h
 I basically just copied file content, and I'll start altering them now.
 
 Crazy how less code it is to write for streamlit. I'll handle the questions processing and everything when my brain is fresh tmr. Gonna go fiddle with hardware!!!
+
+---
+
+13th Aug, 11.58am
+
+![configure quizquiz](images/streamlit_runquiz.png)
+
+Still first time using streamlit, but I understood more abt session_stat ein streamlit, and completed the home page and running quiz part.
+but imma deal with each questions' showing up and working tmr.
+
+ ![answering questions](images/progress_w_running_quiz.mp4)
+You can look at the video progress [video](images/progress_w_running_quiz.mp4)

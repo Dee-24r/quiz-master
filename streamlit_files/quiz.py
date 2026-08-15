@@ -44,24 +44,46 @@ def display_question(question):
     """
 
     st.write(question["question_statement"])
-    return st.selectbox("Pick a mode", 
+    return st.selectbox(f"{question["question_statement"]}", 
         options=question["options"],
-        )
+    )
+
     #for i, option in enumerate(question["options"]):
      #   print(f"{i+1}. {option}")
 
 
-
 def select_option(question, allow_quit=False):
+    if "question_state" not in st.session_state:
+        st.session_state.question_state = "select_option"
+
+    if st.session_state.question_state == "select_option":
+        result = display_question(question)
+        if "answer" not in st.session_state:
+            st.session_state.answer = result
+
+        if st.button("Submit"):
+            st.session_state.question_state == "show_answer"
+
+    if st.session_state.question_stats == "show_answer":
+        if result == question["answer"]:
+            st.write("Correct answer!\n")
+            return True
+        else:
+            st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
+            return False
+
+    st.session_state.question_state == "next_question"
+    
+
     """
-    Prompts the user to pick and option for the question and check
-    the asnwer"""
+    #Prompts the user to pick and option for the question and check
+    #the asnwer
     prompt = f"Pick an option (1-{len(question['options'])})"
 
     if allow_quit == True:
         prompt += " or enter 'X' to cancel"
     prompt += ": "
-
+    
     user_answer = input(prompt)
 
     if allow_quit and user_answer.upper() == 'X':
@@ -69,7 +91,7 @@ def select_option(question, allow_quit=False):
     while not (allow_quit and user_answer.upper() == 'X') and not (user_answer.isdigit() and 1 <= int(user_answer) <= len(question["options"])):
         print("Invalid input!")
         user_answer = input(prompt)
-
+    
     if allow_quit and user_answer.upper() == 'X':
         return "quit"
     if question["options"][int(user_answer) - 1] == question["answer"]:
@@ -78,6 +100,7 @@ def select_option(question, allow_quit=False):
     else:
         print(f"Wrong answer! The correct answer is: {question['answer']}\n")
         return False
+    """
 
 
 def run_practice_mode(game_config):
@@ -89,7 +112,6 @@ def run_practice_mode(game_config):
     set_of_questions["correctly_answered"] = []
 
     for question in list_of_questions:
-        display_question(question)
         result = select_option(question)
 
         if result:
@@ -98,6 +120,7 @@ def run_practice_mode(game_config):
             set_of_questions["wrongly_answered"].append(question)
 
     handle_and_print_score(set_of_questions, game_config)
+    st.session_state.current_game = "home"
 
 
 def run_timed_mode(game_config):
@@ -135,6 +158,7 @@ def run_timed_mode(game_config):
             set_of_questions["wrongly_answered"].append(question)
 
     handle_and_print_score(set_of_questions, game_config)
+    st.session_state.current_game = "home"
 
 
 
@@ -169,6 +193,7 @@ def run_jeopardy_mode(game_config):
 
     handle_and_print_score(set_of_questions, game_config)
     print(f"Score: {score}")
+    st.session_state.current_game = "home"
 
 
 
@@ -195,6 +220,7 @@ def run_endless_mode(game_config):
             if result == "quit":
                 print("Nice Work")
                 handle_and_print_score(set_of_questions, game_config)
+                st.session_state.current_game = "home"
                 return
             
             else:
@@ -206,9 +232,9 @@ def run_endless_mode(game_config):
 
 
 
-
 def run_exam_mode(game_config):
     print("Not yet implemented")
+    st.session_state.current_game = "home"
     
 
 def run_survival_mode(game_config):
@@ -236,6 +262,7 @@ def run_survival_mode(game_config):
             score + 100
 
     handle_and_print_score(set_of_questions, game_config)
+    st.session_state.current_game = "home"
 
 
 def run_streak_mode(game_config):
@@ -264,6 +291,7 @@ def run_streak_mode(game_config):
                 longest_streak = current_streak
 
     handle_and_print_score(set_of_questions, game_config)
+    st.session_state.current_game = "home"
 
 
 def run_millionaire_mode(game_config):
@@ -272,8 +300,7 @@ def run_millionaire_mode(game_config):
 
 
 def run_quiz():
-    mode = choose_game_mode()
-    game_config = configure_quiz(mode)
+    game_config = st.session_state.state_game_config
 
     mode = game_config["mode"]["name_id"]
     if mode == "practice_mode":
@@ -295,7 +322,7 @@ def run_quiz():
     else:
         print("THERE WAS AN ERROR SOMEWHEREE!! - RUN_QUIZ()")
 
-    
+
 
 
 

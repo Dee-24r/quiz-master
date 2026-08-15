@@ -64,7 +64,7 @@ def choose_game_mode():
     #st.subheader("Let's goo! Where do you want to start?: ")
     return st.selectbox("Pick a mode", 
                  options=GAME_MODES,
-                 format_func= lambda x: x["name"]
+                 format_func= lambda x: x["name_id"]
                  )
 
 def choose_category():
@@ -81,42 +81,40 @@ def choose_category():
 def choose_questions_type():
     #st.subheader("\nWhat kind of questions do you want?\n")
     
-    return st.selectbox("Choose a category", 
-        options=categories,
-        format_func= lambda x: x["name"]
+    return st.selectbox("Choose a question type", 
+        options=QUESTION_TYPES,
+        format_func= lambda x: x["name_id"]
     )
 
     
 def choose_difficulty():
     #st.subheader("\nHow far can you go?: ")
+    difficulty = st.slider("Pick a difficulty level", min_value=1, max_value=3, step=1)
 
-    return st.slider("Pick a difficulty level", min_value=1, max_value=3, step=1)
-
+    return DIFFICULTY[difficulty-1]
 
 def choose_amount():
-    st.subheader("\nOkay, how many questions?: ")
+    #st.subheader("\nOkay, how many questions?: ")
     return st.number_input("How many questions?", 1, 16)
 
 
 
 
-def configure_quiz(mode):
+def configure_quiz():
     """Prompts the user to choose category, difficulty, and 
     number of questions"""
-    
-    global game_config
 
-    game_config["mode"] = mode
-    game_config["category"] = choose_category()
-    game_config["type"] = choose_questions_type()
-    game_config["difficulty"] = choose_difficulty()
-
+    mode = st.session_state.state_game_config["mode"] = choose_game_mode()
+    st.session_state.state_game_config["category"] = choose_category()
+    st.session_state.state_game_config["type"] = choose_questions_type()
+    st.session_state.state_game_config["difficulty"] = choose_difficulty()
     if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
-        game_config["amount"] = 15
+            st.session_state.state_game_config["amount"] = 15
     else:
-        game_config["amount"] = choose_amount()
-
-    return game_config
+        st.session_state.state_game_config["amount"] = choose_amount()
+    
+    if st.button("Start Quiz"):
+        st.session_state.current_page = "run_selected_quiz"
     
 
 #pass in game_config. then we'll do game_config["id"]

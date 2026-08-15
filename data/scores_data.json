@@ -1659,5 +1659,932 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 10,
+            "name": "Entertainment: Books"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the name of the main Character from the Series: Dead Space?",
+                "options": [
+                    "Isaac Clarke",
+                    "Ellen Ripley",
+                    "Captain Kirk",
+                    "Commander Shepard"
+                ],
+                "answer": "Isaac Clarke",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "The tale of Robin Hood originates from which country?",
+                "options": [
+                    "Scotland",
+                    "Portugal",
+                    "France",
+                    "England"
+                ],
+                "answer": "England",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Cylinder",
+                    "Pyramid",
+                    "Cube",
+                    "Sphere"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the name of Poland in Polish?",
+                "options": [
+                    "Polszka",
+                    "P\u00f3land",
+                    "Polska",
+                    "Pupcia"
+                ],
+                "answer": "Polska",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "Who was the 1st President of Mexico?",
+                "options": [
+                    "Guadalupe Victoria",
+                    "Vicente Guerrero",
+                    "Benito Ju\u00e1rez",
+                    "Miguel Hidalgo Y Costilla"
+                ],
+                "answer": "Guadalupe Victoria",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "Monty Python",
+                    "The Penny Dreadfuls",
+                    "The League of Gentlemen\u200e",
+                    "The Goodies\u200e"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 12,
+            "name": "Entertainment: Music"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 12,
+            "name": "Entertainment: Music"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "When was the website reddit founded ?",
+                "options": [
+                    "2008",
+                    "2005",
+                    "2004",
+                    "2006"
+                ],
+                "answer": "2005",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
+                "options": [
+                    "Six",
+                    "Seven",
+                    "One",
+                    "Twelve"
+                ],
+                "answer": "Six",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,717 ft",
+                    "2,546 ft",
+                    "3,024 ft",
+                    "2,722 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "Which one of these Swedish companies was founded in 1943?",
+                "options": [
+                    "IKEA",
+                    "Clas Ohlson",
+                    "Lindex",
+                    "H & M"
+                ],
+                "answer": "IKEA",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "The protagonist's names in 'Who's Afraid of Virginia Woolf', George and Martha, were derived from George Washington and his wife.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "Entertainment: Musicals &amp; Theatres",
+                "difficulty": "hard"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+                "options": [
+                    "Spanish",
+                    "French",
+                    "Catalan",
+                    "Portuguese"
+                ],
+                "answer": "Catalan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In which cardinal direction does the Sun rise from?",
+                "options": [
+                    "North",
+                    "South",
+                    "West",
+                    "East"
+                ],
+                "answer": "East",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "How many plays is Shakespeare generally considered to have written?",
+                "options": [
+                    "25",
+                    "37",
+                    "54",
+                    "18"
+                ],
+                "answer": "37",
+                "category": "Entertainment: Musicals &amp; Theatres",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 13,
+            "name": "Entertainment: Musicals & Theatres"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 17,
+            "name": "Science & Nature"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+                "options": [
+                    "12 Minutes",
+                    "6 Minutes",
+                    "8 Minutes",
+                    "2 Minutes"
+                ],
+                "answer": "8 Minutes",
+                "category": "Science &amp; Nature",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the half-life of Uranium-235?",
+                "options": [
+                    "703,800,000 years",
+                    "Uranium-235 is a stable isotope",
+                    "4,300,400,000 years",
+                    "1,260,900,000 years"
+                ],
+                "answer": "703,800,000 years",
+                "category": "Science &amp; Nature",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Down Syndrome is usually caused by an extra copy of which chromosome?",
+                "options": [
+                    "21",
+                    "15",
+                    "23",
+                    "24"
+                ],
+                "answer": "21",
+                "category": "Science &amp; Nature",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,546 ft",
+                    "2,722 ft",
+                    "3,024 ft",
+                    "2,717 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of the three astronauts of the Apollo 11 spaceflight did NOT walk on the moon?",
+                "options": [
+                    "Buzz Aldrin",
+                    "Michael Collins",
+                    "Neil Armstrong",
+                    "None of them"
+                ],
+                "answer": "Michael Collins",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the alcoholic beverage made from potatoes or grains that originates from Poland and Russia?",
+                "options": [
+                    "Absinthe",
+                    "Sake",
+                    "Rum",
+                    "Vodka"
+                ],
+                "answer": "Vodka",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What fruit is a traditional ingredient of a Black Forest Gateau?",
+                "options": [
+                    "Apricots",
+                    "Raisins",
+                    "Cherries",
+                    "Apples"
+                ],
+                "answer": "Cherries",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "In blood typing, the (+) and (-) marker after an A, B, AB, or O is called Rh factor. Which of the following is the source of its discovery?",
+                "options": [
+                    "Rhesus Monkeys",
+                    "Red-Haired People",
+                    "Rhizomes",
+                    "Rheumatism Patients"
+                ],
+                "answer": "Rhesus Monkeys",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 5
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "On a dartboard, what number is directly opposite No. 1?",
+                "options": [
+                    "19",
+                    "20",
+                    "12",
+                    "15"
+                ],
+                "answer": "19",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which one of these is not a typical European sword design?",
+                "options": [
+                    "Falchion",
+                    "Flamberge",
+                    "Ulfberht",
+                    "Scimitar"
+                ],
+                "answer": "Scimitar",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Five dollars is worth how many nickels?",
+                "options": [
+                    "100",
+                    "25",
+                    "50",
+                    "69"
+                ],
+                "answer": "100",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 18,
+            "name": "Science: Computers"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
     }
 ]
