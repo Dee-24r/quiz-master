@@ -43,9 +43,10 @@ def display_question(question):
     question, one at a time.
     """
 
-    st.write(question["question_statement"])
+    #st.write(question["question_statement"])
     return st.selectbox(f"{question["question_statement"]}", 
         options=question["options"],
+        key=f"{st.session_state.current_question}"
     )
 
     #for i, option in enumerate(question["options"]):
@@ -53,26 +54,36 @@ def display_question(question):
 
 
 def select_option(question, allow_quit=False):
-    if "question_state" not in st.session_state:
+    if "current_question" not in st.session_state:
+        st.session_state.current_question = 0
+
+    if "question_state" not in st.session_state or st.session_state.question_state == "next_question":
         st.session_state.question_state = "select_option"
+
+    #question = st.session_state.questions[st.session_state.current_question] #continue from here tmr
 
     if st.session_state.question_state == "select_option":
         result = display_question(question)
         if "answer" not in st.session_state:
-            st.session_state.answer = result
+            st.session_state.answer = result #cuz basically, the thing wud reset
+        st.session_state.answer = result
 
-        if st.button("Submit"):
-            st.session_state.question_state == "show_answer"
+        if st.button("Submit", key=f"submit_{st.session_state.current_question}"):
+            st.session_state.question_state = "show_answer"
 
-    if st.session_state.question_stats == "show_answer":
-        if result == question["answer"]:
+    if st.session_state.question_state == "show_answer":
+        if st.session_state.answer == question["answer"]:
             st.write("Correct answer!\n")
+            st.session_state.current_question += 1
             return True
-        else:
+        
+        elif st.session_state.answer != question["answer"]:
             st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
+            st.session_state.current_question += 1
             return False
+        else:
+            st.write("Error from answering...")
 
-    st.session_state.question_state == "next_question"
     
 
     """
@@ -104,23 +115,25 @@ def select_option(question, allow_quit=False):
 
 
 def run_practice_mode(game_config):
-    
     list_of_questions = get_opentdb_questions(game_config)
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = len(list_of_questions)
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+
+    st.session_state.questions["no_of_questions"] = len(list_of_questions)
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
 
     for question in list_of_questions:
         result = select_option(question)
 
         if result:
-            (set_of_questions["correctly_answered"]).append(question)
+            (st.session_state.questions["correctly_answered"]).append(question)
         elif not result:
-            set_of_questions["wrongly_answered"].append(question)
+            st.session_state.questions["wrongly_answered"].append(question)
 
-    handle_and_print_score(set_of_questions, game_config)
-    st.session_state.current_game = "home"
+    handle_and_print_score(st.session_state.questions, game_config)
+    st.session_state.question_state = None
+    st.session_state.current_page = "home"
 
 
 def run_timed_mode(game_config):
@@ -128,10 +141,12 @@ def run_timed_mode(game_config):
     Runs the timed quiz option of the app"""
 
     list_of_questions = get_opentdb_questions(game_config)
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = len(list_of_questions)
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+
+    st.session_state.questions["no_of_questions"] = len(list_of_questions)
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
 
     time_limit = 15
     start_time = time.time()
@@ -145,7 +160,7 @@ def run_timed_mode(game_config):
 
         if remaining_time <= 0:
             print("Time's up!")
-            no_of_answered_questions = len(set_of_questions["wrongly_answered"]) + len(set_of_questions["correctly_answered"])
+            no_of_answered_questions = len(st.session_state.questions["wrongly_answered"]) + len(st.session_state.questions["correctly_answered"])
             print(f"Questions answered {no_of_answered_questions}")
             break
 
@@ -153,12 +168,12 @@ def run_timed_mode(game_config):
         display_question(question)
         result = select_option(question)
         if result:
-            set_of_questions["correctly_answered"].append(question)
+            st.session_state.questions["correctly_answered"].append(question)
         elif not result:
-            set_of_questions["wrongly_answered"].append(question)
+            st.session_state.questions["wrongly_answered"].append(question)
 
-    handle_and_print_score(set_of_questions, game_config)
-    st.session_state.current_game = "home"
+    handle_and_print_score(st.session_state.questions, game_config)
+    st.session_state.current_page = "home"
 
 
 
@@ -166,10 +181,11 @@ def run_timed_mode(game_config):
 def run_jeopardy_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
     score = 0
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = len(list_of_questions)
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+    st.session_state.questions["no_of_questions"] = len(list_of_questions)
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
     
     for question in list_of_questions:
         #should implement the dict here if something is easy
@@ -186,14 +202,14 @@ def run_jeopardy_mode(game_config):
         result = select_option(question)
         if not result:
             score - score_addition
-            (set_of_questions["wrongly_answered"]).append(question)
+            (st.session_state.questions["wrongly_answered"]).append(question)
         elif result:
             score + score_addition
-            (set_of_questions["correctly_answered"]).append(question)
+            (st.session_state.questions["correctly_answered"]).append(question)
 
-    handle_and_print_score(set_of_questions, game_config)
+    handle_and_print_score(st.session_state.questions, game_config)
     print(f"Score: {score}")
-    st.session_state.current_game = "home"
+    st.session_state.current_page = "home"
 
 
 
@@ -204,10 +220,11 @@ def run_endless_mode(game_config):
 
     print("Hmm!! I see you're locked in?")
     print("Get ready! I won't stop until you say so!")
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = 0
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+    st.session_state.questions["no_of_questions"] = 0
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
 
     print("Enter 'X' to stop the quiz!")
 
@@ -219,31 +236,31 @@ def run_endless_mode(game_config):
             result = select_option(question, allow_quit=True)
             if result == "quit":
                 print("Nice Work")
-                handle_and_print_score(set_of_questions, game_config)
+                handle_and_print_score(st.session_state.questions, game_config)
                 st.session_state.current_game = "home"
                 return
             
             else:
-                set_of_questions["no_of_questions"] += 1
+                st.session_state.questions["no_of_questions"] += 1
                 if result:
-                    (set_of_questions["correctly_answered"]).append(question)
+                    (st.session_state.questions["correctly_answered"]).append(question)
                 elif not result:
-                    (set_of_questions["wrongly_answered"]).append(question)
+                    (st.session_state.questions["wrongly_answered"]).append(question)
 
 
 
 def run_exam_mode(game_config):
     print("Not yet implemented")
-    st.session_state.current_game = "home"
+    st.session_state.current_page = "home"
     
 
 def run_survival_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
-
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = len(list_of_questions)
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+    st.session_state.questions["no_of_questions"] = len(list_of_questions)
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
 
     lives, score = 3, 0
     for question in list_of_questions:
@@ -252,26 +269,27 @@ def run_survival_mode(game_config):
         result = select_option(question)
 
         if not result:
-            set_of_questions["wrongly_answered"].append(question)
+            st.session_state.questions["wrongly_answered"].append(question)
             lives-=1
             if lives <= 0:
                 print("Game Over!")
                 return
         else:
-            set_of_questions["correctly_answered"].append(question)
+            st.session_state.questions["correctly_answered"].append(question)
             score + 100
 
-    handle_and_print_score(set_of_questions, game_config)
-    st.session_state.current_game = "home"
+    handle_and_print_score(st.session_state.questions, game_config)
+    st.session_state.current_page = "home"
 
 
 def run_streak_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
 
-    set_of_questions = {}
-    set_of_questions["no_of_questions"] = len(list_of_questions)
-    set_of_questions["wrongly_answered"] = []
-    set_of_questions["correctly_answered"] = []
+    if "questions" not in st.session_state:
+        st.session_state.questions = {}
+    st.session_state.questions["no_of_questions"] = len(list_of_questions)
+    st.session_state.questions["wrongly_answered"] = []
+    st.session_state.questions["correctly_answered"] = []
     
     longest_streak = current_streak = 0
     for question in list_of_questions:
@@ -282,16 +300,16 @@ def run_streak_mode(game_config):
         result = select_option(question)
         
         if not result:
-            set_of_questions["wrongly_answered"].append(question)
+            st.session_state.questions["wrongly_answered"].append(question)
             current_streak = 0
         else:
-            set_of_questions["correctly_answered"].append(question)
+            st.session_state.questions["correctly_answered"].append(question)
             current_streak += 1
             if current_streak > longest_streak:
                 longest_streak = current_streak
 
-    handle_and_print_score(set_of_questions, game_config)
-    st.session_state.current_game = "home"
+    handle_and_print_score(st.session_state.questions, game_config)
+    st.session_state.current_page = "home"
 
 
 def run_millionaire_mode(game_config):
@@ -321,6 +339,7 @@ def run_quiz():
         run_millionaire_mode(game_config)
     else:
         print("THERE WAS AN ERROR SOMEWHEREE!! - RUN_QUIZ()")
+    st.session_state.questions = None
 
 
 

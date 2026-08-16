@@ -205,3 +205,7 @@ but imma deal with each questions' showing up and working tmr.
 
  ![answering questions](images/progress_w_running_quiz.mp4)
 You can look at the video progress [video](images/progress_w_running_quiz.mp4)
+
+---
+16th Aug (2am)
+I like undertsood how streamlit reran code each time, but I was really looking at it from a s,mall perspecitive. Turns out, once a user answeres one question, streamlit would re-fetch questions each time , and I literally didn't realise,. Well, at least I understand what the problem was now. I'lon tmr

@@ -50,6 +50,13 @@
             "wrongly_answered": 0,
             "no_of_questions": 2,
             "percentage": 100.0
+        },
+        {
+            "categ_name": "Entertainment: Film",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 0,
+            "percentage": 0
         }
     ],
     "Science: Gadgets": [
@@ -224,6 +231,55 @@
             "wrongly_answered": 1,
             "no_of_questions": 2,
             "percentage": 50.0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 0,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 1,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 3,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 3,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 1,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 4,
+            "no_of_questions": 4,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 4,
+            "no_of_questions": 4,
+            "percentage": 0
         }
     ],
     "Entertainment: Musicals & Theatres": [

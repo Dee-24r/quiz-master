@@ -2586,5 +2586,331 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 11,
+            "name": "Entertainment: Film"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What planet is not named after a Greek or Roman god?",
+                "options": [
+                    "Mercury",
+                    "Jupiter",
+                    "Earth",
+                    "Mars"
+                ],
+                "answer": "Earth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+                "options": [
+                    "Peach",
+                    "Apple",
+                    "Pear",
+                    "Plum"
+                ],
+                "answer": "Plum",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The word \"dozen\" usually refers to a group of how many objects?",
+                "options": [
+                    "12",
+                    "10",
+                    "20",
+                    "6"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Zodiac symbol for Gemini?",
+                "options": [
+                    "Twins",
+                    "Fish",
+                    "Maiden",
+                    "Scales"
+                ],
+                "answer": "Twins",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Area 51 is located in which US state?",
+                "options": [
+                    "Nevada",
+                    "Arizona",
+                    "New Mexico",
+                    "Utah"
+                ],
+                "answer": "Nevada",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Antibiotics are generally taken to combat what?",
+                "options": [
+                    "Migraines",
+                    "Viruses",
+                    "Muscular pains",
+                    "Bacterial infections"
+                ],
+                "answer": "Bacterial infections",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Pyramid",
+                    "Cube",
+                    "Cylinder",
+                    "Sphere"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What was the soft drink Pepsi originally introduced as?",
+                "options": [
+                    "Pepsin Syrup",
+                    "Pepsin Pop",
+                    "Brad's Drink",
+                    "Carolina Cola"
+                ],
+                "answer": "Brad's Drink",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+                "options": [
+                    "Biryani",
+                    "Tiki masala",
+                    "Pani puri",
+                    "Tandoori"
+                ],
+                "answer": "Tandoori",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What character was once considered to be the 27th letter of the alphabet?",
+                "options": [
+                    "Pilcrow",
+                    "Ampersand",
+                    "Tilde",
+                    "Interrobang"
+                ],
+                "answer": "Ampersand",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the German word for \"spoon\"?",
+                "options": [
+                    "L\u00f6ffel",
+                    "Gabel",
+                    "Messer",
+                    "Essst\u00e4bchen"
+                ],
+                "answer": "L\u00f6ffel",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which of these is the name of a Japanese system of alternative medicine, literally meaning \"finger pressure\"?",
+                "options": [
+                    "Ikigai",
+                    "Majime",
+                    "Shiatsu",
+                    "Ukiyo"
+                ],
+                "answer": "Shiatsu",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which month is Black History Month in the US?",
+                "options": [
+                    "November",
+                    "August",
+                    "February",
+                    "May"
+                ],
+                "answer": "February",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which mountain has the highest peak in Europe?",
+                "options": [
+                    "Mont Blanc, France",
+                    "Shkhara, Georgia",
+                    "Mount Ararat, Turkey",
+                    "Mount Elbrus, Russia"
+                ],
+                "answer": "Mount Elbrus, Russia",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "When was the Declaration of Independence approved by the Second Continental Congress?",
+                "options": [
+                    "July 2, 1776",
+                    "June 4, 1776",
+                    "July 4, 1776",
+                    "May 4, 1776"
+                ],
+                "answer": "July 4, 1776",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which mountain has the highest peak in South America?",
+                "options": [
+                    "Monte Pissis, Argentina",
+                    "Aconcagua, Argentina",
+                    "Huascar\u00e1n, Peru",
+                    "Ojos del Salado, Argentina/Chile border"
+                ],
+                "answer": "Aconcagua, Argentina",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 4
     }
 ]
