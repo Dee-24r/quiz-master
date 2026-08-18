@@ -209,3 +209,13 @@ You can look at the video progress [video](images/progress_w_running_quiz.mp4)
 ---
 16th Aug (2am)
 I like undertsood how streamlit reran code each time, but I was really looking at it from a s,mall perspecitive. Turns out, once a user answeres one question, streamlit would re-fetch questions each time , and I literally didn't realise,. Well, at least I understand what the problem was now. I'lon tmr
+
+---
+17th Aug (11:44pm)
+
+I'm not using streamlit for any of my projects after this... if I have the choice lolol. The qay it runs is quite senseless to me.
+
+Anyways, I've got the quiz working now from start to finish.
+[this video](images/quiz_works_practice_mode.mp4)
+
+Gonna edit all the other modes, to work well. I hope to finish up to sttats by Thursdya or earlier.

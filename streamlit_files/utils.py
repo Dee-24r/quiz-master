@@ -115,6 +115,7 @@ def configure_quiz():
     
     if st.button("Start Quiz"):
         st.session_state.current_page = "run_selected_quiz"
+        st.rerun()
     
 
 #pass in game_config. then we'll do game_config["id"]

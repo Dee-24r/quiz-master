@@ -280,6 +280,13 @@
             "wrongly_answered": 4,
             "no_of_questions": 4,
             "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 4,
+            "wrongly_answered": 6,
+            "no_of_questions": 5,
+            "percentage": 80.0
         }
     ],
     "Entertainment: Musicals & Theatres": [

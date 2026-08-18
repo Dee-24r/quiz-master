@@ -2912,5 +2912,143 @@
         ],
         "correctly_answered": [],
         "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the German word for \"spoon\"?",
+                "options": [
+                    "Essst\u00e4bchen",
+                    "L\u00f6ffel",
+                    "Gabel",
+                    "Messer"
+                ],
+                "answer": "L\u00f6ffel",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the German word for \"spoon\"?",
+                "options": [
+                    "Essst\u00e4bchen",
+                    "L\u00f6ffel",
+                    "Gabel",
+                    "Messer"
+                ],
+                "answer": "L\u00f6ffel",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which mountain has the highest peak in South America?",
+                "options": [
+                    "Huascar\u00e1n, Peru",
+                    "Monte Pissis, Argentina",
+                    "Aconcagua, Argentina",
+                    "Ojos del Salado, Argentina/Chile border"
+                ],
+                "answer": "Aconcagua, Argentina",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which mountain has the highest peak in South America?",
+                "options": [
+                    "Huascar\u00e1n, Peru",
+                    "Monte Pissis, Argentina",
+                    "Aconcagua, Argentina",
+                    "Ojos del Salado, Argentina/Chile border"
+                ],
+                "answer": "Aconcagua, Argentina",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the currency of Poland?",
+                "options": [
+                    "Euro",
+                    "Ruble",
+                    "Krone",
+                    "Z\u0142oty"
+                ],
+                "answer": "Z\u0142oty",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the currency of Poland?",
+                "options": [
+                    "Euro",
+                    "Ruble",
+                    "Krone",
+                    "Z\u0142oty"
+                ],
+                "answer": "Z\u0142oty",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What year was Apple Inc. founded?",
+                "options": [
+                    "1980",
+                    "1974",
+                    "1976",
+                    "1978"
+                ],
+                "answer": "1976",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What year was Apple Inc. founded?",
+                "options": [
+                    "1980",
+                    "1974",
+                    "1976",
+                    "1978"
+                ],
+                "answer": "1976",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "When was the Declaration of Independence approved by the Second Continental Congress?",
+                "options": [
+                    "July 4, 1776",
+                    "June 4, 1776",
+                    "May 4, 1776",
+                    "July 2, 1776"
+                ],
+                "answer": "July 4, 1776",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "When was the Declaration of Independence approved by the Second Continental Congress?",
+                "options": [
+                    "July 4, 1776",
+                    "June 4, 1776",
+                    "May 4, 1776",
+                    "July 2, 1776"
+                ],
+                "answer": "July 4, 1776",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 5
     }
 ]
