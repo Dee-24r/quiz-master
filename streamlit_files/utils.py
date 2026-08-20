@@ -103,7 +103,7 @@ def choose_amount():
 def configure_quiz():
     """Prompts the user to choose category, difficulty, and 
     number of questions"""
-
+    
     mode = st.session_state.state_game_config["mode"] = choose_game_mode()
     st.session_state.state_game_config["category"] = choose_category()
     st.session_state.state_game_config["type"] = choose_questions_type()
@@ -149,8 +149,8 @@ def format_time_figures(no_of_seconds):
     return int(no_of_hours), int(no_of_minutes), int(no_of_seconds)
 
 
-def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
-    print(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
+#def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
+#   st.text(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
 
 
 

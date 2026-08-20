@@ -287,6 +287,83 @@
             "wrongly_answered": 6,
             "no_of_questions": 5,
             "percentage": 80.0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 4,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 4,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 1,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 0,
+            "no_of_questions": 3,
+            "percentage": 0
         }
     ],
     "Entertainment: Musicals & Theatres": [

@@ -3,7 +3,7 @@ import time
 import streamlit as st
 from streamlit_files.questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from streamlit_files.score import handle_and_print_score
-from streamlit_files.utils import configure_quiz, choose_game_mode, format_time_figures, print_formatted_time
+from streamlit_files.utils import configure_quiz, choose_game_mode, format_time_figures
 
 """this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
 configure_quiz
@@ -139,44 +139,76 @@ def run_practice_mode(game_config):
 
 
 
+#NEED to fins a better way to do time - no longer a  terminal.
 def run_timed_mode(game_config):
     """
     Runs the timed quiz option of the app"""
 
-    st.session_state.questions = get_opentdb_questions(game_config)
+
     if "questions" not in st.session_state:
-        st.session_state.set_of_questions = {}
+        st.session_state.questions = get_opentdb_questions(game_config)
+        st.session_state.current_question = 0
+        st.session_state.answer = None
 
-    st.session_state.set_of_questions["no_of_questions"] = len(st.session_state.questions)
-    st.session_state.set_of_questions["wrongly_answered"] = []
-    st.session_state.set_of_questions["correctly_answered"] = []
+        st.session_state.question_state = "answering"
+        st.session_state.set_of_questions = {
+            "no_of_questions": len(st.session_state.questions),
+            "wrongly_answered": [],
+            "correctly_answered": []
+        }
+        st.rerun()
 
-    time_limit = 15
-    start_time = time.time()
+    if "time_limit" not in st.session_state:
+        st.session_state.time_limit = 30
 
+    if "start_time" not in st.session_state:
+        st.session_state.start_time = time.time()
+        st.session_state.time_up = False
+
+    
+    st.session_state.elapsed_time = time.time() - st.session_state.start_time
+    st.session_state.remaining_time = max(0, st.session_state.time_limit - st.session_state.elapsed_time)
+
+
+    if st.session_state.remaining_time <= 0:
+        st.session_state.time_up = True
+
+
+    if (st.session_state.current_question >= len(st.session_state.questions)) or st.session_state.time_up:
+        if st.session_state.time_up:
+            st.write("Time's up!!")
+
+        no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
+        st.write(f"Questions answered: {no_of_answered_questions}")
+
+        handle_and_print_score(st.session_state.set_of_questions, game_config)
+        st.session_state.question_state = None
+        st.session_state.current_page = "home"
+        st.session_state.remaining_time = 0
+        st.rerun()
+        return
+    
+    timer_display = st.empty()
+    st.session_state.hrs, st.session_state.mins, st.session_state.secs = format_time_figures(st.session_state.remaining_time)
+    timer_display.text(f"Tiem remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
+    
+    question = st.session_state.questions[st.session_state.current_question]
+    select_option(question)
+
+    time.sleep(1)
+    st.rerun()
+
+
+    """
     for question in st.session_state.questions:
         elapsed_time = time.time() - start_time
         remaining_time = (time_limit - elapsed_time)
 
         no_of_hours, no_of_minutes, no_of_seconds = format_time_figures(remaining_time)
         print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds)
-
-        if remaining_time <= 0:
-            print("Time's up!")
-            no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
-            print(f"Questions answered {no_of_answered_questions}")
-            break
-
-        
-        display_question(question)
-        result = select_option(question)
-        if result:
-            st.session_state.set_of_questions["correctly_answered"].append(question)
-        elif not result:
-            st.session_state.set_of_questions["wrongly_answered"].append(question)
-
-    handle_and_print_score(st.session_state.set_of_questions, game_config)
-    st.session_state.current_page = "home"
+    """
+    #no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
+    #print(f"Questions answered {no_of_answered_questions}")
 
 
 

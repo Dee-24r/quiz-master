@@ -28,9 +28,9 @@ def choose_and_run_task():
             #display_stats()
 
 def main():
-    st.write("Welcome, Welcome! What would you like to do today?")
 
     if st.session_state.current_page == "home":
+        st.write("Welcome, Welcome! What would you like to do today?")
         choose_and_run_task()
 
     if st.session_state.current_page == "configure_quiz":
