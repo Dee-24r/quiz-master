@@ -3376,5 +3376,2593 @@
         "wrongly_answered": [],
         "correctly_answered": [],
         "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1958",
+                    "1947",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "A criminal who has \u201ccooked the books\u201d has engaged in what kind of illegal behavior?",
+                "options": [
+                    "Accounting Fraud",
+                    "Extortion",
+                    "Blackmail",
+                    "Money Laundering"
+                ],
+                "answer": "Accounting Fraud",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Red",
+                    "Yellow",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Red",
+                    "Yellow",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Red",
+                    "Yellow",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Red",
+                    "Yellow",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Red",
+                    "Yellow",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Caballo",
+                    "Burro",
+                    "Toro",
+                    "Perro"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Caballo",
+                    "Burro",
+                    "Toro",
+                    "Perro"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Caballo",
+                    "Burro",
+                    "Toro",
+                    "Perro"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Alan Sugar",
+                    "Bill Gates",
+                    "Richard Branson",
+                    "Donald Trump"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Alan Sugar",
+                    "Bill Gates",
+                    "Richard Branson",
+                    "Donald Trump"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country, not including Japan, has the most people of Japanese descent?",
+                "options": [
+                    "United States of America",
+                    "China",
+                    "Brazil",
+                    "South Korea"
+                ],
+                "answer": "Brazil",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country, not including Japan, has the most people of Japanese descent?",
+                "options": [
+                    "United States of America",
+                    "China",
+                    "Brazil",
+                    "South Korea"
+                ],
+                "answer": "Brazil",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many letters are there in the English alphabet?",
+                "options": [
+                    "24",
+                    "26",
+                    "28",
+                    "23"
+                ],
+                "answer": "26",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many letters are there in the English alphabet?",
+                "options": [
+                    "24",
+                    "26",
+                    "28",
+                    "23"
+                ],
+                "answer": "26",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which of these colours is NOT featured in the logo for Google?",
+                "options": [
+                    "Pink",
+                    "Green",
+                    "Blue",
+                    "Yellow"
+                ],
+                "answer": "Pink",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of these colours is NOT featured in the logo for Google?",
+                "options": [
+                    "Pink",
+                    "Green",
+                    "Blue",
+                    "Yellow"
+                ],
+                "answer": "Pink",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Who is the founder of \"The Lego Group\"?",
+                "options": [
+                    "Kirstine Christiansen",
+                    " Jens Niels Christiansen",
+                    " Gerhardt Kirk Christiansen",
+                    "Ole Kirk Christiansen"
+                ],
+                "answer": "Ole Kirk Christiansen",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Out of these four buildings, which one is the tallest, with a height of 2,717 ft (828 m)?",
+                "options": [
+                    "Ping An Finance Centre, China",
+                    "Burj Khalifa, United Arab Emirates",
+                    "Shanghai Tower, China",
+                    "Lotte World Tower, South Korea"
+                ],
+                "answer": "Burj Khalifa, United Arab Emirates",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Rolex is a company that specializes in what type of product?",
+                "options": [
+                    "Watches",
+                    "Cars",
+                    "Sports equipment",
+                    "Computers"
+                ],
+                "answer": "Watches",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Flying",
+                    "Birds",
+                    "Dogs",
+                    "Germs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Flying",
+                    "Birds",
+                    "Dogs",
+                    "Germs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Digest",
+                    "Look",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Digest",
+                    "Look",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "12",
+                    "14",
+                    "16",
+                    "10"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "12",
+                    "14",
+                    "16",
+                    "10"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Libra",
+                    "Aries",
+                    "Capricorn",
+                    "Sagittarius"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Libra",
+                    "Aries",
+                    "Capricorn",
+                    "Sagittarius"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 5,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Flying",
+                    "Birds",
+                    "Dogs",
+                    "Germs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Flying",
+                    "Birds",
+                    "Dogs",
+                    "Germs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Digest",
+                    "Look",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Digest",
+                    "Look",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "12",
+                    "14",
+                    "16",
+                    "10"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "12",
+                    "14",
+                    "16",
+                    "10"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Libra",
+                    "Aries",
+                    "Capricorn",
+                    "Sagittarius"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Libra",
+                    "Aries",
+                    "Capricorn",
+                    "Sagittarius"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of the following rhythm games was made by Harmonix?",
+                "options": [
+                    "Guitar Hero Live",
+                    "Dance Dance Revolution",
+                    "Meat Beat Mania",
+                    "Rock Band"
+                ],
+                "answer": "Rock Band",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of the following rhythm games was made by Harmonix?",
+                "options": [
+                    "Guitar Hero Live",
+                    "Dance Dance Revolution",
+                    "Meat Beat Mania",
+                    "Rock Band"
+                ],
+                "answer": "Rock Band",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Walnuts",
+                    "Pistachios",
+                    "Peanuts",
+                    "Almonds"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Walnuts",
+                    "Pistachios",
+                    "Peanuts",
+                    "Almonds"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of the following rhythm games was made by Harmonix?",
+                "options": [
+                    "Guitar Hero Live",
+                    "Dance Dance Revolution",
+                    "Meat Beat Mania",
+                    "Rock Band"
+                ],
+                "answer": "Rock Band",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of the following rhythm games was made by Harmonix?",
+                "options": [
+                    "Guitar Hero Live",
+                    "Dance Dance Revolution",
+                    "Meat Beat Mania",
+                    "Rock Band"
+                ],
+                "answer": "Rock Band",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Walnuts",
+                    "Pistachios",
+                    "Peanuts",
+                    "Almonds"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Walnuts",
+                    "Pistachios",
+                    "Peanuts",
+                    "Almonds"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do sailors call the left side of a boat?",
+                "options": [
+                    "Bow",
+                    "Stern",
+                    "Port",
+                    "Starboard"
+                ],
+                "answer": "Port",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the left side of a boat?",
+                "options": [
+                    "Bow",
+                    "Stern",
+                    "Port",
+                    "Starboard"
+                ],
+                "answer": "Port",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Soviet Union",
+                    "Israel",
+                    "Iran",
+                    "Poland"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Soviet Union",
+                    "Israel",
+                    "Iran",
+                    "Poland"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Pyramid",
+                    "Sphere",
+                    "Cube",
+                    "Cylinder"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Pyramid",
+                    "Sphere",
+                    "Cube",
+                    "Cylinder"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "When one is \"envious\", they are said to be what color?",
+                "options": [
+                    "Yellow",
+                    "Red",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When one is \"envious\", they are said to be what color?",
+                "options": [
+                    "Yellow",
+                    "Red",
+                    "Blue",
+                    "Green"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Why is the night sky dark? ",
+                "options": [
+                    "Dust clouds absorb light ",
+                    "The universe is finite in age and size",
+                    "Quantum mechanics",
+                    "Redshift doesn't let us see distant stars "
+                ],
+                "answer": "The universe is finite in age and size",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Why is the night sky dark? ",
+                "options": [
+                    "Dust clouds absorb light ",
+                    "The universe is finite in age and size",
+                    "Quantum mechanics",
+                    "Redshift doesn't let us see distant stars "
+                ],
+                "answer": "The universe is finite in age and size",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the right side of a boat?",
+                "options": [
+                    "Stern",
+                    "Bow",
+                    "Port",
+                    "Starboard"
+                ],
+                "answer": "Starboard",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the right side of a boat?",
+                "options": [
+                    "Stern",
+                    "Bow",
+                    "Port",
+                    "Starboard"
+                ],
+                "answer": "Starboard",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "If you are caught \"Goldbricking\", what are you doing wrong?",
+                "options": [
+                    "Stealing",
+                    "Smoking",
+                    "Cheating",
+                    "Slacking"
+                ],
+                "answer": "Slacking",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "If you are caught \"Goldbricking\", what are you doing wrong?",
+                "options": [
+                    "Stealing",
+                    "Smoking",
+                    "Cheating",
+                    "Slacking"
+                ],
+                "answer": "Slacking",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Eight",
+                    "Two",
+                    "Six",
+                    "Four"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Eight",
+                    "Two",
+                    "Six",
+                    "Four"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which cardinal direction does the Sun rise from?",
+                "options": [
+                    "East",
+                    "West",
+                    "South",
+                    "North"
+                ],
+                "answer": "East",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which cardinal direction does the Sun rise from?",
+                "options": [
+                    "East",
+                    "West",
+                    "South",
+                    "North"
+                ],
+                "answer": "East",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who was the 1st President of Mexico?",
+                "options": [
+                    "Benito Ju\u00e1rez",
+                    "Vicente Guerrero",
+                    "Guadalupe Victoria",
+                    "Miguel Hidalgo Y Costilla"
+                ],
+                "answer": "Guadalupe Victoria",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who was the 1st President of Mexico?",
+                "options": [
+                    "Benito Ju\u00e1rez",
+                    "Vicente Guerrero",
+                    "Guadalupe Victoria",
+                    "Miguel Hidalgo Y Costilla"
+                ],
+                "answer": "Guadalupe Victoria",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What step in cellular respiration forms ATP?",
+                "options": [
+                    "Calvin Cycle",
+                    "Glycolysis",
+                    "Pyruvate Oxidation",
+                    "Oxidative Phosphorylation"
+                ],
+                "answer": "Oxidative Phosphorylation",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What step in cellular respiration forms ATP?",
+                "options": [
+                    "Calvin Cycle",
+                    "Glycolysis",
+                    "Pyruvate Oxidation",
+                    "Oxidative Phosphorylation"
+                ],
+                "answer": "Oxidative Phosphorylation",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Two",
+                    "Eight",
+                    "Four",
+                    "Six"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Two",
+                    "Eight",
+                    "Four",
+                    "Six"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "Which of these fast-food chains is NOT mainly known to sell pizza?",
+                "options": [
+                    "Wendy's",
+                    "Little Caesars",
+                    "Papa John's",
+                    "Domino's"
+                ],
+                "answer": "Wendy's",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of these fast-food chains is NOT mainly known to sell pizza?",
+                "options": [
+                    "Wendy's",
+                    "Little Caesars",
+                    "Papa John's",
+                    "Domino's"
+                ],
+                "answer": "Wendy's",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What step in cellular respiration forms ATP?",
+                "options": [
+                    "Calvin Cycle",
+                    "Oxidative Phosphorylation",
+                    "Glycolysis",
+                    "Pyruvate Oxidation"
+                ],
+                "answer": "Oxidative Phosphorylation",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What step in cellular respiration forms ATP?",
+                "options": [
+                    "Calvin Cycle",
+                    "Oxidative Phosphorylation",
+                    "Glycolysis",
+                    "Pyruvate Oxidation"
+                ],
+                "answer": "Oxidative Phosphorylation",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+                "options": [
+                    "Key",
+                    "Pen",
+                    "Cellphone",
+                    "Sword"
+                ],
+                "answer": "Key",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+                "options": [
+                    "Key",
+                    "Pen",
+                    "Cellphone",
+                    "Sword"
+                ],
+                "answer": "Key",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "Monty Python",
+                    "The League of Gentlemen\u200e",
+                    "The Penny Dreadfuls",
+                    "The Goodies\u200e"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "Monty Python",
+                    "The League of Gentlemen\u200e",
+                    "The Penny Dreadfuls",
+                    "The Goodies\u200e"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the closest planet to our solar system's sun?",
+                "options": [
+                    "Jupiter",
+                    "Mars",
+                    "Mercury",
+                    "Earth"
+                ],
+                "answer": "Mercury",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the closest planet to our solar system's sun?",
+                "options": [
+                    "Jupiter",
+                    "Mars",
+                    "Mercury",
+                    "Earth"
+                ],
+                "answer": "Mercury",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does VR stand for?",
+                "options": [
+                    "Virtual Reality",
+                    "Visual Recognition",
+                    "Very Real",
+                    "Voice Recognition"
+                ],
+                "answer": "Virtual Reality",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does VR stand for?",
+                "options": [
+                    "Virtual Reality",
+                    "Visual Recognition",
+                    "Very Real",
+                    "Voice Recognition"
+                ],
+                "answer": "Virtual Reality",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Germs",
+                    "Flying",
+                    "Birds",
+                    "Dogs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cynophobia the fear of?",
+                "options": [
+                    "Germs",
+                    "Flying",
+                    "Birds",
+                    "Dogs"
+                ],
+                "answer": "Dogs",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye",
+                    "Millenium Falcon"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye",
+                    "Millenium Falcon"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+                "options": [
+                    "Truth",
+                    "Answer",
+                    "Source",
+                    "Cause"
+                ],
+                "answer": "Truth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "According to Sherlock Holmes, \"If you eliminate the impossible, whatever remains, however improbable, must be the...\"",
+                "options": [
+                    "Truth",
+                    "Answer",
+                    "Source",
+                    "Cause"
+                ],
+                "answer": "Truth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do sailors call the front of a boat?",
+                "options": [
+                    "Port",
+                    "Stern",
+                    "Starboard",
+                    "Bow"
+                ],
+                "answer": "Bow",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the front of a boat?",
+                "options": [
+                    "Port",
+                    "Stern",
+                    "Starboard",
+                    "Bow"
+                ],
+                "answer": "Bow",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The tale of Robin Hood originates from which country?",
+                "options": [
+                    "Scotland",
+                    "England",
+                    "Portugal",
+                    "France"
+                ],
+                "answer": "England",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The tale of Robin Hood originates from which country?",
+                "options": [
+                    "Scotland",
+                    "England",
+                    "Portugal",
+                    "France"
+                ],
+                "answer": "England",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In aerodynamics, which force pushes an object upwards?",
+                "options": [
+                    "Thrust",
+                    "Lift",
+                    "Weight",
+                    "Drag"
+                ],
+                "answer": "Lift",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In aerodynamics, which force pushes an object upwards?",
+                "options": [
+                    "Thrust",
+                    "Lift",
+                    "Weight",
+                    "Drag"
+                ],
+                "answer": "Lift",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the famous Papa John's last name?",
+                "options": [
+                    "ANDERSON",
+                    "Chowder",
+                    "Williams",
+                    "Schnatter"
+                ],
+                "answer": "Schnatter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cuba's official, most widely spoken language?",
+                "options": [
+                    "Italian",
+                    "Portuguese",
+                    "Spanish",
+                    "French"
+                ],
+                "answer": "Spanish",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cuba's official, most widely spoken language?",
+                "options": [
+                    "Italian",
+                    "Portuguese",
+                    "Spanish",
+                    "French"
+                ],
+                "answer": "Spanish",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the name of the poker hand containing three of a kind and a pair?",
+                "options": [
+                    "Full House",
+                    "High card",
+                    "Straight",
+                    "Flush"
+                ],
+                "answer": "Full House",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the poker hand containing three of a kind and a pair?",
+                "options": [
+                    "Full House",
+                    "High card",
+                    "Straight",
+                    "Flush"
+                ],
+                "answer": "Full House",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the poker hand containing three of a kind and a pair?",
+                "options": [
+                    "Full House",
+                    "High card",
+                    "Straight",
+                    "Flush"
+                ],
+                "answer": "Full House",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,546 ft",
+                    "2,717 ft",
+                    "2,722 ft",
+                    "3,024 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,546 ft",
+                    "2,717 ft",
+                    "2,722 ft",
+                    "3,024 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the poker hand containing three of a kind and a pair?",
+                "options": [
+                    "Flush",
+                    "High card",
+                    "Full House",
+                    "Straight"
+                ],
+                "answer": "Full House",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the poker hand containing three of a kind and a pair?",
+                "options": [
+                    "Flush",
+                    "High card",
+                    "Full House",
+                    "Straight"
+                ],
+                "answer": "Full House",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is inexperienced they are said to be what color?",
+                "options": [
+                    "Green",
+                    "Red",
+                    "Yellow",
+                    "Blue"
+                ],
+                "answer": "Green",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Where is the train station \"Llanfair\u00adpwllgwyngyll\u00adgogery\u00adchwyrn\u00addrobwll\u00adllan\u00adtysilio\u00adgogo\u00adgoch\"?",
+                "options": [
+                    "Czech Republic",
+                    "Moldova",
+                    "Denmark",
+                    "Wales"
+                ],
+                "answer": "Wales",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Where is the train station \"Llanfair\u00adpwllgwyngyll\u00adgogery\u00adchwyrn\u00addrobwll\u00adllan\u00adtysilio\u00adgogo\u00adgoch\"?",
+                "options": [
+                    "Czech Republic",
+                    "Moldova",
+                    "Denmark",
+                    "Wales"
+                ],
+                "answer": "Wales",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which American-owned brewery led the country in sales by volume in 2015?",
+                "options": [
+                    "Anheuser Busch",
+                    "Miller Coors",
+                    "D. G. Yuengling and Son, Inc",
+                    "Boston Beer Company"
+                ],
+                "answer": "D. G. Yuengling and Son, Inc",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which American-owned brewery led the country in sales by volume in 2015?",
+                "options": [
+                    "Anheuser Busch",
+                    "Miller Coors",
+                    "D. G. Yuengling and Son, Inc",
+                    "Boston Beer Company"
+                ],
+                "answer": "D. G. Yuengling and Son, Inc",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+                "options": [
+                    "Single",
+                    "Solid",
+                    "Subscriber",
+                    "Secure"
+                ],
+                "answer": "Subscriber",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+                "options": [
+                    "Single",
+                    "Solid",
+                    "Subscriber",
+                    "Secure"
+                ],
+                "answer": "Subscriber",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What does the F stand for in the FBI?",
+                "options": [
+                    "Federal",
+                    "Foreign",
+                    "Formal",
+                    "First"
+                ],
+                "answer": "Federal",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the F stand for in the FBI?",
+                "options": [
+                    "Federal",
+                    "Foreign",
+                    "Formal",
+                    "First"
+                ],
+                "answer": "Federal",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What company developed the vocaloid Hatsune Miku?",
+                "options": [
+                    "Yamaha Corporation",
+                    "Sony",
+                    "Crypton Future Media",
+                    "Sega"
+                ],
+                "answer": "Crypton Future Media",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What company developed the vocaloid Hatsune Miku?",
+                "options": [
+                    "Yamaha Corporation",
+                    "Sony",
+                    "Crypton Future Media",
+                    "Sega"
+                ],
+                "answer": "Crypton Future Media",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What planet is not named after a Greek or Roman god?",
+                "options": [
+                    "Earth",
+                    "Mars",
+                    "Mercury",
+                    "Jupiter"
+                ],
+                "answer": "Earth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What planet is not named after a Greek or Roman god?",
+                "options": [
+                    "Earth",
+                    "Mars",
+                    "Mercury",
+                    "Jupiter"
+                ],
+                "answer": "Earth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Stern",
+                    "Bow",
+                    "Starboard",
+                    "Port"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Stern",
+                    "Bow",
+                    "Starboard",
+                    "Port"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In the English language, what is the name of the \"&\" character?",
+                "options": [
+                    "And Sign",
+                    "Eightslash",
+                    "Ampersand",
+                    "Obelus "
+                ],
+                "answer": "Ampersand",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In the English language, what is the name of the \"&\" character?",
+                "options": [
+                    "And Sign",
+                    "Eightslash",
+                    "Ampersand",
+                    "Obelus "
+                ],
+                "answer": "Ampersand",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who is the author of Jurassic Park?",
+                "options": [
+                    "Irvine Welsh",
+                    "Chuck Paluhniuk",
+                    "Peter Benchley",
+                    "Michael Crichton"
+                ],
+                "answer": "Michael Crichton",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who is the author of Jurassic Park?",
+                "options": [
+                    "Irvine Welsh",
+                    "Chuck Paluhniuk",
+                    "Peter Benchley",
+                    "Michael Crichton"
+                ],
+                "answer": "Michael Crichton",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Look",
+                    "Digest",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The New York Times slogan is, \u201cAll the News That\u2019s Fit to\u2026\u201d",
+                "options": [
+                    "Print",
+                    "Look",
+                    "Digest",
+                    "Read"
+                ],
+                "answer": "Print",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
     }
 ]

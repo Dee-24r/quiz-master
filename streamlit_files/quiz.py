@@ -5,37 +5,8 @@ from streamlit_files.questions import get_random_questions, get_opentdb_question
 from streamlit_files.score import handle_and_print_score
 from streamlit_files.utils import configure_quiz, choose_game_mode, format_time_figures
 
-"""this will have mode, set by pick_game_mode, and cat, diff, type, and number set by
-configure_quiz
-
-
-game_config = {
-    "mode": {
-        "id":1,
-        "name": "Practice Mode",
-        "name_id": "practice_mode",
-        "description": "kms"
-    },
-    "category":{
-        "id": 2,
-        "name": "dsmn",
-        "name_id": "aboni_"
-    },
-    "difficulty":{
-        "id": 2,
-        "name": "dsmn",
-        "name_id": "aboni_"
-    },
-    "type":{
-        "id": 2,
-        "name": "dsmn",
-        "name_id": "aboni_"
-    },
-    "amount": 20
-}
-"""
-
-
+#statrt from length of questions after reload
+#rename functions!
 
 def display_question(question):
     """
@@ -48,9 +19,6 @@ def display_question(question):
         options=question["options"],
         key=f"{st.session_state.current_question}"
     )
-
-    #for i, option in enumerate(question["options"]):
-     #   print(f"{i+1}. {option}")
 
 
 def select_option(question, allow_quit=False):
@@ -83,43 +51,16 @@ def select_option(question, allow_quit=False):
             st.session_state.question_state = "answering"
             st.session_state.answer = None
             st.rerun()
-        
-
-    """
-    #Prompts the user to pick and option for the question and check
-    #the asnwer
-    prompt = f"Pick an option (1-{len(question['options'])})"
-
-    if allow_quit == True:
-        prompt += " or enter 'X' to cancel"
-    prompt += ": "
-    
-    user_answer = input(prompt)
-
-    if allow_quit and user_answer.upper() == 'X':
-        return "quit"
-    while not (allow_quit and user_answer.upper() == 'X') and not (user_answer.isdigit() and 1 <= int(user_answer) <= len(question["options"])):
-        print("Invalid input!")
-        user_answer = input(prompt)
-    
-    if allow_quit and user_answer.upper() == 'X':
-        return "quit"
-    if question["options"][int(user_answer) - 1] == question["answer"]:
-        print("Correct answer!\n")
-        return True
-    else:
-        print(f"Wrong answer! The correct answer is: {question['answer']}\n")
-        return False
-    """
 
 
 def run_practice_mode(game_config):
-    if "questions" not in st.session_state:
+    if "questions" not in st.session_state or len(st.session_state.questions) == 0:
         st.session_state.questions = get_opentdb_questions(game_config)
         st.session_state.current_question = 0
         st.session_state.answer = None
 
         st.session_state.question_state = "answering"
+
         st.session_state.set_of_questions = {
             "no_of_questions": len(st.session_state.questions),
             "wrongly_answered": [],
@@ -131,21 +72,43 @@ def run_practice_mode(game_config):
         handle_and_print_score(st.session_state.set_of_questions, game_config)
         st.session_state.question_state = None
         st.session_state.current_page = "home"
+        st.session_state.questions = []
         st.rerun()
         return
 
     question = st.session_state.questions[st.session_state.current_question]
     select_option(question)
 
+def run_timer(time_limit):
+    """runs the timer"""
 
+    if not "time_limit" in st.session_state or (st.session_state.time_limit == None):
+        st.session_state.time_limit = time_limit
+
+    if not "start_time" in st.session_state or (st.session_state.start_time == None):
+        st.session_state.start_time = time.time()
+        st.session_state.time_up = False
+
+    timer_display = st.empty()
+
+    st.session_state.elapsed_time = time.time() - st.session_state.start_time
+    st.session_state.remaining_time = max(0, st.session_state.time_limit - st.session_state.elapsed_time)
+    
+    st.session_state.hrs, st.session_state.mins, st.session_state.secs = format_time_figures(st.session_state.remaining_time)
+    timer_display.text(f"Tiem remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
+
+    if st.session_state.remaining_time <= 0:
+        st.session_state.time_up = True
+    
+    return st.session_state.time_up
+    
+    
 
 #NEED to fins a better way to do time - no longer a  terminal.
 def run_timed_mode(game_config):
-    """
-    Runs the timed quiz option of the app"""
+    """Runs the timed quiz option of the app"""
 
-
-    if "questions" not in st.session_state:
+    if "questions" not in st.session_state or len(st.session_state.questions) == 0:
         st.session_state.questions = get_opentdb_questions(game_config)
         st.session_state.current_question = 0
         st.session_state.answer = None
@@ -158,25 +121,9 @@ def run_timed_mode(game_config):
         }
         st.rerun()
 
-    if "time_limit" not in st.session_state:
-        st.session_state.time_limit = 30
-
-    if "start_time" not in st.session_state:
-        st.session_state.start_time = time.time()
-        st.session_state.time_up = False
-
-    
-    st.session_state.elapsed_time = time.time() - st.session_state.start_time
-    st.session_state.remaining_time = max(0, st.session_state.time_limit - st.session_state.elapsed_time)
-
-
-    if st.session_state.remaining_time <= 0:
-        st.session_state.time_up = True
-
+    run_timer(30)
 
     if (st.session_state.current_question >= len(st.session_state.questions)) or st.session_state.time_up:
-        if st.session_state.time_up:
-            st.write("Time's up!!")
 
         no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
         st.write(f"Questions answered: {no_of_answered_questions}")
@@ -184,31 +131,16 @@ def run_timed_mode(game_config):
         handle_and_print_score(st.session_state.set_of_questions, game_config)
         st.session_state.question_state = None
         st.session_state.current_page = "home"
-        st.session_state.remaining_time = 0
+        st.session_state.questions = []
+        st.session_state.time_limit = None
+        st.session_state.start_time = None
         st.rerun()
         return
-    
-    timer_display = st.empty()
-    st.session_state.hrs, st.session_state.mins, st.session_state.secs = format_time_figures(st.session_state.remaining_time)
-    timer_display.text(f"Tiem remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
     
     question = st.session_state.questions[st.session_state.current_question]
     select_option(question)
 
-    time.sleep(1)
-    st.rerun()
 
-
-    """
-    for question in st.session_state.questions:
-        elapsed_time = time.time() - start_time
-        remaining_time = (time_limit - elapsed_time)
-
-        no_of_hours, no_of_minutes, no_of_seconds = format_time_figures(remaining_time)
-        print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds)
-    """
-    #no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
-    #print(f"Questions answered {no_of_answered_questions}")
 
 
 

@@ -10,7 +10,7 @@ st.title("QuizMe")
 if "current_page" not in st.session_state:
     st.session_state.current_page = "home"
 
-if "state_game_config" not in st.session_state:
+if "state_game_config" not in st.session_state or not st.session_state.state_game_config:
     st.session_state.state_game_config = {}
 
 

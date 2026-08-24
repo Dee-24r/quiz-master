@@ -219,3 +219,8 @@ Anyways, I've got the quiz working now from start to finish.
 [this video](images/quiz_works_practice_mode.mp4)
 
 Gonna edit all the other modes, to work well. I hope to finish up to sttats by Thursdya or earlier.
+
+
+![What the HACK?](images/sk.png)
+
+What the HACK? I find this v funny. :sk: Gonna debug, lolol! i just fixed my not reloading issue. yayay.
