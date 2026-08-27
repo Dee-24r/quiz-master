@@ -5964,5 +5964,1131 @@
             }
         ],
         "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which language is most widely spoken in Switzerland?",
+                "options": [
+                    "French",
+                    "Swiss",
+                    "German",
+                    "Italian"
+                ],
+                "answer": "German",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which language is most widely spoken in Switzerland?",
+                "options": [
+                    "French",
+                    "Swiss",
+                    "German",
+                    "Italian"
+                ],
+                "answer": "German",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Israel",
+                    "Poland",
+                    "Iran",
+                    "Soviet Union"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Israel",
+                    "Poland",
+                    "Iran",
+                    "Soviet Union"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which American-owned brewery led the country in sales by volume in 2015?",
+                "options": [
+                    "D. G. Yuengling and Son, Inc",
+                    "Miller Coors",
+                    "Boston Beer Company",
+                    "Anheuser Busch"
+                ],
+                "answer": "D. G. Yuengling and Son, Inc",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                "options": [
+                    "Taurus",
+                    "Capricorn",
+                    "Gemini",
+                    "Libra"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which sign of the zodiac comes between Virgo and Scorpio?",
+                "options": [
+                    "Taurus",
+                    "Capricorn",
+                    "Gemini",
+                    "Libra"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Burro",
+                    "Perro",
+                    "Caballo",
+                    "Toro"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What was the name of Sqiudward's bad painting in the Spongebob episode \"Artist Unknown?\"",
+                "options": [
+                    "Tilted Perspectives",
+                    "Rippy Bits",
+                    "Squidward en Repose",
+                    "Bold and Brash"
+                ],
+                "answer": "Bold and Brash",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What was the name of Sqiudward's bad painting in the Spongebob episode \"Artist Unknown?\"",
+                "options": [
+                    "Tilted Perspectives",
+                    "Rippy Bits",
+                    "Squidward en Repose",
+                    "Bold and Brash"
+                ],
+                "answer": "Bold and Brash",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,722 ft",
+                    "2,546 ft",
+                    "2,717 ft",
+                    "3,024 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "2,722 ft",
+                    "2,546 ft",
+                    "2,717 ft",
+                    "3,024 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What company developed the vocaloid Hatsune Miku?",
+                "options": [
+                    "Crypton Future Media",
+                    "Sony",
+                    "Sega",
+                    "Yamaha Corporation"
+                ],
+                "answer": "Crypton Future Media",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What company developed the vocaloid Hatsune Miku?",
+                "options": [
+                    "Crypton Future Media",
+                    "Sony",
+                    "Sega",
+                    "Yamaha Corporation"
+                ],
+                "answer": "Crypton Future Media",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Starboard",
+                    "Port",
+                    "Bow",
+                    "Stern"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Starboard",
+                    "Port",
+                    "Bow",
+                    "Stern"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Big Eye",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Millenium Falcon"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Big Eye",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Millenium Falcon"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Where is the train station \"Llanfair\u00adpwllgwyngyll\u00adgogery\u00adchwyrn\u00addrobwll\u00adllan\u00adtysilio\u00adgogo\u00adgoch\"?",
+                "options": [
+                    "Moldova",
+                    "Denmark",
+                    "Czech Republic",
+                    "Wales"
+                ],
+                "answer": "Wales",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Where is the train station \"Llanfair\u00adpwllgwyngyll\u00adgogery\u00adchwyrn\u00addrobwll\u00adllan\u00adtysilio\u00adgogo\u00adgoch\"?",
+                "options": [
+                    "Moldova",
+                    "Denmark",
+                    "Czech Republic",
+                    "Wales"
+                ],
+                "answer": "Wales",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Trypophobia is the fear of ",
+                "options": [
+                    "swimming in deep water",
+                    "public speaking",
+                    "groups of holes",
+                    "eating too much"
+                ],
+                "answer": "groups of holes",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Trypophobia is the fear of ",
+                "options": [
+                    "swimming in deep water",
+                    "public speaking",
+                    "groups of holes",
+                    "eating too much"
+                ],
+                "answer": "groups of holes",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Sagittarius",
+                    "Libra",
+                    "Capricorn",
+                    "Aries"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What zodiac sign is represented by a pair of scales?",
+                "options": [
+                    "Sagittarius",
+                    "Libra",
+                    "Capricorn",
+                    "Aries"
+                ],
+                "answer": "Libra",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of these is not a typical European sword design?",
+                "options": [
+                    "Ulfberht",
+                    "Falchion",
+                    "Scimitar",
+                    "Flamberge"
+                ],
+                "answer": "Scimitar",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of these is not a typical European sword design?",
+                "options": [
+                    "Ulfberht",
+                    "Falchion",
+                    "Scimitar",
+                    "Flamberge"
+                ],
+                "answer": "Scimitar",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Israel",
+                    "Iran",
+                    "Soviet Union",
+                    "Poland"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which country developed the AK-47 assault rifle?",
+                "options": [
+                    "Israel",
+                    "Iran",
+                    "Soviet Union",
+                    "Poland"
+                ],
+                "answer": "Soviet Union",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In \"Shrek\", what comedic actor voices Donkey?",
+                "options": [
+                    "Bernie Mac",
+                    "Chris Rock",
+                    "Eddie Murphy",
+                    "Richard Pryor"
+                ],
+                "answer": "Eddie Murphy",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In \"Shrek\", what comedic actor voices Donkey?",
+                "options": [
+                    "Bernie Mac",
+                    "Chris Rock",
+                    "Eddie Murphy",
+                    "Richard Pryor"
+                ],
+                "answer": "Eddie Murphy",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What do the letters of the fast food chain KFC stand for?",
+                "options": [
+                    "Kiwi Food Cut",
+                    "Kentucky Fresh Cheese",
+                    "Kibbled Freaky Cow",
+                    "Kentucky Fried Chicken"
+                ],
+                "answer": "Kentucky Fried Chicken",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do the letters of the fast food chain KFC stand for?",
+                "options": [
+                    "Kiwi Food Cut",
+                    "Kentucky Fresh Cheese",
+                    "Kibbled Freaky Cow",
+                    "Kentucky Fried Chicken"
+                ],
+                "answer": "Kentucky Fried Chicken",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which company did Valve cooperate with in the creation of the Vive?",
+                "options": [
+                    "Google",
+                    "Razer",
+                    "HTC",
+                    "Oculus"
+                ],
+                "answer": "HTC",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which company did Valve cooperate with in the creation of the Vive?",
+                "options": [
+                    "Google",
+                    "Razer",
+                    "HTC",
+                    "Oculus"
+                ],
+                "answer": "HTC",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "The Penny Dreadfuls",
+                    "The Goodies\u200e",
+                    "The League of Gentlemen\u200e",
+                    "Monty Python"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "The Penny Dreadfuls",
+                    "The Goodies\u200e",
+                    "The League of Gentlemen\u200e",
+                    "Monty Python"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Who is considered the \"Father of Modern Philosophy\"?",
+                "options": [
+                    "Ren\u00e9 Descartes",
+                    "Antoine Lavoiser",
+                    "Plato",
+                    "Albert Einstein"
+                ],
+                "answer": "Ren\u00e9 Descartes",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who is considered the \"Father of Modern Philosophy\"?",
+                "options": [
+                    "Ren\u00e9 Descartes",
+                    "Antoine Lavoiser",
+                    "Plato",
+                    "Albert Einstein"
+                ],
+                "answer": "Ren\u00e9 Descartes",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do the letters in the GMT time zone stand for?",
+                "options": [
+                    "General Median Time",
+                    "Greenwich Mean Time",
+                    "Global Meridian Time",
+                    "Glasgow Man Time"
+                ],
+                "answer": "Greenwich Mean Time",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do the letters in the GMT time zone stand for?",
+                "options": [
+                    "General Median Time",
+                    "Greenwich Mean Time",
+                    "Global Meridian Time",
+                    "Glasgow Man Time"
+                ],
+                "answer": "Greenwich Mean Time",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Burro",
+                    "Perro",
+                    "Toro",
+                    "Caballo"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Burro",
+                    "Perro",
+                    "Toro",
+                    "Caballo"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who invented the first ever chocolate bar, in 1847?",
+                "options": [
+                    "Joseph Fry",
+                    "John Tyler",
+                    "John Cadbury",
+                    "Andrew Johnson"
+                ],
+                "answer": "Joseph Fry",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who invented the first ever chocolate bar, in 1847?",
+                "options": [
+                    "Joseph Fry",
+                    "John Tyler",
+                    "John Cadbury",
+                    "Andrew Johnson"
+                ],
+                "answer": "Joseph Fry",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What country does sushi & karaoke come from?",
+                "options": [
+                    "Japan",
+                    "South Korea",
+                    "China",
+                    "Vietnam"
+                ],
+                "answer": "Japan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What country does sushi & karaoke come from?",
+                "options": [
+                    "Japan",
+                    "South Korea",
+                    "China",
+                    "Vietnam"
+                ],
+                "answer": "Japan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What are Panama hats made out of?",
+                "options": [
+                    "Flax",
+                    "Hemp",
+                    "Silk",
+                    "Straw"
+                ],
+                "answer": "Straw",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What are Panama hats made out of?",
+                "options": [
+                    "Flax",
+                    "Hemp",
+                    "Silk",
+                    "Straw"
+                ],
+                "answer": "Straw",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Alan Sugar",
+                    "Richard Branson",
+                    "Donald Trump",
+                    "Bill Gates"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Alan Sugar",
+                    "Richard Branson",
+                    "Donald Trump",
+                    "Bill Gates"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "10",
+                    "14",
+                    "12",
+                    "16"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Flag of the European Union has how many stars on it?",
+                "options": [
+                    "10",
+                    "14",
+                    "12",
+                    "16"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What company owns Outlook?",
+                "options": [
+                    "Microsoft",
+                    "Google",
+                    "Yahoo",
+                    "Apple"
+                ],
+                "answer": "Microsoft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The word \"dozen\" usually refers to a group of how many objects?",
+                "options": [
+                    "20",
+                    "6",
+                    "10",
+                    "12"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which candy is NOT made by Mars?",
+                "options": [
+                    "Snickers",
+                    "Twix",
+                    "Almond Joy",
+                    "M&M's"
+                ],
+                "answer": "Almond Joy",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which candy is NOT made by Mars?",
+                "options": [
+                    "Snickers",
+                    "Twix",
+                    "Almond Joy",
+                    "M&M's"
+                ],
+                "answer": "Almond Joy",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "The Goodies\u200e",
+                    "The League of Gentlemen\u200e",
+                    "Monty Python",
+                    "The Penny Dreadfuls"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Terry Gilliam was an animator that worked with which British comedy group?",
+                "options": [
+                    "The Goodies\u200e",
+                    "The League of Gentlemen\u200e",
+                    "Monty Python",
+                    "The Penny Dreadfuls"
+                ],
+                "answer": "Monty Python",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of the following is the IATA code for Manchester Airport?",
+                "options": [
+                    "LHR",
+                    "EGLL",
+                    "MAN",
+                    "EGCC"
+                ],
+                "answer": "MAN",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of the following is the IATA code for Manchester Airport?",
+                "options": [
+                    "LHR",
+                    "EGLL",
+                    "MAN",
+                    "EGCC"
+                ],
+                "answer": "MAN",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "If you are caught \"Goldbricking\", what are you doing wrong?",
+                "options": [
+                    "Smoking",
+                    "Stealing",
+                    "Slacking",
+                    "Cheating"
+                ],
+                "answer": "Slacking",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "If you are caught \"Goldbricking\", what are you doing wrong?",
+                "options": [
+                    "Smoking",
+                    "Stealing",
+                    "Slacking",
+                    "Cheating"
+                ],
+                "answer": "Slacking",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The \u201cfairy\u201d type made it\u2019s debut in which generation of the Pokemon core series games?",
+                "options": [
+                    "2nd",
+                    "7th",
+                    "6th",
+                    "4th"
+                ],
+                "answer": "6th",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The \u201cfairy\u201d type made it\u2019s debut in which generation of the Pokemon core series games?",
+                "options": [
+                    "2nd",
+                    "7th",
+                    "6th",
+                    "4th"
+                ],
+                "answer": "6th",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the French word for \"hat\"?",
+                "options": [
+                    " Casque",
+                    "Bonnet",
+                    "Chapeau",
+                    " \u00c9charpe"
+                ],
+                "answer": "Chapeau",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+                "options": [
+                    "Spanish",
+                    "Portuguese",
+                    "French",
+                    "Catalan"
+                ],
+                "answer": "Catalan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+                "options": [
+                    "Spanish",
+                    "Portuguese",
+                    "French",
+                    "Catalan"
+                ],
+                "answer": "Catalan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the largest organ of the human body?",
+                "options": [
+                    "Skin",
+                    "Heart",
+                    "large Intestine",
+                    "Liver"
+                ],
+                "answer": "Skin",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Antibiotics are generally taken to combat what?",
+                "options": [
+                    "Bacterial infections",
+                    "Viruses",
+                    "Migraines",
+                    "Muscular pains"
+                ],
+                "answer": "Bacterial infections",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who invented the first ever chocolate bar, in 1847?",
+                "options": [
+                    "Andrew Johnson",
+                    "John Cadbury",
+                    "Joseph Fry",
+                    "John Tyler"
+                ],
+                "answer": "Joseph Fry",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who invented the first ever chocolate bar, in 1847?",
+                "options": [
+                    "Andrew Johnson",
+                    "John Cadbury",
+                    "Joseph Fry",
+                    "John Tyler"
+                ],
+                "answer": "Joseph Fry",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Almonds",
+                    "Walnuts",
+                    "Pistachios",
+                    "Peanuts"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the first book of the Old Testament?",
+                "options": [
+                    "Exodus",
+                    "Numbers",
+                    "Leviticus",
+                    "Genesis"
+                ],
+                "answer": "Genesis",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
     }
 ]

@@ -574,6 +574,104 @@
             "wrongly_answered": 4,
             "no_of_questions": 3,
             "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 1,
+            "wrongly_answered": 4,
+            "no_of_questions": 3,
+            "percentage": 33.33333333333333
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 1,
+            "wrongly_answered": 2,
+            "no_of_questions": 4,
+            "percentage": 25.0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 4,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 133.33333333333331
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 4,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 6,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 4,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 4,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 4,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 133.33333333333331
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 4,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 133.33333333333331
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 6,
+            "no_of_questions": 3,
+            "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 1,
+            "wrongly_answered": 4,
+            "no_of_questions": 3,
+            "percentage": 33.33333333333333
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 2,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 66.66666666666666
         }
     ],
     "Entertainment: Musicals & Theatres": [

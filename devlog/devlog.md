@@ -224,3 +224,9 @@ Gonna edit all the other modes, to work well. I hope to finish up to sttats by T
 ![What the HACK?](images/sk.png)
 
 What the HACK? I find this v funny. :sk: Gonna debug, lolol! i just fixed my not reloading issue. yayay.
+
+---
+
+![scoring_thingy](images/scoring_works_right.png)
+
+I fixed the scoring, what the heckk? My cfix for it feels like redundant code tho. might find sth more efficient

@@ -1,4 +1,5 @@
 import json
+import streamlit as st
 
 SCORES_DATA_FILENAME = "data/scores_data.json"
 STATS_FILENAME = "data/stats.json"
@@ -34,22 +35,6 @@ def update_stats(categ_name, correctly_answered, wrong_answers, no_of_questions)
     write_update_stats(categ_scores)
 
 
-def handle_and_print_score(set_of_questions, game_config, printScore=True):
-
-    correctly_answered, wrong_answers, no_of_questions = len(set_of_questions["correctly_answered"]), len(set_of_questions["wrongly_answered"]), set_of_questions["no_of_questions"]
-
-    percentage_score = calculate_score(correctly_answered, no_of_questions)
-
-    #some modes are supposed to not print scores (e.g the game modes) bcuz they'll print differently in their own function.
-    #dunno if i'll later scrap this
-    if printScore:
-        print(f"""You scored {correctly_answered} out of {no_of_questions}.
-        Your percentage score is: {percentage_score}\n""")
-
-    record_score_data(set_of_questions, game_config)
-    categ_name = (game_config["category"])["name"]
-    update_stats(categ_name, correctly_answered, wrong_answers, no_of_questions)
-
 
 def calculate_score(correct_answers, total_questions):
     if total_questions == 0:
@@ -82,6 +67,28 @@ def record_score_data(set_of_questions, game_config):
         json.dump(scores_data, file, indent=4)
 
 
+
+def handle_and_print_score(set_of_questions, game_config, printScore=True):
+
+    correctly_answered, wrongly_answered, no_of_questions = len(set_of_questions["correctly_answered"]), len(set_of_questions["wrongly_answered"]), set_of_questions["no_of_questions"]
+    percentage_score = calculate_score(correctly_answered, no_of_questions)
+
+    #some modes are supposed to not print scores (e.g the game modes) bcuz they'll print differently in their own function.
+    #dunno if i'll later scrap this
+
+    if printScore:
+        st.write(f"""You scored {correctly_answered} out of {no_of_questions}.
+        Your percentage score is: {percentage_score}\n""")
+
+    record_score_data(set_of_questions, game_config)
+    categ_name = (game_config["category"])["name"]
+    update_stats(categ_name, correctly_answered, wrongly_answered, no_of_questions)
+
+    st.session_state.question_state = None
+    st.session_state.questions = []
+
+    if st.button("Return to Home"):
+        st.session_state.current_page = "home"
 
 
 #---- DISPLAY STATS STUFF ----

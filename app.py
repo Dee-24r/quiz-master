@@ -15,8 +15,6 @@ if "state_game_config" not in st.session_state or not st.session_state.state_gam
 
 
 def choose_and_run_task():
-    st.write("Welcome to QuizMe!!")
-    
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Run Quiz"):

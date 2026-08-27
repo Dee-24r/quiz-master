@@ -15,42 +15,50 @@ def display_question(question):
     """
 
     #st.write(question["question_statement"])
-    return st.selectbox(f"{question["question_statement"]}", 
+    return st.selectbox(f"{question['question_statement']}", 
         options=question["options"],
         key=f"{st.session_state.current_question}"
     )
 
 
 def select_option(question, allow_quit=False):
-    if "question_state" not in st.session_state: #or st.session_state.question_state == "next_question":
+    if "question_state" not in st.session_state or not st.session_state.question_state:
         st.session_state.question_state = "answering"
-
-    #question = st.session_state.set_of_questions[st.session_state.current_question] #continue from here tmr
 
     if st.session_state.question_state == "answering":
         st.session_state.answer = display_question(question)
             
         if st.button("Submit", key=f"submit_{st.session_state.current_question}"):
             st.session_state.question_state = "show_answer"
+            st.rerun()
 
-    if st.session_state.question_state == "show_answer":
+    elif st.session_state.question_state == "show_answer":
 
         if st.session_state.answer == question["answer"]:
             st.write("Correct answer!\n")
-            (st.session_state.set_of_questions["correctly_answered"]).append(question)
-        
-        elif st.session_state.answer != question["answer"]:
-            st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
-            st.session_state.set_of_questions["wrongly_answered"].append(question)
+            if question not in st.session_state.set_of_questions["correctly_answered"]:
+                st.session_state.set_of_questions["correctly_answered"].append(question)
         
         else:
-            st.write("Error from answering...")
+            st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
+            if question not in st.session_state.set_of_questions["correctly_answered"]:
+                st.session_state.set_of_questions["wrongly_answered"].append(question)
+    
 
-        if st.button("Next Question", key=f"question_{st.session_state.current_question}"):
-            st.session_state.current_question += 1
-            st.session_state.question_state = "answering"
-            st.session_state.answer = None
-            st.rerun()
+        if st.session_state.current_question < len(st.session_state.questions) - 1:
+            if st.button("Next Question", key=f"question_{st.session_state.current_question}"):
+                st.session_state.current_question += 1
+                st.session_state.question_state = "answering"
+                st.session_state.answer = None
+                st.rerun()
+
+        else:
+            if st.button("Finish Quiz"):
+                st.session_state.current_question += 1
+                st.session_state.question_state = "answering"
+                st.session_state.answer = None
+                handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+                return
 
 
 def run_practice_mode(game_config):
@@ -68,16 +76,25 @@ def run_practice_mode(game_config):
         }
         st.rerun()
 
-    if st.session_state.current_question >= len(st.session_state.questions):
-        handle_and_print_score(st.session_state.set_of_questions, game_config)
+    if st.session_state.current_question < len(st.session_state.questions):
+        question = st.session_state.questions[st.session_state.current_question]
+        select_option(question)
+
+
+
+"""
         st.session_state.question_state = None
-        st.session_state.current_page = "home"
         st.session_state.questions = []
+
+        if st.button("Return to Home"):
+            st.session_state.current_page = "home"
+
         st.rerun()
         return
 
-    question = st.session_state.questions[st.session_state.current_question]
-    select_option(question)
+"""
+
+
 
 def run_timer(time_limit):
     """runs the timer"""
@@ -121,7 +138,8 @@ def run_timed_mode(game_config):
         }
         st.rerun()
 
-    run_timer(30)
+    allowed_time = len(st.session_state.questions)*5
+    run_timer(allowed_time)
 
     if (st.session_state.current_question >= len(st.session_state.questions)) or st.session_state.time_up:
 
@@ -139,7 +157,6 @@ def run_timed_mode(game_config):
     
     question = st.session_state.questions[st.session_state.current_question]
     select_option(question)
-
 
 
 
