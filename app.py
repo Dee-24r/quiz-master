@@ -18,6 +18,7 @@ def choose_and_run_task():
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Run Quiz"):
+            st.session_state.ret = False
             st.session_state.current_page = "configure_quiz"
 
     with col2:

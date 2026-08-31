@@ -103,6 +103,9 @@ def choose_amount():
 def configure_quiz():
     """Prompts the user to choose category, difficulty, and 
     number of questions"""
+
+    if st.session_state.ret == True:
+        return
     
     mode = st.session_state.state_game_config["mode"] = choose_game_mode()
     st.session_state.state_game_config["category"] = choose_category()

@@ -88,7 +88,9 @@ def handle_and_print_score(set_of_questions, game_config, printScore=True):
     st.session_state.questions = []
 
     if st.button("Return to Home"):
+        st.session_state.ret == True
         st.session_state.current_page = "home"
+        st.rerun()
 
 
 #---- DISPLAY STATS STUFF ----

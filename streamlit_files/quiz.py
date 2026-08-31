@@ -1,6 +1,7 @@
 #IMPORTS
 import time
 import streamlit as st
+
 from streamlit_files.questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
 from streamlit_files.score import handle_and_print_score
 from streamlit_files.utils import configure_quiz, choose_game_mode, format_time_figures
@@ -22,6 +23,9 @@ def display_question(question):
 
 
 def select_option(question, allow_quit=False):
+    if st.session_state.state_game_config == None:
+        return
+
     if "question_state" not in st.session_state or not st.session_state.question_state:
         st.session_state.question_state = "answering"
 
@@ -62,6 +66,9 @@ def select_option(question, allow_quit=False):
 
 
 def run_practice_mode(game_config):
+    if st.session_state.state_game_config == None:
+        return
+
     if "questions" not in st.session_state or len(st.session_state.questions) == 0:
         st.session_state.questions = get_opentdb_questions(game_config)
         st.session_state.current_question = 0
@@ -80,25 +87,12 @@ def run_practice_mode(game_config):
         question = st.session_state.questions[st.session_state.current_question]
         select_option(question)
 
-
-
-"""
-        st.session_state.question_state = None
-        st.session_state.questions = []
-
-        if st.button("Return to Home"):
-            st.session_state.current_page = "home"
-
-        st.rerun()
-        return
-
-"""
-
-
-
+@st.fragment(run_every=0.5)
 def run_timer(time_limit):
     """runs the timer"""
-
+    if st.session_state.ret:
+        return
+    
     if not "time_limit" in st.session_state or (st.session_state.time_limit == None):
         st.session_state.time_limit = time_limit
 
@@ -112,10 +106,12 @@ def run_timer(time_limit):
     st.session_state.remaining_time = max(0, st.session_state.time_limit - st.session_state.elapsed_time)
     
     st.session_state.hrs, st.session_state.mins, st.session_state.secs = format_time_figures(st.session_state.remaining_time)
-    timer_display.text(f"Tiem remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
+    timer_display.text(f"Time remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
 
     if st.session_state.remaining_time <= 0:
         st.session_state.time_up = True
+        handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+        return
     
     return st.session_state.time_up
     
@@ -141,22 +137,18 @@ def run_timed_mode(game_config):
     allowed_time = len(st.session_state.questions)*5
     run_timer(allowed_time)
 
-    if (st.session_state.current_question >= len(st.session_state.questions)) or st.session_state.time_up:
+    if st.session_state.current_question < len(st.session_state.questions) or not st.session_state.time_up:
+        question = st.session_state.questions[st.session_state.current_question]
+        select_option(question)
 
+    if st.session_state.current_question >= len(st.session_state.questions):
         no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
         st.write(f"Questions answered: {no_of_answered_questions}")
 
-        handle_and_print_score(st.session_state.set_of_questions, game_config)
-        st.session_state.question_state = None
-        st.session_state.current_page = "home"
-        st.session_state.questions = []
+        st.session_state.ret = True
         st.session_state.time_limit = None
         st.session_state.start_time = None
-        st.rerun()
         return
-    
-    question = st.session_state.questions[st.session_state.current_question]
-    select_option(question)
 
 
 
@@ -302,6 +294,7 @@ def run_millionaire_mode(game_config):
 
 
 def run_quiz():
+    st.session_state.ret = False
     game_config = st.session_state.state_game_config
 
     mode = game_config["mode"]["name_id"]
