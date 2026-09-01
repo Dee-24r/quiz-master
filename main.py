@@ -1,5 +1,5 @@
-from streamlit_files.quiz import run_quiz
-from streamlit_files.score import display_stats
+from terminal_files.quiz import run_quiz
+from terminal_files.score import display_stats
 
 def exit_game():
     print("Thank you for playing! Goodbye!")
