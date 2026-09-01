@@ -42,11 +42,15 @@ def select_option(question, allow_quit=False):
             st.write("Correct answer!\n")
             if question not in st.session_state.set_of_questions["correctly_answered"]:
                 st.session_state.set_of_questions["correctly_answered"].append(question)
+                if (st.session_state.state_game_config["mode"])["name_id"] == "jeopardy_mode":
+                    st.session_state.score += st.session_state.added_points
         
         else:
             st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
             if question not in st.session_state.set_of_questions["correctly_answered"]:
                 st.session_state.set_of_questions["wrongly_answered"].append(question)
+                if (st.session_state.state_game_config["mode"])["name_id"] == "jeopardy_mode":
+                    st.session_state.score += st.session_state.added_points
     
 
         if st.session_state.current_question < len(st.session_state.questions) - 1:
@@ -86,6 +90,8 @@ def run_practice_mode(game_config):
     if st.session_state.current_question < len(st.session_state.questions):
         question = st.session_state.questions[st.session_state.current_question]
         select_option(question)
+
+
 
 @st.fragment(run_every=0.5)
 def run_timer(time_limit):
@@ -151,42 +157,58 @@ def run_timed_mode(game_config):
         return
 
 
+def jeopardy_board():
+    points = [100, 200, 300, 400, 500]
 
+    for row, no_of_points in enumerate(points):
+        cols = st.columns(4)
+
+        for col in cols:
+            with col:
+                if st.button(str(no_of_points), key=f"ques_{row}_{col}"):
+                    st.session_state.added_points = no_of_points
+                    st.rerun()
 
 
 def run_jeopardy_mode(game_config):
-    st.session_state.questions = get_opentdb_questions(game_config)
-    score = 0
-    if "questions" not in st.session_state:
-        st.session_state.set_of_questions = {}
-    st.session_state.set_of_questions["no_of_questions"] = len(st.session_state.questions)
-    st.session_state.set_of_questions["wrongly_answered"] = []
-    st.session_state.set_of_questions["correctly_answered"] = []
-    
-    for question in st.session_state.questions:
-        #should implement the dict here if something is easy
-        #meaning we shud get questions of different difficulties. (will come back to this tbh)
-        
-        if question["difficulty"] == "easy":
-            score_addition = 10
-        if question["difficulty"] == "medium":
-            score_addition = 20
-        if question["difficulty"] == "hard":
-            score_addition = 30
-        display_question(question)
+    if "questions" not in st.session_state or len(st.session_state.questions) == 0:
+        st.session_state.state_game_config = game_config
+        st.session_state.questions = []
 
-        result = select_option(question)
-        if not result:
-            score - score_addition
-            (st.session_state.set_of_questions["wrongly_answered"]).append(question)
-        elif result:
-            score + score_addition
-            (st.session_state.set_of_questions["correctly_answered"]).append(question)
+        for diffic_level in st.session_state.difficulty_levels:
+            st.session_state.state_game_config["difficulty"] = diffic_level
+            questions_by_diff = get_opentdb_questions(st.session_state.state_game_config)
+            for question in questions_by_diff:
+                st.session_state.questions.append(question)
+            time.sleep(1)
 
-    handle_and_print_score(st.session_state.set_of_questions, game_config)
-    print(f"Score: {score}")
-    st.session_state.current_page = "home"
 
+        #st.session_state.questions = get_opentdb_questions(game_config)
+        # st.session_state.level_questions = {}
+        # st.session_state.questions = []
+
+        #     st.session_state.level_questions[f"{diffic_level}"] = get_opentdb_questions(st.session_state.state_game_config)
+        #     for question in st.session_state.level_questions[f"{diffic_level}"]:
+        #         st.session_state.questions.append(question)
+
+        st.session_state.current_question = 0
+        st.session_state.score = 0
+        st.session_state.answer = None
+        st.session_state.question_state = "answering"
+
+        st.session_state.set_of_questions = {
+            "no_of_questions": len(st.session_state.questions),
+            "wrongly_answered": [],
+            "correctly_answered": []
+        }
+        st.rerun()
+
+    if st.session_state.current_question < len(st.session_state.questions):
+        jeopardy_board()
+        question = st.session_state.questions[st.session_state.current_question]
+        select_option(question)
+
+    st.write(f"Score: {st.session_state.score}")
 
 
 

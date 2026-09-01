@@ -57387,5 +57387,94 @@
         ],
         "correctly_answered": [],
         "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In aerodynamics, which force pushes an object upwards?",
+                "options": [
+                    "Drag",
+                    "Thrust",
+                    "Lift",
+                    "Weight"
+                ],
+                "answer": "Lift",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In aerodynamics, which force pushes an object upwards?",
+                "options": [
+                    "Drag",
+                    "Thrust",
+                    "Lift",
+                    "Weight"
+                ],
+                "answer": "Lift",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the largest living species of penguin?",
+                "options": [
+                    "Adele",
+                    "Gentoo",
+                    "King",
+                    "Emperor"
+                ],
+                "answer": "Emperor",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the largest living species of penguin?",
+                "options": [
+                    "Adele",
+                    "Gentoo",
+                    "King",
+                    "Emperor"
+                ],
+                "answer": "Emperor",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                "options": [
+                    "Quito",
+                    "Bogot\u00e1",
+                    "Cali",
+                    "Medell\u00edn"
+                ],
+                "answer": "Medell\u00edn",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                "options": [
+                    "Quito",
+                    "Bogot\u00e1",
+                    "Cali",
+                    "Medell\u00edn"
+                ],
+                "answer": "Medell\u00edn",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
     }
 ]

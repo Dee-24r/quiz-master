@@ -30,6 +30,7 @@ QUESTION_TYPES = [
     {"id": 3, "name": "Mixed", "name_id": "mixed"}   
 ]
 
+st.session_state.difficulty_levels = DIFFICULTY
 
 def save_opentdb_categories():
     """
@@ -108,14 +109,21 @@ def configure_quiz():
         return
     
     mode = st.session_state.state_game_config["mode"] = choose_game_mode()
-    st.session_state.state_game_config["category"] = choose_category()
-    st.session_state.state_game_config["type"] = choose_questions_type()
-    st.session_state.state_game_config["difficulty"] = choose_difficulty()
-    if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
-            st.session_state.state_game_config["amount"] = 15
-    else:
-        st.session_state.state_game_config["amount"] = choose_amount()
     
+
+    st.session_state.state_game_config["category"] = choose_category()
+    if mode["name_id"] != "jeopardy_mode":
+        st.session_state.state_game_config["type"] = choose_questions_type()
+        st.session_state.state_game_config["difficulty"] = choose_difficulty()
+        if mode["name_id"] != "endless_mode":
+            st.session_state.state_game_config["amount"] = choose_amount()
+    
+    if mode["name_id"] == "endless_mode":
+        st.session_state.state_game_config["amount"] = 15
+    elif mode["name_id"] == "jeopardy_mode":
+        st.session_state.state_game_config["amount"] = 4
+        
+        
     if st.button("Start Quiz"):
         st.session_state.current_page = "run_selected_quiz"
         st.rerun()

@@ -230,3 +230,7 @@ What the HACK? I find this v funny. :sk: Gonna debug, lolol! i just fixed my not
 ![scoring_thingy](images/scoring_works_right.png)
 
 I fixed the scoring, what the heckk? My cfix for it feels like redundant code tho. might find sth more efficient
+
+![jeopardy](images/jeopardy_mode.png)
+
+Yyayaya. Jeopardy mode...
