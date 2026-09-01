@@ -1,5 +1,7 @@
 # QUIZME 
 
+(until I find a better name)
+
 Basically quizzes in the form of different game modes :) Fun and educative :)
 
 ngl I learned a lot from running this code countless times :) e.g. that this train station is in Wales :)
@@ -20,24 +22,29 @@ You can run my app two ways:
 - Streamlit UI in your browser.
 
 
-How to run:
+### How to run:
 - Clone the repo
 - Create a venv (if u want to)
 - Run pip requirements.txt
 - Run code with:
   - Terminal: run "python main.py"
   - Streamlit: run "streamlit run app.py"
-  
 
-(until I find a better name)
 
 Quiz has a couple of (functioning) modes:
-- Practice Mode
-- Timed Mode
-- Jeopardy Mode, and
-- Endless Mode
+These ones are the most useful.
 
-Every other mode is pretty needless.. but yh. It's there
+- Practice Mode (just solve a random number of questions)
+- Timed Mode (Solve questions in a limited amount of time)
+- Jeopardy Mode, and (Make sure you don't get below 0, then try to beat your last score.)
+- Endless Mode (Keep solving until you're tired)
 
+
+
+TECH STACK:
+- Python
+- Streamlit UI
+- Open Trivia Database API and QuizAPI
+- JSON...?
 
 Gonna come back and rebuild this as a web app with Flask/Django!
