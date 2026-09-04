@@ -7,7 +7,9 @@ Basically quizzes in the form of different game modes :) Fun and educative :)
 ngl I learned a lot from running this code countless times :) e.g. that this train station is in Wales :)
 ![crazy_question](devlog/images/crazy_question.png)
 
-So, yes, fun and educative. Play QuizMe todayyy!!! :))
+So, yes, fun and educative. Play QuizMe todayyy!!! :)) Also, more motivation: Beat my stats :)
+
+![my_stats](devlog/images/my_stats.png)
 
 ## Streamlit UI
 
@@ -17,15 +19,17 @@ So, yes, fun and educative. Play QuizMe todayyy!!! :))
 
 ![term-img](devlog/images/term-img.png)
 
-You can run my app two ways:
+You can run my app three ways:
 - Terminal
 - Streamlit UI in your browser.
+- Streamlit website on app https://quiz-master-q2evebp8vev9djubrrgzjy.streamlit.app/
+  (Do this - )
 
 
 ### How to run:
 - Clone the repo
 - Create a venv (if u want to)
-- Run pip requirements.txt
+- Run "pip install -r requirements.txt"
 - Run code with:
   - Terminal: run "python main.py"
   - Streamlit: run "streamlit run app.py"

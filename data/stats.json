@@ -7441,6 +7441,13 @@
             "wrongly_answered": 6,
             "no_of_questions": 3,
             "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 6,
+            "no_of_questions": 3,
+            "percentage": 0
         }
     ],
     "Entertainment: Musicals & Theatres": [

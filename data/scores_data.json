@@ -57476,5 +57476,94 @@
         ],
         "correctly_answered": [],
         "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the name of the extra pedal on a manual or standard transmission car?",
+                "options": [
+                    "Booster",
+                    "Shifter",
+                    "Parking Brake",
+                    "Clutch"
+                ],
+                "answer": "Clutch",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the extra pedal on a manual or standard transmission car?",
+                "options": [
+                    "Booster",
+                    "Shifter",
+                    "Parking Brake",
+                    "Clutch"
+                ],
+                "answer": "Clutch",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the French word for \"fish\"?",
+                "options": [
+                    "escargot",
+                    "poisson",
+                    "mer",
+                    "fiche"
+                ],
+                "answer": "poisson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the French word for \"fish\"?",
+                "options": [
+                    "escargot",
+                    "poisson",
+                    "mer",
+                    "fiche"
+                ],
+                "answer": "poisson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of these is NOT considered to be a colour that makes up the rainbow?",
+                "options": [
+                    "Orange",
+                    "Blue",
+                    "Pink",
+                    "Violet"
+                ],
+                "answer": "Pink",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of these is NOT considered to be a colour that makes up the rainbow?",
+                "options": [
+                    "Orange",
+                    "Blue",
+                    "Pink",
+                    "Violet"
+                ],
+                "answer": "Pink",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
     }
 ]

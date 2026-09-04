@@ -109,7 +109,7 @@ def compute_categ_avgs():
             percentage_avg = percentage_sum / len(categ)
         else:
             percentage_avg = 0
-        categs_avgs.append((categ, percentage_avg))
+        categs_avgs.append((categ, round(percentage_avg, 2)))
     return categs_avgs
 
 def ret_high_and_low_categs():
@@ -121,7 +121,7 @@ def ret_high_and_low_categs():
 def display_categorical_stats():
     sorted_categs_avgs = ret_high_and_low_categs()
     for item in sorted_categs_avgs:
-        print(f"{item[0]} {item[1]}")
+        st.write(f"{item[0]} \t {item[1]}")
 
 def display_score_based_performance():
     stats = load_stats()
@@ -137,28 +137,20 @@ def display_score_based_performance():
 
     avg_percentage = round(sum_percentage/count, 2)
 
-    print(f"Total answereed questions: {no_of_questions}")
-    print(f"Total correctly answered questions: {total_correct}")
-    print(f"Total wrongly answered questions: {total_wrong}")
+    st.write(f"Total answereed questions: {no_of_questions}")
+    st.write(f"Total correctly answered questions: {total_correct}")
+    st.write(f"Total wrongly answered questions: {total_wrong}")
 
-    print(f"You have a percentage correctness of {avg_percentage:.2f} \n")
+    st.write(f"You have a percentage correctness of {avg_percentage:.2f} \n")
 
 
 def display_stats():
-    print("What would you like to look at today?")
-    print("1. Overall performance")
-    print("2. Categorical performance")
+    stat_view_options = ["Overall performance", "Categorical performance"]
+    user_input = st.selectbox("What would you like to look at today?", options=stat_view_options)
 
-    user_input = input("Enter a number between 1 and 2: ")
-
-    while not user_input.isdigit() or not (1 <= int(user_input) <= 2):
-        user_input = input("Please enter a valid number between 1 and 2: ")
-
-    user_input = int(user_input)
-
-    if user_input == 1:
+    if user_input == "Overall performance":
         display_score_based_performance()
-    elif user_input == 2:
+    elif user_input == "Categorical performance":
         display_categorical_stats()
 
 
@@ -172,8 +164,8 @@ if __name__ == "__main__":
     #categs_avgs = [("Math", 90),  ("Computer", 299),  ("Computer", 380), ("Computer", 80),  ("Computer", 20)]
     #print(ret_high_and_low_categs(categs_avgs))
     sorted_categs_avgs = [('Computer', 380), ('Computer', 299), ('Math', 90), ('Computer', 80), ('Computer', 20)]
-    print(display_categorical_stats(sorted_categs_avgs))
-    print("Doneee")
+    st.write(display_categorical_stats(sorted_categs_avgs))
+    st.write("Doneee")
 
 
 

@@ -66,7 +66,7 @@ def choose_game_mode():
     return st.selectbox("Pick a mode", 
                  options=GAME_MODES,
                  format_func= lambda x: x["name_id"]
-                 )
+                )
 
 def choose_category():
     """

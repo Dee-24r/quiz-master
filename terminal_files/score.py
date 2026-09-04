@@ -100,7 +100,7 @@ def compute_categ_avgs():
             percentage_avg = percentage_sum / len(categ)
         else:
             percentage_avg = 0
-        categs_avgs.append((categ, percentage_avg))
+        categs_avgs.append((categ, round(percentage_avg, 2)))
     return categs_avgs
 
 def ret_high_and_low_categs():
@@ -112,7 +112,7 @@ def ret_high_and_low_categs():
 def display_categorical_stats():
     sorted_categs_avgs = ret_high_and_low_categs()
     for item in sorted_categs_avgs:
-        print(f"{item[0]} {item[1]}")
+        print(f"{item[0]} \t {item[1]}")
 
 def display_score_based_performance():
     stats = load_stats()

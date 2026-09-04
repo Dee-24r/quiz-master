@@ -42,18 +42,33 @@ def select_option(question, allow_quit=False):
             st.write("Correct answer!\n")
             if question not in st.session_state.set_of_questions["correctly_answered"]:
                 st.session_state.set_of_questions["correctly_answered"].append(question)
-                if (st.session_state.state_game_config["mode"])["name_id"] == "jeopardy_mode":
+                if st.session_state.state_game_config["mode"]["name_id"] == "jeopardy_mode":
                     st.session_state.score += st.session_state.added_points
         
         else:
             st.write(f"Wrong answer! The correct answer is: {question['answer']}\n")
-            if question not in st.session_state.set_of_questions["correctly_answered"]:
+            if question not in st.session_state.set_of_questions["wrongly_answered"]:
                 st.session_state.set_of_questions["wrongly_answered"].append(question)
                 if (st.session_state.state_game_config["mode"])["name_id"] == "jeopardy_mode":
-                    st.session_state.score += st.session_state.added_points
-    
+                    st.session_state.score -= st.session_state.added_points
 
-        if st.session_state.current_question < len(st.session_state.questions) - 1:
+
+        if allow_quit:
+            if st.button("Next Question", key=f"question_{st.session_state.current_question}"):
+                st.session_state.current_question += 1
+                st.session_state.question_state = "answering"
+                st.session_state.answer = None
+                st.rerun()
+
+            if st.button("Quit", key=f"quit_{st.session_state.current_question}"):
+                st.session_state.quit = True
+                st.session_state.question_state = "answering"
+                st.session_state.answer = None
+                handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+                st.rerun()
+
+
+        elif st.session_state.current_question < len(st.session_state.questions) - 1:
             if st.button("Next Question", key=f"question_{st.session_state.current_question}"):
                 st.session_state.current_question += 1
                 st.session_state.question_state = "answering"
@@ -218,32 +233,30 @@ def run_endless_mode(game_config):
 
     print("Hmm!! I see you're locked in?")
     print("Get ready! I won't stop until you say so!")
-    if "questions" not in st.session_state:
-        st.session_state.set_of_questions = {}
-    st.session_state.set_of_questions["no_of_questions"] = 0
-    st.session_state.set_of_questions["wrongly_answered"] = []
-    st.session_state.set_of_questions["correctly_answered"] = []
 
-    print("Enter 'X' to stop the quiz!")
-
-    while True:
+    if "questions" not in st.session_state or len(st.session_state.questions) == 0:
         st.session_state.questions = get_opentdb_questions(game_config)
-        for question in st.session_state.questions:
-            display_question(question)
-            
-            result = select_option(question, allow_quit=True)
-            if result == "quit":
-                print("Nice Work")
-                handle_and_print_score(st.session_state.set_of_questions, game_config)
-                st.session_state.current_game = "home"
-                return
-            
-            else:
-                st.session_state.set_of_questions["no_of_questions"] += 1
-                if result:
-                    (st.session_state.set_of_questions["correctly_answered"]).append(question)
-                elif not result:
-                    (st.session_state.set_of_questions["wrongly_answered"]).append(question)
+        st.session_state.current_question = 0
+        st.session_state.answer = None
+
+        st.session_state.question_state = "answering"
+
+        st.session_state.set_of_questions = {
+            "no_of_questions": len(st.session_state.questions),
+            "wrongly_answered": [],
+            "correctly_answered": []
+        }
+        st.rerun()
+
+    if st.session_state.current_question >= len(st.session_state.questions):
+        st.session_state.questions.extend(get_opentdb_questions(game_config))
+        st.session_state.question_state = "answering"
+
+        st.rerun()
+
+    question = st.session_state.questions[st.session_state.current_question]
+    select_option(question, allow_quit=True)
+
 
 
 
